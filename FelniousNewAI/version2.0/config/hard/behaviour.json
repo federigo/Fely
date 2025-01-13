@@ -2270,7 +2270,7 @@
 			"limit": 5
 		},
 		"armflea": {	//"main", "enemy", "enemy", "etc"
-			"role": ["scout"],
+			"role": ["tick"],
 			"attribute": ["melee"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
@@ -2279,7 +2279,7 @@
 			"retreat": 0.0
 		},
 		"armpw": {
-			"role": ["raider"],
+			"role": ["pawn"],
 			"attribute": ["melee"],
 			"thr_mod": {"surf": 0.00, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
@@ -2288,7 +2288,7 @@
 			"retreat": 0.0
 		},
 		"armrock": {
-			"role": ["artillery"],
+			"role": ["rocketeer"],
 			"attribute": ["siege", "anti_stat"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
@@ -2297,7 +2297,7 @@
 			"retreat": 0.0
 		},
 		"armham": {
-			"role": ["skirmish"],
+			"role": ["mace"],
 			"attribute": ["melee"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
@@ -2306,7 +2306,7 @@
 			"retreat": 0.0
 		},
 		"armwar": {
-			"role": ["riot"],
+			"role": ["centurion"],
 			"attribute": ["melee"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
@@ -2315,7 +2315,7 @@
 			"retreat": 0.0
 		},
 		"armjeth": {
-			"role": ["anti_air", "air"],
+			"role": ["crossbow", "air"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
