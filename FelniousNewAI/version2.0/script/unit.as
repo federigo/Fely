@@ -25,13 +25,7 @@ TypeMask COMM    = aiRoleMasker.GetTypeMask("commander");
 TypeMask AHA      = AiAddRole("anti_heavy_ass",  SUPPORT.type);
 TypeMask BUILDER2 = AiAddRole("builderT2",       BUILDER.type);
 
-TypeMask TICK    	= AiAddRole("tick2",  		SCOUT.type);
-TypeMask PAWN    	= AiAddRole("pawn2",    		RAIDER.type);
-TypeMask MACE    	= AiAddRole("mace2", 		ASSAULT.type);
-TypeMask ROCKETEER  = AiAddRole("rocketeer2",    ARTY.type);
-TypeMask CENTURION  = AiAddRole("centrution2",   RIOT.type);
-TypeMask CROSSBOW   = AiAddRole("crossbow2",		AA.type);
-
+TypeMask STICK      = AiAddRole("tick_scout",  SCOUT.type);
 }  // namespace Role
 
 namespace Attr {
@@ -90,11 +84,12 @@ Type COMM    = Unit::Role::COMM.type;
 Type AHA      = Unit::Role::AHA.type;
 Type BUILDER2 = Unit::Role::BUILDER2.type;
 
+Type STICK      = Unit::Role::STICK.type;
 
-Type TICK = Unit::Role::TICK.type;
-Type PAWN = Unit::Role::PAWN.type;
-Type MACE = Unit::Role::MACE.type;
-Type ROCKETEER = Unit::Role::ROCKETEER.type;
-Type CENTURION = Unit::Role::CENTURION.type;
-Type CROSSBOW = Unit::Role::CROSSBOW.type;
+Type TICK = Unit::Role::SCOUT.type;
+Type PAWN = Unit::Role::RAIDER.type;
+Type MACE = Unit::Role::ASSAULT.type;
+Type ROCKETEER = Unit::Role::ARTY.type;
+Type CENTURION = Unit::Role::RIOT.type;
+Type CROSSBOW = Unit::Role::AA.type;
 }  // namespace RT

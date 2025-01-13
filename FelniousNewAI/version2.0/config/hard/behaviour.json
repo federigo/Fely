@@ -2270,7 +2270,7 @@
 			"limit": 5
 		},
 		"armflea": {	//"main", "enemy", "enemy", "etc"
-			"role": ["tick2"],
+			"role": ["tick_scout"],
 			"attribute": ["melee"],
 			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
