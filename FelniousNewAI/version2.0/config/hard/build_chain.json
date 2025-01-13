@@ -3,26 +3,26 @@
 	"porcupine": {
 		"unit": {
 		//
-		//              0           	1         		2        		3           	4          	5     			6				7				8				9   			10
-			"armada":  [	"armllt",		"armtl",   		"armrl",  		"armbeamer", 	"armhlt",  		"armclaw",		"armferret",		"armcir", 		"armpb",   		"armatl",
-						"armflak",   	"armamb",  		"armanni", 		"armguard", 		"armamd", 		"armrad",		"armjamt",		"armestor", 		"armmstor", 		"armadvsol",
-						"armnanotc", 	"armnanotct2",	"armarad",		"armtarg",		"armuwadves",  	"armemp",		"armveil",		"armckfus",     	"armsolar",     	"armgate",      	"armfhlt"],
+		//              0           	1         		2        		3           	4          		5     			6				7				8				9   				10
+			"armada":  ["armllt",		"armtl",   		"armrl",  		"armbeamer", 	"armhlt",  		"armclaw",		"armferret",	"armcir", 		"armpb",   		"armatl",
+						"armflak",   	"armamb",  		"armanni", 		"armguard", 	"armamd", 		"armrad",		"armjamt",		"armestor", 	"armmstor", 	"armadvsol",
+						"armnanotc", 	"armnanotct2",	"armarad",		"armtarg",		"armuwadves",  	"armemp",		"armveil",		"armckfus",     "armsolar",     "armgate",      	"armfhlt"],
 		//	
-		//              0          	1          	2          	3            	4           	5          	6				7				8				9				10
-			"cortex":  [	"corllt",		"cortl",   		"corrl",  		"corhllt",   	"corhlt",   		"cormaw",  		"cormadsam",  	"corerad",		"corvipe", 		"coratl", 
-						"corflak",   	"cortoast", 		"cordoom", 		"corpun",    	"corfmd",		"corrad",		"corjamt",		"corestor",		"cormstor",		"coradvsol", 
-						"cornanotc", 	"cornanotct2",	"corarad",		"cortarg",		"coruwadves",	"cortron", 		"corshroud",		"corfus",       	"corsolar",     	"corgate",      	"corfhlt"],
+		//              0          		1          		2          		3            	4           	5          		6				7				8				9					10
+			"cortex":  ["corllt",		"cortl",   		"corrl",  		"corhllt",   	"corhlt",   	"cormaw",  		"cormadsam",  	"corerad",		"corvipe", 		"coratl", 
+						"corflak",   	"cortoast", 	"cordoom", 		"corpun",    	"corfmd",		"corrad",		"corjamt",		"corestor",		"cormstor",		"coradvsol", 
+						"cornanotc", 	"cornanotct2",	"corarad",		"cortarg",		"coruwadves",	"cortron", 		"corshroud",	"corfus",       "corsolar",     "corgate",      	"corfhlt"],
 		//	
-		//             0          	1          	2          	3            	4           	5          	6				7				8				9				10
-			"legion":  [	"leglht",		"cortl",   		"legrl",  		"leghive",   	"legmg",   		"legdtr",  		"legrhapsis",  	"leglupara",		"legbombard", 	"coratl", 
-						"legflak",   	"legacluster", 	"legbastion", 	"legcluster",   	"legabm",		"legrad",		"legjam",		"legestor",		"legmstor",		"legadvsol", 
-						"legnanotc", 	"legnanotct2",	"corarad",		"cortarg",		"coruwadves",	"legperdition", 	"corshroud",		"corfus",       	"legsolar",     	"corgate",      	"corfhlt"]
+		//             0          		1          		2          		3            	4           	5          		6				7				8				9					10
+			"legion":  ["leglht",		"cortl",   		"legrl",  		"leghive",   	"legmg",   		"legdtr",  		"legrhapsis",  	"leglupara",	"legbombard", 	"coratl", 
+						"legflak",   	"legacluster", 	"legbastion", 	"legcluster",   "legabm",		"legrad",		"legjam",		"legestor",		"legmstor",		"legadvsol", 
+						"legnanotc", 	"legnanotct2",	"corarad",		"cortarg",		"coruwadves",	"legperdition", "corshroud",	"corfus",       "legsolar",     "corgate",      	"corfhlt"]
 		},
 		
 	// Actual number of defences per cluster bounded by income - the order of defenses that should be build with numbers as above.
 	"land":  [0, 3, 5, 6, 4, 8, 10, 12],
 	"water": [1, 1, 4, 9, 10, 9, 10],
-	"prevent": 1,  // number of preventive defences
+	"prevent": 5,  // number of preventive defences
 	"amount": {  // income bound factor
 		"offset": [-2.0, 2.0],
 		// Amount factor: 10x10 ~ 48.0, 20x20 ~ 32.0
@@ -41,9 +41,9 @@
 		"unit": {
 				"armada": [	"armmercury",  	"armemp",  		"armbrtha", 	"armvulc", 		"armamd", "armsilo", "armgate", 		"armgatet3"],
 				"cortex": [	"corscreamer", 	"cortron", 		"corint",   	"corbuzz", 		"corfmd", "corsilo", "corgate", 		"corgatet3"],
-				"legion": [	"leglraa", 		"legperdition",	"leglrpc",   "legstarfall", 	"legabm", "legsilo", "corgate", 		"corgatet3"]
+				"legion": [	"leglraa", 		"legperdition",	"leglrpc",   	"legstarfall", 	"legabm", "legsilo", "corgate", 		"corgatet3"]
 			},
-			"weight":     [	0.65,          	0.40,      		0.35,		0.10,      		0.95,     0.75,     	0.80,     		0.40],
+			"weight":     [	0.65,          	0.40,      		0.35,			0.10,      		0.95,     0.75,      0.80,     			0.40],
 			"condition": [40, 600]  // [<Minimum income>, <maximum seconds to build>]
 	},
 
