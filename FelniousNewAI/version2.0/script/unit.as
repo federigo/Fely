@@ -91,10 +91,10 @@ Type AHA      = Unit::Role::AHA.type;
 Type BUILDER2 = Unit::Role::BUILDER2.type;
 
 
-Type TICK = Unit::Role::SCOUT.type;
-Type PAWN = Unit::Role::RAIDER.type;
-Type MACE = Unit::Role::ASSAULT.type;
-Type ROCKETEER = Unit::Role::ARTY.type;
-Type CENTURION = Unit::Role::RIOT.type;
-Type CROSSBOW = Unit::Role::AA.type;
+Type TICK = Unit::Role::TICK.type;
+Type PAWN = Unit::Role::PAWN.type;
+Type MACE = Unit::Role::MACE.type;
+Type ROCKETEER = Unit::Role::ROCKETEER.type;
+Type CENTURION = Unit::Role::CENTURION.type;
+Type CROSSBOW = Unit::Role::CROSSBOW.type;
 }  // namespace RT
