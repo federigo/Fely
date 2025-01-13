@@ -44,14 +44,7 @@ SOpener@ GetOpenInfo()
 {
 	return SOpener({
 		{Factory::armlab, array<SQueue> = {
-			//standard
-			//SQueue(0.4f, {SO(RT::SCOUT), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2)}),
-			// raider serial production
-			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::STICK, 99), SO(RT::BUILDER)})
-			// scout start
-			//SQueue(0.2f, {SO(RT::SCOUT, 4), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER)}),
-			//defensive eco start
-			//SQueue(0.2f, {SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER)})
+			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::SCOUT, 2), SO(RT::BUILDER), SO(RT::RAIDER, 3), SO(RT::BUILDER), SO(RT::RAIDER, 10), SO(RT::ARTY, 6), SO(RT::ASSAULT, 5)})
 		}},
 		{Factory::armvp, array<SQueue> = {
 			//standard

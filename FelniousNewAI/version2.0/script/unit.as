@@ -25,7 +25,6 @@ TypeMask COMM    = aiRoleMasker.GetTypeMask("commander");
 TypeMask AHA      = AiAddRole("anti_heavy_ass",  SUPPORT.type);
 TypeMask BUILDER2 = AiAddRole("builderT2",       BUILDER.type);
 
-TypeMask STICK      = AiAddRole("tick_scout",  SCOUT.type);
 }  // namespace Role
 
 namespace Attr {
@@ -84,7 +83,6 @@ Type COMM    = Unit::Role::COMM.type;
 Type AHA      = Unit::Role::AHA.type;
 Type BUILDER2 = Unit::Role::BUILDER2.type;
 
-Type STICK      = Unit::Role::STICK.type;
 
 Type TICK = Unit::Role::SCOUT.type;
 Type PAWN = Unit::Role::RAIDER.type;
