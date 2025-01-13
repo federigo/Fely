@@ -48,7 +48,7 @@ TypeMask FENCE     = aiAttrMasker.GetTypeMask("fence");
 TypeMask REARM     = aiAttrMasker.GetTypeMask("rearm");
 TypeMask NO_DGUN   = aiAttrMasker.GetTypeMask("no_dgun");
 TypeMask ANTI_STAT = aiAttrMasker.GetTypeMask("anti_stat");
-}  // namespace Attr
+}  // namespace Attr0
 
 enum UseAs {
 	COMBAT = 0, FENCE, SUPER, STOCK,  // military
