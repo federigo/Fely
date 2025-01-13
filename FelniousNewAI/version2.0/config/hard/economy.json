@@ -5,8 +5,8 @@
 			"land":{
 				"armmakr": 	[1,		5],
 				"cormakr": 	[1,		5],
-				"legeconv": 	[1,		5]
-			},
+				"legeconv": [1,		5]
+			}
 		},
 		"energy": {
 			// If land area >= 40% of the map then "land" config used, "water" otherwise
@@ -17,45 +17,45 @@
 				//higer value => more efficient | e-output * e-output / mcost*x*y
 				
 				//			Lower	Upper	Metal	Energy
-				"armwin": 	[20,		60],
-				"armsolar":  [1,		 3],
-				"armadvsol": [5,		 5, 		15, 		250, 	0.23], 	// efficiency=0.237542
-				"armfus":  	[1,		 3, 		25, 		600, 	4.23],		// efficiency=1.937984
-				"armafus": 	[1, 		25, 		50, 		1000, 	8.23],
-				"armwint2":  [1,	 	 5,		30],
+				"armwin": 		[20,		60],
+				"armsolar":  	[1,		 	3],
+				"armadvsol": 	[5,		 	5, 		15, 		250, 	0.23], 	// efficiency=0.237542
+				"armfus":  		[1,		 	3, 		25, 		600, 	4.23],		// efficiency=1.937984
+				"armafus": 		[1, 		25, 	50, 		1000, 	8.23],
+				"armwint2":  	[1,	 	 	5,		30],
 				
-				"corwin": 	[20,		60],
-				"corsolar":  [8,		12], 
-				"coradvsol": [8,		10, 		15, 		250, 	0.23], //efficiency=0.237542
-				"corfus": 	[1,		 3, 		25, 		600, 	4.23],  // efficiency=2.057844
-				"corafus": 	[1, 		25, 		50, 		1000, 	8.23],
-				"corwint2":  [1,	 	 5,		30],
+				"corwin": 		[20,		60],
+				"corsolar":  	[8,			12], 
+				"coradvsol": 	[8,			10, 	15, 		250, 	0.23], //efficiency=0.237542
+				"corfus": 		[1,		 	3, 		25, 		600, 	4.23],  // efficiency=2.057844
+				"corafus": 		[1, 		25, 	50, 		1000, 	8.23],
+				"corwint2":  	[1,	 	 	5,		30],
 				
-				"legwin": 	[30,	 	30],
-				"legsolar":  [5,		 8], 
-				"legadvsol": [6,		 10, 	15, 		250, 	0.23],
-				"legwint2":  [3,	 	 5,		30],
+				"legwin": 		[30,	 	30],
+				"legsolar":  	[5,		 	8], 
+				"legadvsol": 	[6,		 	10, 	15, 		250, 	0.23],
+				"legwint2":  	[3,	 	 	5,		30],
 				
-				"legmext15":	[1,		30],
+				"legmext15":	[1,			30],
 				
 				"armgeo":   	[4, 		8, 		16, 		300], //eff 0.6
-				"armgmm":	[4, 		8, 		25, 		600],
-				"armageo":	[0, 		2, 		35, 		1000], //eff 3.0
+				"armgmm":		[4, 		8, 		25, 		600],
+				"armageo":		[0, 		2, 		35, 		1000], //eff 3.0
 				"armuwgeo": 	[4, 		8, 		16, 		300], //eff 0.6
 				"armuwageo":	[0, 		2, 		35, 		1000], //eff 3.0
 				
-				"corgeo": 	[4, 		8, 		16, 		300], //eff 0.6
-				"corbhmth":	[4, 		8, 		25, 		600],
-				"corageo":	[0, 		2, 		35, 		1000], //eff 3.0
+				"corgeo": 		[4, 		8, 		16, 		300], //eff 0.6
+				"corbhmth":		[4, 		8, 		25, 		600],
+				"corageo":		[0, 		2, 		35, 		1000], //eff 3.0
 				"coruwgeo": 	[4, 		8, 		16, 		300], //eff 0.6
 				"coruwageo":	[0, 		2, 		35, 		1000], //eff 3.0
 				
-				"leggeo": 	[4, 		8, 		16, 		300], //eff 0.6
-				"legageo":	[0, 		2, 		35, 		1000], //eff 3.0
-				"legrampart":[0, 		2, 		35, 		2000], //eff 3.0
+				"leggeo": 		[4, 		8, 		16, 		300], //eff 0.6
+				"legageo":		[0, 		2, 		35, 		1000], //eff 3.0
+				"legrampart":	[0, 		2, 		35, 		2000], //eff 3.0
 				
-				"coruwfus": 	[6, 		12, 		35, 		600, 	2.8], // efficiency=6.443299
-				"armuwfus": 	[6, 		12, 		35, 		600]  // efficiency=6.443299
+				"coruwfus": 	[6, 		12, 	35, 		600, 	2.8], // efficiency=6.443299
+				"armuwfus": 	[6, 		12, 	35, 		600]  // efficiency=6.443299
 				//"armckfus": 	[1, 		3, 		50, 		2000]   // efficiency=2.400266
 			},
 			"water": {
@@ -82,14 +82,14 @@
 				"coruwfus": [50, 100, 35, 600, 2.8]  // efficiency=2.756296
 			},
 	
-			"factor": [[6.0, 1], [20, 300], [30, 420], [60.0, 3600]], //desired energy factor at a certain time
+			"factor": [[10.0, 1], [20, 200], [40, 320], [80.0, 1800]], //desired energy factor at a certain time
 			// desired energy rule #1: e-income >= m-income * factor
 			// income factor for energy, time is in seconds
 			// [[<start_factor>, <start_time>], [<end_factor>, <end_time>]]
 	
 			"min_income": 5,  // minimum energy income to filter out generators
 	
-			"cost_ratio": 0.030, //0.43
+			"cost_ratio": 0.040, //0.43
 			// min. limit for energy to cost ratio to have access to next energy tier 
 			// (e.g. armfusion ecost (21000*0.04=1260 => 840e income neccessary to start building fusion)
 			// ratio 0.4 => armadvsol 200e, armfus 840e, armafus 2760e

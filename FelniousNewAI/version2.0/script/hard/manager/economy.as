@@ -30,12 +30,12 @@ void AiUpdateEconomy()
 		aiEconomyMgr.isEnergyStalling = (energy.income < energy.pull) && (energy.current < energy.storage * 0.2f);
 	} else {
 		aiEconomyMgr.isEnergyEmpty = energy.current < energy.storage * 0.2f;
-		aiEconomyMgr.isEnergyStalling = aiEconomyMgr.isEnergyEmpty || ((energy.income < energy.pull) && (energy.current < energy.storage * 0.6f));
+		aiEconomyMgr.isEnergyStalling = aiEconomyMgr.isEnergyEmpty || ((energy.income < energy.pull) && (energy.current < energy.storage * 0.4f));
 	}
 	// NOTE: Default energy-to-metal conversion TeamRulesParam "mmLevel" = 0.75
-	aiEconomyMgr.isEnergyFull = energy.current > energy.storage * 0.88f;
+	aiEconomyMgr.isEnergyFull = energy.current > energy.storage * 0.75f;
 
-	aiFactoryMgr.isAssistRequired = (metal.current > metal.storage * 0.2f) && !aiEconomyMgr.isEnergyStalling;
+	aiFactoryMgr.isAssistRequired = (metal.current > metal.storage * 0.1f) && !aiEconomyMgr.isEnergyStalling;
 }
 
 }  // namespace Economy

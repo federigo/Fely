@@ -142,7 +142,7 @@
 		"armvp": {
 			"hub": [
 					[{"unit": "armllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
-					[{"unit": "armalab", "category": "factory", "priority": "now"}]
+					[{"unit": "armavp", "category": "factory", "priority": "now"}]
 			]
 		},
 		"corlab": {
@@ -162,13 +162,13 @@
 			"hub": [
 					[{"unit": "armarad", "category": "defence", "offset": {"back": 100}, "priority": "normal"}],
 					[{"unit": "armamb", "category": "defence", "offset": {"front": 100}, "priority": "low"}],
-					[{"unit": "armfus", "category": "energy", "priority": "high"}]
+					[{"unit": "armfus", "category": "energy", "priority": "now"}]
 			]
 		},
 		"armavp": {
 			"hub": [
 					[{"unit": "armamb", "category": "defence", "offset": {"front": 100}, "priority": "low"}],
-					[{"unit": "armfus", "category": "energy", "priority": "high"}]
+					[{"unit": "armfus", "category": "energy", "priority": "now"}]
 			]
 		},
 		"coralab": {
@@ -179,35 +179,45 @@
 		},
 		"coravp": {
 			"hub": [
-					[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}]
+					[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
+					[{"unit": "corfus", "category": "energy", "priority": "now"}],
+					[{"unit": "cormmkr", "category": "convert", "priority": "now"}],
+					[{"unit": "cormmkr", "category": "convert", "priority": "now"}]
 			]
 		},
 		"armap": {
-			"hub": [
-					[{"unit": "armllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
-					[{"unit": "armfus", "category": "energy", "priority": "high"}]
-			]
-		},
-		"armaap": {
 			"hub": [
 					[{"unit": "armllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
 					[{"unit": "armaap", "category": "factory", "priority": "now"}]
 			]
 		},
-		"corapt3": {
-			"hub": [[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}]]
+		"armaap": {
+			"hub": [
+					[{"unit": "armllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
+					[{"unit": "armfus", "category": "energy", "priority": "now"}]
+			]
 		},
 		"armapt3": {
-			"hub": [[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}]]
-		},
-		"armap": {
-			"hub": [[{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
-		},
-		"armapt3": {
-			"hub": [[{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+			"hub": [
+				[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}]
+			]
 		},
 		"corap": {
-			"hub": [[{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+			"hub": [
+					[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
+					[{"unit": "coraap", "category": "factory", "priority": "now"}]
+			]
+		},
+		"coraap": {
+			"hub": [
+					[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}],
+					[{"unit": "corfus", "category": "energy", "priority": "now"}]
+			]
+		},
+		"corapt3": {
+			"hub": [
+				[{"unit": "corllt", "category": "defence", "offset": {"back": 5}, "priority": "now"}]
+			]
 		},
 		"armsy": {
 			"hub": [
