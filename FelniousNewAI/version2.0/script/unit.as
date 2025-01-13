@@ -25,12 +25,12 @@ TypeMask COMM    = aiRoleMasker.GetTypeMask("commander");
 TypeMask AHA      = AiAddRole("anti_heavy_ass",  SUPPORT.type);
 TypeMask BUILDER2 = AiAddRole("builderT2",       BUILDER.type);
 
-TypeMask TICK    	= AiAddRole("tick",  		SCOUT.type);
-TypeMask PAWN    	= AiAddRole("pawn",    		RAIDER.type);
-TypeMask MACE    	= AiAddRole("mace", 		ASSAULT.type);
-TypeMask ROCKETEER  = AiAddRole("rocketeer",    ARTY.type);
-TypeMask CENTURION  = AiAddRole("centrution",   RIOT.type);
-TypeMask CROSSBOW   = AiAddRole("crossbow",		AA.type);
+TypeMask TICK    	= AiAddRole("tick2",  		SCOUT.type);
+TypeMask PAWN    	= AiAddRole("pawn2",    		RAIDER.type);
+TypeMask MACE    	= AiAddRole("mace2", 		ASSAULT.type);
+TypeMask ROCKETEER  = AiAddRole("rocketeer2",    ARTY.type);
+TypeMask CENTURION  = AiAddRole("centrution2",   RIOT.type);
+TypeMask CROSSBOW   = AiAddRole("crossbow2",		AA.type);
 
 }  // namespace Role
 

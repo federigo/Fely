@@ -47,7 +47,7 @@ SOpener@ GetOpenInfo()
 			//standard
 			//SQueue(0.4f, {SO(RT::SCOUT), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2)}),
 			// raider serial production
-			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::TICK, 3), SO(RT::PAWN, 6), SO(RT::BUILDER), SO(RT::MACE, 6), SO(RT::ROCKETEER, 6)})
+			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::TICK, 66), SO(RT::PAWN, 6), SO(RT::BUILDER), SO(RT::MACE, 6), SO(RT::ROCKETEER, 6)})
 			// scout start
 			//SQueue(0.2f, {SO(RT::SCOUT, 4), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER)}),
 			//defensive eco start
