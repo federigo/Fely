@@ -663,7 +663,8 @@
 			"role": ["static"],
 			"attribute": ["support"],
 			"build_mod": 10.0,
-			"limit": 1
+			"limit": 1,
+			"since": 360
 		},
 		"armshltx": { //Armada T3 lab
 			"role": ["static"],
@@ -682,7 +683,8 @@
 			"role": ["static"],
 			"attribute": ["support"],
 			"build_mod": 10.0,
-			"limit": 1
+			"limit": 1,
+			"since": 360
 		},
 		"armsy": { //Naval lab
 			"role": ["static"],
@@ -694,7 +696,8 @@
 			"role": ["static"],
 			"attribute": ["support"],
 			"build_mod": 10.0,
-			"limit": 1
+			"limit": 1,
+			"since": 360
 		},
 		"armhp": { //Hovercraft lab
 			"role": ["static"],
