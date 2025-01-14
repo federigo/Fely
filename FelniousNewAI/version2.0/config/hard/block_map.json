@@ -24,49 +24,41 @@
 			},
 			"fac_land_t2":{
 				"type": ["rectangle", "factory"],
-				"size": [8 ,8],
+				//"size": [8 ,8],
 				"yard": [12, 20],
 				"offset": [4, 6],
 				"ignore": ["none"]
 			},		
 			"fac_air": {
 				"type": ["rectangle", "factory"],
-				"yard": [6, 6],
-				"not_ignore": ["none"]
+				//"yard": [6, 6],
+				"not_ignore": ["convert", "factory", "special"]
 			},
 			"fac_water": {
 				"type": ["rectangle", "factory"],
+				
 				"yard": [10, 12],
-				"offset": [0, 4],
-				"ignore":["none"]
+				"offset": [0, 4]
 			},
 			"fac_strider": {                        //t3 factory 9x9
 				"type": ["rectangle", "factory"],
 				"size": [9, 9],
-				"yard":[20, 20],
-				//"offset": [4, 6],
+				"yard":[20, 5],
+				"offset": [0, 5],
 				"ignore":["none"]
 			},
 			"solar": {
 				"type": ["rectangle", "engy_mid"],
 				"ignore": ["engy_mid", "def_low", "mex", "def_low"],
-				"yard": [3, 3]
+				"yard": [6, 6]
 				
 			},
 			"advsolar":{
 				"type": ["rectangle", "engy_mid"],
-				"yard": [3, 3],
+				"yard": [5, 5],
 				"ignore": ["mex", "engy_mid", "def_low", "nano"]
 			},
 			"wind": {
-				"type": ["rectangle", "engy_low"],
-	// 			Integer radius of a blocker or description string.
-	// 			Available string values: explosion, expl_ally
-	//			"radius": "explosion",  // default: "explosion"
-				"yard": [10,10],  // "default": "explosion"
-				"ignore": ["engy_low"]
-			},
-			"wind2": {
 				"type": ["rectangle", "engy_low"],
 	// 			Integer radius of a blocker or description string.
 	// 			Available string values: explosion, expl_ally
@@ -89,11 +81,11 @@
 				"yard": [5, 5],
 				"ignore": ["mex", "engy_high"]
 			},
-			"singu": {
-				"type": ["circle", "engy_high"],
-				"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
-				"ignore": ["mex", "engy_low", "def_low", "nano"]
-			},
+	//		"singu": {
+	//			"type": ["circle", "engy_high"],
+	//			"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
+	//			"ignore": ["mex", "engy_low", "def_low", "nano"]
+	//		},
 			"store": {
 				"type": ["rectangle", "mex"],
 				"yard": [4, 4],
@@ -101,7 +93,7 @@
 			},
 			"mex": {
 				"type": ["rectangle", "mex"],
-				"yard": [2, 2],
+	//			"yard": [2, 2],
 				"offset": [0, -4],
 				"ignore": ["all"]
 			},
@@ -111,12 +103,12 @@
 			},
 			"converter": {
 				"type": ["rectangle", "convert"],
-				"yard": [7, 7],
-				"ignore": ["convert"]
+				"yard": [3, 3],
+				"ignore": ["engy_high"]
 			},
 			"def_low": {
 				"type": ["circle", "def_low"],
-				"radius": 6,
+				"radius": 6,  // 128 / (SQUARE_SIZE * 2)
 				"ignore": ["engy_mid", "engy_high", "engy_low", "nano"]
 			},
 			"def_mid": {
@@ -145,15 +137,15 @@
 				"type": ["circle", "special"],
 				"ignore": ["mex", "def_low", "engy_mid", "engy_high"]
 			},
-			"terraform": {
-				"type": ["rectangle", "special"],
-				"size": [7, 7]  // int2(3 + 4, 3 + 4)
-			},
-			"strider": {
-				"type": ["rectangle", "special"],
-				"yard": [4, 4],
-				"ignore": ["all"]
-			},
+	//		"terraform": {
+	//			"type": ["rectangle", "special"],
+	//			"size": [7, 7]  // int2(3 + 4, 3 + 4)
+	//		},
+	//		"strider": {
+	//			"type": ["rectangle", "special"],
+	//			"yard": [4, 4],
+	//			"ignore": ["all"]
+	//		},
 			"small": {
 				"type": ["rectangle", "unknown"],
 				"not_ignore": ["factory", "def_low", "terra"]
@@ -180,7 +172,7 @@
 			"solar": 		["armsolar", "corsolar", "legsolar"],
 			"advsolar":		["armadvsol", "coradvsol", "legadvsol"],
 			"wind": 		["armwin", "corwin", "armtide", "cortide", "legwin"], // Add "legtide" later
-			"wind2": 		["armwint2", "corwint2", "legwint2"], // Add "legtide" later
+			"wind2": 		["armwint2", "corwint2", "legwint2"],
 			"geo": 			["armgeo", "corgeo", "leggeo"],
 			"geo2": 		["armageo", "corageo", "legageo", "armgmm", "legrampart"],
 			"fusion":		["armfus", "armuwfus", "armafus", "corfus", "coruwfus", "corafus"], // Add legion fusions later -- Just a dumb fusion in the game (armckfus)
@@ -192,7 +184,7 @@
 			"def_mid": 		["armbeamer", "armclaw", "armhlt", "armjuno", "corhllt", "corhlt", "cormaw", "leghive", "legmg", "armminivulk", "armamb", "cortoast", "corminibuzz", "legacluster", "legministarfall"],
 			"def_hvy":  	["armguard", "corpun", "legcluster", "armanni", "armbrtha", "armannit3", "cordoom", "corint", "cordoomt3", "legbastion", "leglrpc", "corbhmth"],
 			"def_air": 		["armferret", "armcir",  "armfrock", "armfrt", "armrl", "armflak", "armfflak", "armmercury", "corrl", "corfrock", "cormadsam", "corerad", "corflak", "corenaa", "corfrt", "corfrock", "corscreamer", "legflak", "leglraa", "legrhapsis", "leglupara", "legrl"],
-			"caretaker": 	["armnanotc", "cornanotc", "legnanotc", "armnanotct2", "cornanotct2", "legnanotct2", "armnanotcplat", "cornanotcplat", "legnanotcplat", "armnanotc2plat", "cornanotcplat", "legnanotcplat"],
+			"caretaker": 	["armnanotc", "cornanotc", "legnanotc", "armnanotct2", "cornanotct2", "legnanotct2", "armnanotcplat", "cornanotcplat", "legnanotcplat", "armnanotc2plat", "cornanotc2plat", "legnanotc2plat"],
 			"small": 		["armrad", "corrad", "legrad"]
 			
 	//engy_low: wind

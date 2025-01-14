@@ -84,8 +84,7 @@
 				[{"unit": "armmmkr", "category": "convert", "condition": {"chance": 1.00}, "priority": "now"}],
 				[{"unit": "armsilo", "category": "defence", "condition": {"chance": 0.25}, "priority": "low"}],
 				[{"unit": "armamd", "category": "defence", "condition": {"chance": 1.00}, "priority": "now"}],
-				[{"unit": "armamd", "category": "defence", "condition": {"chance": 0.25}, "priority": "low"}],
-				[{"unit": "armfus", "category": "energy", "condition": {"chance": 1.00}, "priority": "now"}]
+				[{"unit": "armamd", "category": "defence", "condition": {"chance": 0.25}, "priority": "low"}]
 			]
 		},
 		"coradvsol": {
@@ -96,7 +95,8 @@
 		"corfus": {
 			"hub": [
 				[{"unit": "cormmkr", "category": "convert", "condition": {"chance": 1.00}, "priority": "now"}],
-				[{"unit": "cormmkr", "category": "convert", "condition": {"chance": 1.00}, "priority": "now"}]
+				[{"unit": "cormmkr", "category": "convert", "condition": {"chance": 1.00}, "priority": "now"}],
+				[{"unit": "corafus", "category": "energy", "condition": {"chance": 1.00}, "priority": "now"}]
 			]
 		},
 		"corafus": {

@@ -935,7 +935,7 @@
 		"armpw": {
 			"role": ["raider"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": true,
 			"power": 1.0,
 			"retreat": 0.0
@@ -943,7 +943,7 @@
 		"armrectr": {
 			"role": ["support"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -952,7 +952,7 @@
 			"role": ["assault"],
 			"attribute": ["siege"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -960,7 +960,7 @@
 		"armham": {
 			"role": ["skirmish"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -968,7 +968,7 @@
 		"armjeth": {
 			"role": ["anti_air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -977,7 +977,7 @@
 			"role": ["riot"],
 			"attribute": ["melee"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -985,7 +985,7 @@
 		"armflea": {
 			"role": ["scout"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": true,
 			"power": 1.0,
 			"retreat": 0.0
@@ -999,7 +999,7 @@
 		"armfast": {
 			"role": ["scout"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1007,7 +1007,7 @@
 		"armamph": {
 			"role": ["scout", "anti_air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1015,7 +1015,7 @@
 		"armzeus": {
 			"role": ["scout"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1023,7 +1023,7 @@
 		"armfboy": {
 			"role": ["heavy"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1031,7 +1031,7 @@
 		"armmav": {
 			"role": ["riot"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1040,7 +1040,7 @@
 			"role": ["assault"],
 			"attribute": ["siege"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1049,7 +1049,7 @@
 			"role": ["riot"],
 			"attribute": ["melee"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1057,7 +1057,7 @@
 		"armaak": {
 			"role": ["anti_air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1066,7 +1066,7 @@
 		"armmark": {
 			"role": ["support"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1074,7 +1074,7 @@
 		"armaser": {
 			"role": ["support"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1082,7 +1082,7 @@
 		"armspid": {
 			"role": ["raider"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1090,7 +1090,7 @@
 		"armsptk": {
 			"role": ["support"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1100,7 +1100,7 @@
 			"role": ["anti_heavy_ass"],
 			"attribute": ["siege"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1108,7 +1108,7 @@
 		"armscab": {
 			"role": ["support"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1116,7 +1116,7 @@
 		"armspy": {
 			"role": ["scout"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1232,47 +1232,47 @@
 			"limit": 0
 		},
 		"armfav": {
-			"role": ["scout"],
+			"role": ["scout"]
 			//"ignore": true
 		},
 		"armflash": {
 			"role": ["scout"],
 			"threat":{"air": 0.0, "water": 0.0,
 				"vs":{"artillery": 2.0, "anti_air": 2.0, "scout":1.5}	
-			},
+			}
 			//"ignore": true
 		},
 		"armpincer": {
 			"role": ["raider"],
 			"threat":{"air": 0.0, "water": 0.0,
 				"vs":{"artillery": 2.0, "anti_air": 2.0, "scout":1.0}
-			},
+			}
 		},
 		"armstump": {
 			"role": ["skirmish"],
 			"threat":{"air": 0.0, "water": 0.0,
 				"vs":{"artillery": 2.0, "anti_air": 2.0}
-			},
+			}
 		},
 		"armart": {
 			"role": ["artillery"],
 			"attribute": ["siege"],
 			"threat":{"air": 0.0, "water": 0.0, "surf": 0.5, "vs":{"anti_air": 2.0}},
-			"power": 0.5,
+			"power": 0.5
 		},
 		"armjanus": {
 			"role": ["assault"],
 			//"attribute": ["siege"],
 			"threat":{"air": 0.0, "water": 0.0,
 				"vs":{"artillery": 2.0, "anti_air": 2.0}
-			},
+			}
 		},
 		"armsam": {
 			"role": ["anti_air"],
 			"attribute": ["support", "siege"],
 			"threat":{"air": 2.0, "water": 0.0, "surf": 0.5,
 				"vs":{"anti_air": 3.0}
-			}	,
+			}
 		},
 
 
@@ -1851,7 +1851,7 @@
 		"corfink": {
 			"role": ["scout", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1859,7 +1859,7 @@
 		"corveng": {
 			"role": ["anti_air", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1867,7 +1867,7 @@
 		"corshad": {
 			"role": ["bomber", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1875,7 +1875,7 @@
 		"corbw": {
 			"role": ["skirmish", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1889,7 +1889,7 @@
 		"corawac": {
 			"role": ["scout", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1897,7 +1897,7 @@
 		"corvamp": {
 			"role": ["anti_air", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1905,7 +1905,7 @@
 		"corhurc": {
 			"role": ["bomber", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1913,7 +1913,7 @@
 		"corape": {
 			"role": ["raider", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
@@ -1921,7 +1921,7 @@
 		"corcrw": {
 			"role": ["heavy", "air"],
 			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"power": 1.0,
 			"retreat": 0.0
