@@ -30,6 +30,8 @@ string armasy  ("armasy");
 string armap   ("armap");
 string armaap  ("armaap");
 string armshltx("armshltx");
+string armapt3 ("armapt3");
+
 string corlab  ("corlab");
 string coralab ("coralab");
 string corvp   ("corvp");
@@ -39,6 +41,18 @@ string corasy  ("corasy");
 string corap   ("corap");
 string coraap  ("coraap");
 string corgant ("corgant");
+string corapt3 ("corapt3");
+
+string leglab  ("leglab");
+string legalab ("legalab");
+string legvp   ("legvp");
+string legavp  ("legavp");
+string legsy   ("legjim");
+string legasy  ("legasy");
+string legap   ("legap");
+string legaap  ("legaap");
+string leggant ("leggant");
+string legapt3 ("legapt3");
 
 float switchLimit = MakeSwitchLimit();
 
@@ -64,7 +78,7 @@ void AiUnitAdded(CCircuitUnit@ unit, Unit::UseAs usage)
 	if (userData[facDef.id].attr & Attr::T3 != 0) {
 		// if (ai.teamId != ai.GetLeadTeamId()) then this change affects only target selection,
 		// while threatmap still counts "ignored" here units.
-		array<string> spam = {"armpw", "corak", "armflea", "armfav", "corfav", "corvamp", "corveng"};
+		array<string> spam = {"armpw", "corak", "armflea", "armfav", "corfav"};
 		for (uint i = 0; i < spam.length(); ++i)
 			ai.GetCircuitDef(spam[i]).SetIgnore(true);
 	}
@@ -110,7 +124,7 @@ void AiSave(OStream& ostream)
  */
 bool AiIsSwitchTime(int lastSwitchFrame)
 {
-	const float value = pow((ai.frame - lastSwitchFrame), 0.9) * aiEconomyMgr.metal.income + (aiEconomyMgr.metal.current * 5);
+	const float value = pow((ai.frame - lastSwitchFrame), 0.9) * aiEconomyMgr.metal.income + (aiEconomyMgr.metal.current * 7);
 	if (value > switchLimit) {
 		switchLimit = MakeSwitchLimit();
 		return true;
@@ -127,7 +141,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 float MakeSwitchLimit()
 {
-	return AiRandom(16000, 30000) * SECOND;
+	return AiRandom(300, 600) * SECOND;
 }
 
 }  // namespace Factory

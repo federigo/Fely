@@ -63,7 +63,7 @@ SOpener@ GetOpenInfo()
 			SQueue(1.0f, {SO(RT::RIOT, 3), SO(RT::ARTY, 5), SO(RT::SUPER), SO(RT::SUPER)})
 		}},
 		{Factory::armap, array<SQueue> = {
-			SQueue(0.3f, {SO(RT::BUILDER, 3), SO(RT::BOMBER, 25), SO(RT::AA, 25)})
+			SQueue(0.3f, {SO(RT::BUILDER, 3), SO(RT::RAIDER, 8), SO(RT::AA, 10), SO(RT::BOMBER, 10)})
 		}},
 		{Factory::armaap, array<SQueue> = {
 			SQueue(0.3f, {SO(RT::BUILDER, 3)})
