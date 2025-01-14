@@ -118,13 +118,6 @@
 			"max_percent": 0.50,
 			"eps_step": 0.00
 		},
-		"bomber": {
-			"vs":         ["static"],
-			"ratio":      [ 0.10],
-			"importance": [ 10.0],
-			"max_percent": 0.20,
-			"eps_step": 0.00
-		},
 		"super": {	//  korgoth, bantha, juggernaut
 			"vs":         ["heavy", "static", "super"],
 			"ratio":      [ 2.00,    2.00,      2.00],
@@ -138,13 +131,25 @@
 			"importance": [ 5.00,     5.00,		10.00],
 			"max_percent": 0.30,
 			"eps_step": 0.00
-			},
+		},
 		"support": {
 			"vs":         ["skirmish", "assault"],
 			"ratio":      [ 0.10,        0.10],
 			"importance": [ 2.00,       2.00],
 			"max_percent": 0.20,
 			"eps_step": 0.00
+		},
+
+		//=================
+		//AIR RESPONSE TEAM
+		//=================
+		
+		"bomber": {
+			"vs":         ["static"],
+			"ratio":      [ 5.00],
+			"importance": [ 10.0],
+			"max_percent": 0.40,
+			"eps_step": 0.10
 		}
 	}
 	}
