@@ -103,8 +103,8 @@
 			},
 			"converter": {
 				"type": ["rectangle", "convert"],
-				"yard": [3, 3],
-				"ignore": ["engy_high"]
+				"yard": [7, 7],
+				"ignore": ["convert"]
 			},
 			"def_low": {
 				"type": ["circle", "def_low"],

@@ -17,21 +17,21 @@
 				//higer value => more efficient | e-output * e-output / mcost*x*y
 				
 				//			Lower	Upper	Metal	Energy
-				"armwin": 		[40,		60],
-				"armsolar":  	[1,		 	3],
+				"armwin": 		[30,		60],
+				"armsolar":  	[6,		 	7,		0,			0,		0.030],
 				"armadvsol": 	[5,		 	5, 		20, 		250, 	0.23], 	// efficiency=0.237542
-				"armfus":  		[2,		 	3, 		35, 		600, 	4.23],		// efficiency=1.937984
-				"armafus": 		[1, 		25, 	50, 		2000, 	8.23],
+				"armfus":  		[3, 		4, 		50, 		900, 	1.9],		// efficiency=1.937984
+				"armafus": 		[50,		100, 	60, 		4000, 	6.44],
 				"armwint2":  	[1,	 	 	5,		30],
 				
-				"corwin": 		[20,		30],
-				"corsolar":  	[8,			12], 
-				"coradvsol": 	[8,			10, 	20, 		250, 	0.23], //efficiency=0.237542
-				"corfus": 		[2,		 	3, 		35, 		600, 	4.23],  // efficiency=2.057844
-				"corafus": 		[1, 		25, 	50, 		2000, 	8.23],
+				"corwin": 		[30,		60],
+				"corsolar":  	[5, 		8, 		0, 			0, 		0.060], 
+				"coradvsol": 	[8, 		16, 	12, 		220, 	0.220], //efficiency=0.237542
+				"corfus": 		[4, 		6, 		50, 		600, 	2.06],  // efficiency=2.057844
+				"corafus": 		[50, 		100, 	60, 		4000, 	6.44],
 				"corwint2":  	[1,	 	 	5,		30],
 				
-				"legwin": 		[20,	 	30],
+				"legwin": 		[30,	 	60],
 				"legsolar":  	[5,		 	8], 
 				"legadvsol": 	[8,		 	12, 	15, 		250, 	0.23],
 				"legwint2":  	[3,	 	 	5,		30],

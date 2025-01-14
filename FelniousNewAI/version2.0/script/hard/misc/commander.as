@@ -62,6 +62,12 @@ SOpener@ GetOpenInfo()
 		{Factory::armshltx, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::RIOT, 3), SO(RT::ARTY, 5), SO(RT::SUPER), SO(RT::SUPER)})
 		}},
+		{Factory::armap, array<SQueue> = {
+			SQueue(0.3f, {SO(RT::BUILDER, 3), SO(RT::BUILDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::SUB), SO(RT::SKIRM)})
+		}},
+		{Factory::armaap, array<SQueue> = {
+			SQueue(0.3f, {SO(RT::BUILDER, 3), SO(RT::BUILDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::SUB), SO(RT::SKIRM)})
+		}},
 		{Factory::armsy, array<SQueue> = {
 			SQueue(0.3f, {SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::SUB), SO(RT::SKIRM)})
 		}},
