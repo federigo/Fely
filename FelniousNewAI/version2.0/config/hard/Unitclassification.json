@@ -13,12 +13,12 @@
 //				{
 //					"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, 
 //					"skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0,
-//					"bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0,
+//					"bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0,
 //					"heavy": 0.0, "super": 0.0, "commander": 0.0}
 //				},			
 //			"ignore": true,
 //			"power": 1.0,
-//			"retreat": 0.0
+//			"retreat": 0.8
 //
 // LAND VALUES
 // ROCK PAPER SCISSORS: BUILDER < ANTIAIR < SCOUT < RAIDER < RIOT < ARTILLERY/SIEGE < ASSAULT < SKIRMISH < HEAVY < ANTIHEAVY < SUPER
@@ -31,21 +31,21 @@
 //
 //
 // ==============================================================================================================================================================================================
-// =============================--ARMADA--=========================================================================================================================================================
+// =============================--ARMADA--=======================================================================================================================================================
 // ==============================================================================================================================================================================================
 //
 //
 //ARMADA BOT LAB -- armlab
 //
 //
-//Builder: 		armck 		-- 	builder
-//Rezzer: 			armrectr 	-- 	support
-//Tick: 			armflea 	-- 	scout
-//Pawn: 			armpw 		-- 	raider
-//Rocketeer: 		armrock 	-- 	artillery, siege
-//Mace: 			armham	 	-- 	assault
-//Centurion: 		armwar 		-- 	riot
-//Crossbow: 		armjeth 	-- 	anti_air
+//Builder: 			armck 			-- 	builder
+//Rezzer: 			armrectr 		-- 	support
+//Tick: 			armflea 		-- 	scout
+//Pawn: 			armpw 			-- 	raider
+//Rocketeer: 		armrock 		-- 	artillery, siege
+//Mace: 			armham 			-- 	assault
+//Centurion: 		armwar 			-- 	riot
+//Crossbow: 		armjeth 		-- 	anti_air
 //
 //
 // ==============================================================================================================================================================================================
@@ -54,24 +54,24 @@
 //ARMADA ADVANCED BOT LAB -- armalab
 //
 //
-//Builder: 		armack 		-- 	builder
-//Butler: 			armfark 	-- 	builder
-//DeCommander: 	armdecom 	-- 	builder
-//Ghost: 			armspy 		-- 	scout
-//Radar: 			armmark 	-- 	support
-//Jammer: 			armaser 	-- 	support
-//Reclaim: 		armspid 	--	support
-//Sprinter: 		armfast 	-- 	raider
-//Zeus: 			armzeus 	-- 	riot
-//Gunslinger: 		armmav 		-- 	skirmish
-//Hound: 			armfido 	-- 	artillery, siege
-//Recluse: 		armsptk 	-- 	assault
-//Fatboy: 			armfboy		-- 	heavy
-//Sniper: 			armsnipe 	-- 	anti_heavy_ass
-//Tumbleweed: 		armvader 	-- 	raider
-//Platypus: 		armamph 	-- 	raider
-//Archangel: 		armaak 		-- 	anti_air
-//Antinuke: 		armscab 	-- 	support
+//Builder: 			armack 			-- 	builder
+//Butler: 			armfark 		-- 	builder
+//DeCommander: 		armdecom 		-- 	builder
+//Ghost: 			armspy 			-- 	scout
+//Radar: 			armmark 		-- 	support
+//Jammer: 			armaser 		-- 	support
+//Reclaim: 			armspid 		--	support
+//Sprinter: 		armfast 		-- 	raider
+//Zeus: 			armzeus 		-- 	riot
+//Gunslinger: 		armmav 			-- 	skirmish
+//Hound: 			armfido 		-- 	artillery, siege
+//Recluse: 			armsptk 		-- 	assault
+//Fatboy: 			armfboy			-- 	heavy
+//Sniper: 			armsnipe 		-- 	anti_heavy_ass
+//Tumbleweed: 		armvader 		-- 	raider
+//Platypus: 		armamph 		-- 	raider
+//Archangel: 		armaak 			-- 	anti_air
+//Antinuke: 		armscab 		-- 	support
 //
 //
 // ==============================================================================================================================================================================================
@@ -80,17 +80,17 @@
 //ARMADA VEHICLE LAB -- armvp
 //
 //
-//Builder: 		armcv 		-- 	builder
-//Beaver: 			armbeaver 	-- 	builder
-//Minelayer: 		armmlv 		-- 	support
-//Rover: 			armfav 		-- 	scout
-//Blitz: 			armflash 	-- 	raider
-//Janus: 			armjanus 	-- 	artillery, siege
-//Stout: 			armstump 	-- 	assault
-//ShellShocker: 	armart 		-- 	artillery, siege
-//Whistler: 		armsam 		-- 	artillery, siege, anti_air
-//Pincer: 			armpincer 	-- 	raider
-//Zapper: 			armzapper 	-- 	riot
+//Builder: 			armcv 			-- 	builder
+//Beaver: 			armbeaver 		-- 	builder
+//Minelayer: 		armmlv 			-- 	support
+//Rover: 			armfav 			-- 	scout
+//Blitz: 			armflash 		-- 	raider
+//Janus: 			armjanus 		-- 	artillery, siege
+//Stout: 			armstump 		-- 	assault
+//ShellShocker: 	armart 			-- 	artillery, siege
+//Whistler: 		armsam 			-- 	artillery, siege, anti_air
+//Pincer: 			armpincer 		-- 	raider
+//Zapper: 			armzapper 		-- 	riot
 //
 //
 // ==============================================================================================================================================================================================
@@ -99,18 +99,18 @@
 //ARMADA ADVANCED VEHICLE LAB -- armavp
 //
 //
-//Builder: 		armacv 		-- 	builder
-//Helper: 			armconsul 	-- 	builder
-//Radar: 			armseer 	-- 	support
-//Jammer: 			armjam 		-- 	support
-//Gremlin: 		armgremlin -- 	raider
-//Jaguar: 			armlatnk 	-- 	riot
-//Bull: 			armbull 	-- 	assault
-//Starlight: 		armmanni 	-- 	artillery, siege
-//Ambassador: 		armmerl 	-- 	artillery, siege
-//Mauser: 			armmart 	-- 	artillery, siege
-//Turtle: 			armcroc 	-- 	raider
-//Shredder: 		armyork 	-- 	anti_air
+//Builder: 			armacv 			-- 	builder
+//Helper: 			armconsul 		-- 	builder
+//Radar: 			armseer 		-- 	support
+//Jammer: 			armjam 			-- 	support
+//Gremlin: 			armgremlin 		-- 	raider
+//Jaguar: 			armlatnk 		-- 	riot
+//Bull: 			armbull 		-- 	assault
+//Starlight: 		armmanni 		-- 	artillery, siege
+//Ambassador: 		armmerl 		-- 	artillery, siege
+//Mauser: 			armmart 		-- 	artillery, siege
+//Turtle: 			armcroc 		-- 	raider
+//Shredder: 		armyork 		-- 	anti_air
 //
 //
 // ==============================================================================================================================================================================================
@@ -119,14 +119,14 @@
 //ARMADA AIR LAB -- armap
 //
 //
-//Builder: 		armca 			-- 	builder
+//Builder: 			armca 			-- 	builder
 //Scout: 			armpeep 		-- 	scout
-//Fighter: 		armfig 			-- 	anti_air
-//Gunship: 		armkam 			-- 	raider
+//Fighter: 			armfig 			-- 	anti_air
+//Gunship: 			armkam 			-- 	raider
 //Bomber: 			armthund		-- 	bomber
 //Stork: 			armatlas 		-- 	support
 //Reclaimer: 		armfify 		-- 	support
-//Osprey: 			armhvytrans	-- 	support
+//Osprey: 			armhvytrans 	-- 	support
 //
 //
 // ==============================================================================================================================================================================================
@@ -135,16 +135,16 @@
 //ARMADA ADVANCED AIR LAB -- armaap
 //
 //
-//Builder: 		armaca 		-- 	builder
-//Radar: 			armawac 	-- 	scout
-//Fighter: 		armhawk 	-- 	anti_air
-//Gunship: 		armbrawl 	-- 	raider
-//Hornet: 			armblade 	-- 	heavy
-//Bomber: 			armpnix 	-- 	bomber
-//AtomicBomber:   armliche 	-- 	bomber
-//EMP: 				armstil 	-- 	assault
-//Torpedo: 		armlance 	-- 	anti_sea, bomber
-//EMPTrans: 		armdfly 	-- 	assault
+//Builder: 			armaca 			-- 	builder
+//Radar: 			armawac 		-- 	scout
+//Fighter: 			armhawk 		-- 	anti_air
+//Gunship: 			armbrawl 		-- 	raider
+//Hornet: 			armblade 		-- 	heavy
+//Bomber: 			armpnix 		-- 	bomber
+//AtomicBomber:   	armliche 		-- 	bomber
+//EMP: 				armstil 		-- 	assault
+//Torpedo: 			armlance 		-- 	anti_sea, bomber
+//EMPTrans: 		armdfly 		-- 	assault
 //
 //
 // ==============================================================================================================================================================================================
@@ -153,8 +153,8 @@
 //ARMADA ADVANCED AIR LAB T3 -- armapt3
 //
 //
-//Bomber: 			armthundt4 		-- 	bomber
-//ABomber: 		armlichet4 		-- 	bomber, super
+//Bomber: 			armthundt4 			-- 	bomber
+//ABomber: 			armlichet4 			-- 	bomber, super
 //Flagship: 		armfepocht4 		-- 	heavy
 //
 //
@@ -171,11 +171,11 @@
 //Titan: 			armbanth 			-- 	super
 //Hover: 			armlun 				-- 	skirmisher
 //Meatball: 		armmeatball 		-- 	raider
-//Assimilator: 	armassimilator 	-- 	assault
+//Assimilator: 		armassimilator 		-- 	assault
 //EPawn: 			armpwt4 			-- 	raider
 //ERecluse: 		armsptkt4 			-- 	assault
-//ETumble: 		armvadert4 		-- 	heavy
-//ERatte: 			armrattet4 		-- 	riot
+//ETumble: 			armvadert4 			-- 	heavy
+//ERatte: 			armrattet4 			-- 	riot
 //DCarrier: 		armdronecarryland 	-- 	support
 //
 //
@@ -186,14 +186,14 @@
 //ARMADA T3 GANTRY SEA -- armshltxuw
 //
 //
-//Turtle: 			armcroc 		-- 	raider
-//Marauder: 		armmar 			-- 	raider
-//Titan: 			armbanth 		-- 	super
-//Hover: 			armlun 			-- 	skirmisher
-//Meatball: 		armmeatball 	-- 	raider
-//EPawn: 			armpwt4 		-- 	raider
-//ETumble: 		armvadert4 	-- 	heavy
-//ERatte: 			armrattet4 	-- 	riot
+//Turtle: 			armcroc 			-- 	raider
+//Marauder: 		armmar 				-- 	raider
+//Titan: 			armbanth 			-- 	super
+//Hover: 			armlun 				-- 	skirmisher
+//Meatball: 		armmeatball 		-- 	raider
+//EPawn: 			armpwt4 			-- 	raider
+//ETumble: 			armvadert4 			-- 	heavy
+//ERatte: 			armrattet4 			-- 	riot
 //
 //
 // ==============================================================================================================================================================================================
@@ -202,11 +202,11 @@
 //ARMADA HOVER LAND/SEA LAB -- armhp / armfhp  
 //
 //
-//Builder: 		armch 			-- 	builder
-//Seeker: 			armsh 			-- 	scout
-//Croc: 			armanac 		-- 	raider
-//Possum: 			armmh 			-- 	artillery, siege
-//Sweeper: 		armah 			-- 	anti_air
+//Builder: 			armch 				-- 	builder
+//Seeker: 			armsh 				-- 	scout
+//Croc: 			armanac 			-- 	raider
+//Possum: 			armmh 				-- 	artillery, siege
+//Sweeper: 			armah 				-- 	anti_air
 //
 //
 // ==============================================================================================================================================================================================
@@ -215,13 +215,13 @@
 //ARMADA SEA LAB -- armsy
 //
 //
-//Builder: 		armcs 			-- 	builder
-//Reclaimer: 		armrecl 		-- 	support
-//Skater:			armpt 			-- 	scout
-//Dolphin: 		armdecade 		-- 	raider
-//Ellysaw: 		armpship 		-- 	assault
-//Corsair: 		armroy 			-- 	anti_sub
-//Sub: 				armsub 			-- 	sub
+//Builder: 			armcs 				-- 	builder
+//Reclaimer: 		armrecl 			-- 	support
+//Skater:			armpt 				-- 	scout
+//Dolphin: 			armdecade 			-- 	raider
+//Ellysaw: 			armpship 			-- 	assault
+//Corsair: 			armroy 				-- 	anti_sub
+//Sub: 				armsub 				-- 	sub
 //
 //
 // ==============================================================================================================================================================================================
@@ -230,27 +230,26 @@
 //ARMADA ADVANCED SEA LAB -- armasy
 //
 //
-//Builder: 		armacsub 		-- 	builder
-//Voyager: 		armmls 			-- 	support
-//Jammer: 			armsjam 		-- 	support
-//Maelstrom: 		armlship 		-- 	raider
-//Paladin: 		armcrus 		-- 	skirmisher
-//Longbow: 		armmship 		-- 	artillery, siege
-//Nexus: 			armdronecarry 	-- 	support
-//Dreadnaught: 	armbats 		-- 	assault
-//Flagship: 		armepoch 		-- 	heavy
-//EDolphin: 		armdecadet3 	-- 	raider
-//EEllysaw: 		armshipt3 		-- 	assault
-//Dragonslayer: 	armaas 			-- 	anti_air
-//Barracuda: 		armsubk 		-- 	sub
-//Serpent: 		armserp 		-- 	sub
-//Excalibur: 		armexcalibur 	-- 	sub
-//SeaDragon: 		armseadragon	-- 	support
-//ESerp: 			armserpt3 		-- 	sub
-//ESkater: 		armptt2 		-- 	scout
-//Antinuke: 		armantiship 	-- 	support
-//Antinuke: 		armcarry 		-- 	support
-//Trident: 		armtrident 	-- 	anti_sub
+//Builder: 			armacsub 			-- 	builder
+//Voyager: 			armmls 				-- 	support
+//Jammer: 			armsjam 			-- 	support
+//Maelstrom: 		armlship 			-- 	raider
+//Paladin: 			armcrus 			-- 	skirmisher
+//Longbow: 			armmship 			-- 	artillery, siege
+//Nexus: 			armdronecarry 		-- 	support
+//Dreadnaught: 		armbats 			-- 	assault
+//Flagship: 		armepoch 			-- 	heavy
+//EDolphin: 		armdecadet3 		-- 	raider
+//EEllysaw: 		armshipt3 			-- 	assault
+//Dragonslayer: 	armaas 				-- 	anti_air
+//Barracuda: 		armsubk 			-- 	sub
+//Serpent: 			armserp 			-- 	sub
+//Excalibur: 		armexcalibur 		-- 	sub
+//SeaDragon: 		armseadragon		-- 	support
+//ESerp: 			armserpt3 			-- 	sub
+//ESkater: 			armptt2 			-- 	scout
+//Antinuke: 		armantiship 		-- 	support
+//Trident: 			armtrident 			-- 	anti_sub
 //
 //
 // ==============================================================================================================================================================================================
@@ -259,28 +258,28 @@
 //ARMADA SEA PLATFORM -- armplat
 //
 //
-//Builder: 		armcsa 			-- 	builder
-//Horizon: 		armsehak 		-- 	scout
-//Saber: 			armsaber 		-- 	raider
-//Tsunami: 		armsb 			-- 	bomber
-//Cyclone: 		armsfig 		-- 	anti_air
-//Puffin: 			armseap 		-- 	bomber
+//Builder: 			armcsa 				-- 	builder
+//Horizon: 			armsehak 			-- 	scout
+//Saber: 			armsaber 			-- 	raider
+//Tsunami: 			armsb 				-- 	bomber
+//Cyclone: 			armsfig 			-- 	anti_air
+//Puffin: 			armseap 			-- 	bomber
 //
 //
 // ==============================================================================================================================================================================================
-// =============================--CORTEX--=========================================================================================================================================================
+// =============================--CORTEX--=======================================================================================================================================================
 // ==============================================================================================================================================================================================
 //
 //
 //CORTEX BOT LAB
 //
 //
-//Builder: 		corck 			-- 	builder
-//Rezzer: 			cornecro 		-- 	support
-//Grunt: 			corak 			-- 	raider
-//Rocketeer: 		corstorm 		-- 	artillery, siege
-//Thug: 			corthud 		-- 	assault
-//Thrasher: 		corcrash 		-- 	anti_air
+//Builder: 			corck 				-- 	builder
+//Rezzer: 			cornecro 			-- 	support
+//Grunt: 			corak 				-- 	raider
+//Rocketeer: 		corstorm 			-- 	artillery, siege
+//Thug: 			corthud 			-- 	assault
+//Thrasher: 		corcrash 			-- 	anti_air
 //
 //
 // ==============================================================================================================================================================================================
@@ -289,24 +288,24 @@
 //CORTEX ADVANCED BOT LAB
 //
 //
-//Builder: 		corak 			-- 	builder
-//Twitcher: 		corfast 		-- 	support
-//Decoy: 			cordecom 		-- 	builder
-//Commando: 		cormando 		-- 	support
-//Spy: 				corspy 			-- 	scout
-//Radar: 			corvoyr 		-- 	support
-//Jammer: 			corspec 		-- 	support
-//Fiend: 			corpyro 		-- 	raider , melee
-//Arbiter: 		corhrk 			-- 	artillery, siege
-//Sheldon: 		cormort 		-- 	artillery, siege
-//Termite: 		cortermite 	-- 	assault
-//Sumo: 			corcan 			-- 	heavy
-//Deadeye: 		cordeadeye 	-- 	raider
-//Mammoth: 		corsumo		 	-- 	heavy
-//Roach: 			corroach 		-- 	scout , melee
-//Skuttle: 		corsktl 		-- 	raider , melee
-//Duck: 			coramph 		-- 	raider
-//Manticore: 		coraak 			-- 	anti_air
+//Builder: 			corak 				-- 	builder
+//Twitcher: 		corfast 			-- 	support
+//Decoy: 			cordecom 			-- 	builder
+//Commando: 		cormando 			-- 	support
+//Spy: 				corspy 				-- 	scout
+//Radar: 			corvoyr 			-- 	support
+//Jammer: 			corspec 			-- 	support
+//Fiend: 			corpyro 			-- 	raider , melee
+//Arbiter: 			corhrk 				-- 	artillery, siege
+//Sheldon: 			cormort 			-- 	artillery, siege
+//Termite: 			cortermite 			-- 	assault
+//Sumo: 			corcan 				-- 	heavy
+//Deadeye: 			cordeadeye 			-- 	raider
+//Mammoth: 			corsumo		 		-- 	heavy
+//Roach: 			corroach 			-- 	scout , melee
+//Skuttle: 			corsktl 			-- 	raider , melee
+//Duck: 			coramph 			-- 	raider
+//Manticore: 		coraak 				-- 	anti_air
 //
 //
 // ==============================================================================================================================================================================================
@@ -315,16 +314,16 @@
 //CORTEX VEHICLE LAB
 //
 //
-//Builder: 		corcv 			-- 	builder
-//Builder: 		cormuskrat 	-- 	builder
-//Minelayer: 		cormlv 			-- 	support
-//Rascal: 			corfav 			-- 	scout
-//Incisor: 		corgator 		-- 	raider
-//Pounder: 		corlevlr 		-- 	riot
-//Brute: 			corraid 		-- 	assault
-//Wolverine: 		corwolv 		-- 	artillery, siege
-//Lasher: 			cormist 		-- 	artillery, siege, anti_air
-//Garpike: 		corgarp 		-- 	raider
+//Builder: 			corcv 				-- 	builder
+//Builder: 			cormuskrat 			-- 	builder
+//Minelayer: 		cormlv 				-- 	support
+//Rascal: 			corfav 				-- 	scout
+//Incisor: 			corgator 			-- 	raider
+//Pounder: 			corlevlr 			-- 	riot
+//Brute: 			corraid 			-- 	assault
+//Wolverine: 		corwolv 			-- 	artillery, siege
+//Lasher: 			cormist 			-- 	artillery, siege, anti_air
+//Garpike: 			corgarp 			-- 	raider
 //
 //
 // ==============================================================================================================================================================================================
@@ -333,23 +332,23 @@
 //CORTEX ADVANCED VEHICLE LAB
 //
 //
-//Builder: 		coracv 				-- 	builder
-//Builder: 		corvac 				-- 	builder
+//Builder: 			coracv 				-- 	builder
+//Builder: 			corvac 				-- 	builder
 //Engi: 			corforge 			-- 	builder
-//Spy: 				corphantom 		-- 	scout
+//Spy: 				corphantom 			-- 	scout
 //Radar: 			corvrad 			-- 	support
 //Jammer: 			coreter 			-- 	support
 //Torch: 			cortorch 			-- 	skirmisher
 //HeatTiger: 		corftiger 			-- 	assault
 //Tiger: 			correap 			-- 	assault
-//LaserTiger: 		corgatreap 		-- 	skirmisher
+//LaserTiger: 		corgatreap 			-- 	skirmisher
 //Negotiator: 		corvroc 			-- 	artillery, siege
 //Banisher: 		corban 				-- 	artillery, siege
 //Quaker: 			cormart 			-- 	artillery, siege
 //Tremor: 			cortrem 			-- 	artillery, siege
 //Tzar: 			corgol 				-- 	heavy
 //Salamander: 		corsala 			-- 	assault
-//PoisonArrow: 	corparro 			-- 	raider
+//PoisonArrow: 		corparro 			-- 	raider
 //Fury: 			corsent 			-- 	anti_air
 //AntiNuke: 		cormabm 			-- 	support
 //Siegebreaker: 	corsiegebreaker 	-- 	artillery, siege
@@ -361,9 +360,9 @@
 //CORTEX AIR LAB
 //
 //
-//Builder: 		corca 				-- 	builder
+//Builder: 			corca 				-- 	builder
 //Radar: 			corfink 			-- 	scout
-//Fighter: 		corveng 			-- 	anti_air
+//Fighter: 			corveng 			-- 	anti_air
 //Bomber: 			corshad 			-- 	bomber
 //Shuri: 			corbw 				-- 	support
 //Trans: 			corvalk 			-- 	support
@@ -376,15 +375,15 @@
 //CORTEX ADVANCED AIR LAB
 //
 //
-//Builder: 		coraca 				-- 	builder
-//Radar: 			corawac 			-- 	scout
-//Fighter: 		corvamp 			-- 	anti_air
-//Wasp: 			corape 				-- 	assault
-//Dragon: 			corcrwh 			-- 	raider
-//ADragon: 		corcrw 				-- 	skirmisher
-//Bomber: 			corhurc 			-- 	bomber
-//Torpedo: 		cortitan 			-- 	anti_sea, bomber
-//Trans: 			corseah 			-- 	support
+//Builder: 			coraca 			-- 	builder
+//Radar: 			corawac 		-- 	scout
+//Fighter: 			corvamp 		-- 	anti_air
+//Wasp: 			corape 			-- 	assault
+//Dragon: 			corcrwh 		-- 	raider
+//ADragon: 			corcrw 			-- 	skirmisher
+//Bomber: 			corhurc 		-- 	bomber
+//Torpedo: 			cortitan 		-- 	anti_sea, bomber
+//Trans: 			corseah 		-- 	support
 //
 //
 // ==============================================================================================================================================================================================
@@ -394,7 +393,7 @@
 //
 //
 //Flagship: 		corfblackhyt4	 	--  heavy, artillery, siege
-//EDragon: 		corcrwt4 		 	--  heavy, raider
+//EDragon: 			corcrwt4 		 	--  heavy, raider
 //DroneCarrier: 	cordronecarryair 	--  support
 //
 //
@@ -404,11 +403,11 @@
 //CORTEX HOVERLAB LAND & SEA
 //
 //
-//Builder: 		corch 			-- 	builder
+//Builder: 			corch 			-- 	builder
 //Goon: 			corsh 			-- 	scout
 //Cayman: 			corsnap 		-- 	raider
 //Mangonel: 		cormh 			-- 	artillery, siege
-//Halberd: 		corhal 			-- 	assault
+//Halberd: 			corhal 			-- 	assault
 //Birdeater: 		corah 			-- 	anti_air
 //
 //
@@ -418,11 +417,11 @@
 //CORTEX SEA LAB
 //
 //
-//Builder: 		corcs 			-- 	builder
+//Builder: 			corcs 			-- 	builder
 //Rezzer: 			correcl 		-- 	support
 //Supporter: 		coresupp 		-- 	scout
-//Herring: 		corpt 			-- 	raider
-//Riptide: 		corpship 		-- 	skirmisher
+//Herring: 			corpt 			-- 	raider
+//Riptide: 			corpship 		-- 	skirmisher
 //Oppressor: 		corroy 			-- 	assault, anti_sub
 //Orca: 			corsub 			-- 	sub
 //
@@ -433,25 +432,24 @@
 //CORTEX ADVANCED SEA LAB
 //
 //
-//Builder: 		coracsub			-- 	builder
-//Engi: 			cormls 				-- 	support
+//Builder: 			coracsub			-- 	builder
+//Engi: 			cormls 			-- 	support
 //Jammer: 			corsjam 			-- 	support
 //Brimstone: 		corfship 			-- 	raider
 //Buccaneer: 		corcrus 			-- 	assault, anti_sub
-//Messenger: 		cormship 			-- 	artillery, siege
-//Drone: 			cordronecarry 		-- 	support
+//Messenger: 		cormship 		-- 	artillery, siege
+//Drone: 			cordronecarry 	-- 	support
 //Sentinel: 		corsentinel 		-- 	support
 //Destroyer: 		corbats 			-- 	heavy, assault
-//Flagship: 		corblackhy	 		-- 	super, heavy, assault
+//Flagship: 		corblackhy	 	-- 	super, heavy, assault
 //ESupport: 		coresuppt3 		-- 	assault, heavy
 //Basilisk: 		corslrpc 			-- 	artillery, siege, heavy
 //ArrowStorm: 		corarch 			-- 	anti_air
 //Predator: 		corshark 			-- 	sub
 //Kraken: 			corssub  			-- 	sub
-//Onager: 			coronager 			-- 	sub
-//SubNuke: 		cordesolator 		-- 	super, artillery, siege, sub
+//Onager: 			coronager 		-- 	sub
+//SubNuke: 			cordesolator 		-- 	super, artillery, siege, sub
 //Antinuke: 		corantiship 		-- 	support
-//Antinuke: 		corcarry 			-- 	support
 //
 //
 // ==============================================================================================================================================================================================
@@ -468,7 +466,7 @@
 //Lunkhead: 		corsok 				-- 	raider
 //EPawn: 			corakt4 			-- 	scout
 //Demon: 			cordemon 			-- 	riot
-//EKarg: 			corkarganetht4 	-- 	heavy, raider, artillery, siege
+//EKarg: 			corkarganetht4 		-- 	heavy, raider, artillery, siege
 //EThermite: 		corthermite 		-- 	skirmisher
 //ETzar: 			corgolt4 			-- 	heavy, artillery, siege
 //
@@ -481,7 +479,7 @@
 //
 //
 //Salamander: 		corsala
-//PoisonArrow: 	corparrow
+//PoisonArrow: 		corparrow
 //Shiva: 			corshiva
 //Jugg: 			corkorg
 //Lunkhead: 		corsok
@@ -496,11 +494,11 @@
 //CORTEX AMPHIB LAB -- coramsub
 //
 //
-//Muskrat: 		cormuskrat
+//Muskrat: 			cormuskrat
 //Decoy: 			cordecom
 //Garpoint: 		corgarp
 //Slamander: 		corsala
-//PoisonArrow: 	corparrow
+//PoisonArrow: 		corparrow
 //Thrasher: 		corcrash
 //AA: 				coraak
 //
@@ -511,12 +509,12 @@
 //CORTEX SEA PLATFORM -- corplat
 //
 //
-//Builder: 		corcsa 				-- 	builder
-//Radar: 			corhunt 			-- 	support
-//Cutlass:			corcut 				-- 	assault
-//DamBuster:		corsb 				-- 	anti_sea, bomber
-//Bat: 				corsfig 			-- 	anti_air
-//Monsoon: 		corseap 			-- 	anti_sea, assault
+//Builder: 			corcsa 			-- 	builder
+//Radar: 			corhunt 		-- 	support
+//Cutlass:			corcut 			-- 	assault
+//DamBuster:		corsb 			-- 	anti_sea, bomber
+//Bat: 				corsfig 		-- 	anti_air
+//Monsoon: 			corseap 		-- 	anti_sea, assault
 //
 //
 // ==============================================================================================================================================================================================
@@ -527,11 +525,11 @@
 //LEGION BOT LAB -- leglab
 //
 //
-//Builder: 		legck 			-- 	builder
+//Builder: 			legck 			-- 	builder
 //Rezzer: 			cornecro 		-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Goblin: 			leggob 			-- 	scout
 //Lobber: 			leglob 			-- 	raider
-//Centaur: 		legcen 			-- 	assault
+//Centaur: 			legcen 			-- 	assault
 //Ballista: 		legbal 			-- 	artillery, siege
 //Karkinos: 		legkark 		-- 	skirmisher
 //Thrasher: 		corcrash 		-- 	anti_air 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
@@ -543,23 +541,23 @@
 //LEGION ADVANCED BOT LAB -- legalab
 //
 //
-//Builder: 		legack 				-- 	builder
-//Engi: 			legaceb 			-- 	support
-//DeCom: 			legdecom 			-- 	support
-//Spy: 				corspy 				-- 	scout				--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Radar: 			corvoyr 			-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Jammer: 			corspec 			-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Strider: 		legstr 				-- 	raider, melee
-//Arbiter: 		corhrk 				-- 	artillery, siege 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Belcher: 		legbart 			-- 	artillery, siege
-//Infestor: 		leginfestor 		-- 	builder, raider
-//Railgun: 		legsrail 			-- 	artillery, siege
-//Phalanx: 		legshot 			-- 	skirmisher
-//Incinerator: 	leginc 				-- 	assault, siege
-//Snapper: 		legsnapper 		-- 	raider, melee
-//Skuttle: 		corsktl 			-- 	raider, melee 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Duck: 			coramph 			-- 	raider 				--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Manticore: 		coraak 				-- 	anti_air 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Builder: 			legack 			-- 	builder
+//Engi: 			legaceb 		-- 	support
+//DeCom: 			legdecom 		-- 	support
+//Spy: 				corspy 			-- 	scout				--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Radar: 			corvoyr 		-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Jammer: 			corspec 		-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Strider: 			legstr 			-- 	raider, melee
+//Arbiter: 			corhrk 			-- 	artillery, siege 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Belcher: 			legbart 		-- 	artillery, siege
+//Infestor: 		leginfestor 	-- 	builder, raider
+//Railgun: 			legsrail 		-- 	artillery, siege
+//Phalanx: 			legshot 		-- 	skirmisher
+//Incinerator: 		leginc 			-- 	assault, siege
+//Snapper: 			legsnapper 		-- 	raider, melee
+//Skuttle: 			corsktl 		-- 	raider, melee 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Duck: 			coramph 		-- 	raider 				--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Manticore: 		coraak 			-- 	anti_air 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
 //
 // ==============================================================================================================================================================================================
@@ -568,16 +566,16 @@
 //LEGION VEHICLE LAB -- legvp
 //
 //
-//Builder: 		legcv 				-- 	builder
-//Builder: 		legotter 			-- 	builder
-//Minelayer: 		legmlv 				-- 	support, mine
-//Wheelie: 		legscout 			-- 	scout
-//Alaris: 			leghades			-- 	raider
-//Helios: 			leghelios 			-- 	skirmisher
-//Decurion: 		leggat 				-- 	assault
-//Barrage: 		legbar 				-- 	artillery, siege
-//Lance: 			legrail 			-- 	artillery, siege
-//Cetus: 			legamphtank 		-- 	raider
+//Builder: 			legcv 			-- 	builder
+//Builder: 			legotter 		-- 	builder
+//Minelayer: 		legmlv 			-- 	support, mine
+//Wheelie: 			legscout 		-- 	scout
+//Alaris: 			leghades		-- 	raider
+//Helios: 			leghelios 		-- 	skirmisher
+//Decurion: 		leggat 			-- 	assault
+//Barrage: 			legbar 			-- 	artillery, siege
+//Lance: 			legrail 		-- 	artillery, siege
+//Cetus: 			legamphtank 	-- 	raider
 //
 //
 // ==============================================================================================================================================================================================
@@ -586,7 +584,7 @@
 //LEGION ADVANCED VEHICLE LAB -- legavp
 //
 //
-//Builder: 		legacv 				-- 	builder
+//Builder: 			legacv 				-- 	builder
 //Radar: 			corvrad 			-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Jammer: 			coreter 			-- 	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Quickshot:		legmrv 				-- 	raider
@@ -594,8 +592,8 @@
 //Boreas: 			legavroc 			-- 	artillery, siege
 //Medusa: 			legmed 				-- 	artillery, siege
 //Mantis: 			legvcarry 			-- 	support
-//Cleaver: 		legamcluster 		-- 	artillery, siege
-//Inferno: 		leginf 				-- 	artillery, siege
+//Cleaver: 			legamcluster 		-- 	artillery, siege
+//Inferno: 			leginf 				-- 	artillery, siege
 //HeatTank: 		legaheattank 		-- 	assault
 //Triton: 			legfloat			--	skirmisher
 //Fury: 			corsent 			-- 	anti_air 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
@@ -608,13 +606,13 @@
 //LEGION AIR LAB -- legap
 //
 //
-//Builder: 		legca 				-- 	builder
+//Builder: 			legca 				-- 	builder
 //Noctua:			legfig				-- 	anti_air
 //Blindfold:		legcib				--	support
-//Mosquito:		legmos				--	raider
+//Mosquito:			legmos				--	raider
 //Martyr:			legkam				--	assault
 //Aeolos:			legatrans			--	support
-//Hephaestus:		corhvytrans		--	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Hephaestus:		corhvytrans			--	support 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
 //
 // ==============================================================================================================================================================================================
@@ -623,15 +621,14 @@
 //LEGION ADVANCED AIR LAB --legaap
 //
 //
-//Builder:			legaca				--	builder
-//Venator: 		legvenator 		-- 	anti_air
+//Venator: 			legvenator 			-- 	anti_air
 //Stronghold: 		legstronghold 		-- 	support
 //Tyrannus: 		legfort 			-- 	assault, heavy
 //Wildfire: 		legnap 				-- 	bomber
 //Harbinger: 		legmineb 			-- 	bomber, support, mine
-//Phoenix: 		legphoenix 		-- 	bomber, assault
+//Phoenix: 			legphoenix 			-- 	bomber, assault
 //Aesacus:			legatorpbomber		--	anti_sea, bomber, anti_sub
-//Whisper: 		legwhisper 		-- 	scout
+//Whisper: 			legwhisper 			-- 	scout
 //
 //
 // ==============================================================================================================================================================================================
@@ -651,14 +648,14 @@
 //
 //EArquebus:		legsrailt4			--	artillery, siege
 //Javelin:			legjav				--	raider
-//Catapult:		corcat				--	artillery, siege 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Catapult:			corcat				--	artillery, siege 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Karg:				corkarg				--	raider 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Keres:			legkeres			--	assault
-//Daedalus:		legerailtank		--	skirmisher
+//Daedalus:			legerailtank		--	skirmisher
 //Mukade:			legpede				--	artillery, siege
 //Praetorian:		leegmech			--	heavy, assault
 //Jugg:				corkorg				-- 	heavy, raider, melee 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Behemoth:		corjugg				--	heavy, assault 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Behemoth:			corjugg				--	heavy, assault 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Cataphract:		corsok				--	raider 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Epicgoblin:		leggobt3			--	heavy, raider
 //
@@ -683,13 +680,13 @@
 //LEGION SEA LAB
 //
 //
-//Builder: 		corcs 			-- 	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Rezzer: 			correcl 		-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Supporter: 		coresupp 		-- 	scout 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Herring: 		corpt 			-- 	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Riptide: 		corpship 		-- 	skirmisher 				--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Oppressor: 		corroy 			-- 	assault, anti_sub 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Orca: 			corsub 			-- 	sub 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Builder: 			corcs 				-- 	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Rezzer: 			correcl 			-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Supporter: 		coresupp 			-- 	scout 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Herring: 			corpt 				-- 	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Riptide: 			corpship 			-- 	skirmisher 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Oppressor: 		corroy 				-- 	assault, anti_sub 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Orca: 			corsub 				-- 	sub 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
 //
 // ==============================================================================================================================================================================================
@@ -698,36 +695,37 @@
 //LEGION ADVANCED SEA LAB
 //
 //
-//Builder: 		coracsub			-- 	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Engi: 			cormls 				-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Jammer: 			corsjam 			-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Brimstone: 		corfship 			-- 	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Buccaneer: 		corcrus 			-- 	assault, anti_sub 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Messenger: 		cormship 			-- 	artillery, siege 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Drone: 			cordronecarry 		-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Sentinel: 		corsentinel 		-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Destroyer: 		corbats 			-- 	heavy, assault 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Flagship: 		corblackhy	 		-- 	super, heavy, assault 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//ESupport: 		coresuppt3 		-- 	assault, heavy 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Basilisk: 		corslrpc 			-- 	artillery, siege, heavy 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//ArrowStorm: 		corarch 			-- 	anti_air 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Predator: 		corshark 			-- 	sub 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Kraken: 			corssub  			-- 	sub 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Onager: 			coronager 			-- 	sub 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//SubNuke: 		cordesolator 		-- 	super, artillery, siege, sub 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Antinuke: 		corantiship 		-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Builder: 			coracsub			-- 	builder 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Engi: 			cormls 				-- 	support 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Jammer: 			corsjam 			-- 	support 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Brimstone: 		corfship 			-- 	raider 							--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Buccaneer: 		corcrus 			-- 	assault, anti_sub 				--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Messenger: 		cormship 			-- 	artillery, siege 				--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Drone: 			cordronecarry 		-- 	support 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Sentinel: 		corsentinel 		-- 	support 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Destroyer: 		corbats 			-- 	heavy, assault 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Flagship: 		corblackhy	 		-- 	super, heavy, assault 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//ESupport: 		coresuppt3 			-- 	assault, heavy 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Basilisk: 		corslrpc 			-- 	artillery, siege, heavy 		--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//ArrowStorm: 		corarch 			-- 	anti_air 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Predator: 		corshark 			-- 	sub 							--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Kraken: 			corssub  			-- 	sub 							--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Onager: 			coronager 			-- 	sub 							--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//SubNuke: 			cordesolator 		-- 	super, artillery, siege, sub 	--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Antinuke: 		corantiship 		-- 	support 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
 //
 // ==============================================================================================================================================================================================
 //
 //
-//LEGION AMPHIB LAB -- legamsub
+//LEGION AMPHIB LAB -- coramsub
 //
 //
-//Otter: 			legotter			--	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Decoy: 			legdecom			--	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Cetus: 			legamphtank		--	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Triton: 			legfloat			--	assault 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Muskrat: 			cormuskrat			--	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Decoy: 			cordecom			--	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Garpoint: 		corgarp				--	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Slamander: 		corsala				--	assault 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//PoisonArrow: 		corparrow			--	raider 						--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Thrasher: 		corcrash			--	anti_air 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //AA: 				coraak				--	anti_air 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
@@ -738,12 +736,12 @@
 //LEGION SEA PLATFORM -- corplat
 //
 //
-//Builder: 		corcsa 				-- 	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Builder: 			corcsa 				-- 	builder 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Radar: 			corhunt 			-- 	support 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Cutlass:			corcut 				-- 	assault 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //DamBuster:		corsb 				-- 	anti_sea, bomber 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //Bat: 				corsfig 			-- 	anti_air 					--PLACEHOLDER (Replaced when New Legion Unit is Made)
-//Monsoon: 		corseap 			-- 	anti_sea, assault 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
+//Monsoon: 			corseap 			-- 	anti_sea, assault 			--PLACEHOLDER (Replaced when New Legion Unit is Made)
 //
 //
 //
