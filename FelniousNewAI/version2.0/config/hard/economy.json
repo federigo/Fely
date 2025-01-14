@@ -1,13 +1,6 @@
 // Mono-space font required
 {
 	"economy": {
-		"convert": {
-			"land":{
-				"armmakr": 	[1,		5],
-				"cormakr": 	[1,		5],
-				"legeconv": [1,		5]
-			}
-		},
 		"energy": {
 			// If land area >= 40% of the map then "land" config used, "water" otherwise
 			"land": {
@@ -15,68 +8,43 @@
 				// limit = random(<lower limit>..<upper limit>)
 				//efficiency calculation: engy.cond.score = SQUARE(engy.make) / (cdef->GetCostM() * cdef->GetDef()->GetXSize() * cdef->GetDef()->GetZSize());
 				//higer value => more efficient | e-output * e-output / mcost*x*y
-				
-				//			Lower	Upper	Metal	Energy
-				"armwin": 		[30,		60],
-				"armsolar":  	[6,		 	7,		0,			0,		0.030],
-				"armadvsol": 	[5,		 	5, 		20, 		250, 	0.23], 	// efficiency=0.237542
-				"armfus":  		[3, 		4, 		50, 		900, 	1.9],		// efficiency=1.937984
-				"armafus": 		[50,		100, 	60, 		4000, 	6.44],
-				"armwint2":  	[1,	 	 	5,		30],
-				
-				"corwin": 		[30,		60],
-				"corsolar":  	[5, 		8, 		0, 			0, 		0.060], 
-				"coradvsol": 	[8, 		16, 	12, 		220, 	0.220], //efficiency=0.237542
-				"corfus": 		[4, 		6, 		50, 		600, 	2.06],  // efficiency=2.057844
-				"corafus": 		[50, 		100, 	60, 		4000, 	6.44],
-				"corwint2":  	[1,	 	 	5,		30],
-				
-				"legwin": 		[30,	 	60],
-				"legsolar":  	[5,		 	8], 
-				"legadvsol": 	[8,		 	12, 	15, 		250, 	0.23],
-				"legwint2":  	[3,	 	 	5,		30],
-				
-				"legmext15":	[1,			30],
-				
-				"armgeo":   	[4, 		8, 		16, 		300], //eff 0.6
-				"armgmm":		[4, 		8, 		25, 		600],
-				"armageo":		[0, 		2, 		35, 		1000], //eff 3.0
-				"armuwgeo": 	[4, 		8, 		16, 		300], //eff 0.6
-				"armuwageo":	[0, 		2, 		35, 		1000], //eff 3.0
-				
-				"corgeo": 		[4, 		8, 		16, 		300], //eff 0.6
-				"corbhmth":		[4, 		8, 		25, 		600],
-				"corageo":		[0, 		2, 		35, 		1000], //eff 3.0
-				"coruwgeo": 	[4, 		8, 		16, 		300], //eff 0.6
-				"coruwageo":	[0, 		2, 		35, 		1000], //eff 3.0
-				
-				"leggeo": 		[4, 		8, 		16, 		300], //eff 0.6
-				"legageo":		[0, 		2, 		35, 		1000], //eff 3.0
-				"legrampart":	[0, 		2, 		35, 		2000], //eff 3.0
-				
-				"coruwfus": 	[6, 		12, 	35, 		600, 	2.8], // efficiency=6.443299
-				"armuwfus": 	[6, 		12, 	35, 		600]  // efficiency=6.443299
-				//"armckfus": 	[1, 		3, 		50, 		2000]   // efficiency=2.400266
+				"armwin": [30, 60],
+				"armsolar": [12, 14, 0, 0, 0.030],  // efficiency=0.025806 --- increased eff to make it better against wind
+				"armadvsol": [20, 30, 12, 220, 0.200], 	// efficiency=0.237542
+				//"armgeo": [4, 8, 16, 300, 0.6], //eff 0.6
+				"armgmm":[4, 8, 25, 600, 2.2],
+				//"armageo":[0, 1, 35, 1000, 3.0], //eff 3.0
+				"armfus": [3, 4, 50, 900, 1.9],		// efficiency=1.937984
+				"armckfus": [1, 3, 50, 2000, 0.230], // efficiency=2.400266
+				"armafus": [50,100, 70, 4000, 6.44],
+				"armuwfus": [6, 12, 35, 600, 2.8],  // efficiency=6.443299
+				"corwin": [30, 60],
+				"corsolar": [9, 12, 0, 0, 0.060], // efficiency=0.026667
+				"coradvsol": [20, 30, 12, 220, 0.220], //efficiency=0.237542
+				//"corgeo": [4, 8, 16, 300, 0.6], //0.6
+				// "corageo": [0, 1, 35, 1000, 3.0], //eff 3.0
+				"corfus": [4, 6, 50, 600, 2.06],  // efficiency=2.057844
+				"corafus": [50, 100, 60, 4000, 6.44],
+				"coruwfus": [6, 12, 35, 600, 2.8] // efficiency=6.443299
 			},
 			"water": {
 				"armtide": [45, 60],
 				"armwin": [30, 60],
 				"armsolar": [12, 14, 0, 0, 0.030],
 				"armadvsol": [16, 20, 12, 220, 0.200],
-				"armgeo": [4, 8, 16, 300, 0.6], //0.6
+				//"armgeo": [4, 8, 16, 300, 0.6], //0.6
 				"armgmm":[4,8, 25, 600, 2.2],
-				"armageo": [0, 1, 35, 1000, 3.0], //3.0
+				//"armageo": [0, 1, 35, 1000, 3.0], //3.0
 				"armfus": [4, 6, 30, 900, 2.0],
-				//"armckfus": [1, 3, 50, 2000, 2.1], // efficiency=2.400266
+				"armckfus": [1, 3, 50, 2000, 2.1], // efficiency=2.400266
 				"armafus": [50,100, 70, 4000, 6.44],  // efficiency=6.443299
 				"armuwfus": [50, 100, 35, 600, 2.8],
-				
 				"cortide": [45, 60],
 				"corwin": [10, 20],
 				"corsolar": [6, 10, 0, 0, 0.027], // efficiency=0.026667
 				"coradvsol": [16, 20, 12, 220, 0.220], //efficiency=0.237542
-				"corgeo": [4, 8, 16, 300, 0.6],
-				"corageo": [0, 1, 16, 1000, 3.0],
+				//"corgeo": [4, 8, 16, 300, 0.6],
+				//"corageo": [0, 1, 16, 1000, 3.0],
 				"corfus": [4, 6, 35, 600, 2.06],  // efficiency=2.057844
 				"corafus": [50, 100, 60, 4000, 6.44], // efficiency=6.443299
 				"coruwfus": [50, 100, 35, 600, 2.8]  // efficiency=2.756296
@@ -99,18 +67,16 @@
 			"pylon": []
 		},
 	
-		"cluster_range": 1200, //900
+		"cluster_range": 1500, //900
 		//size of mex cluster between two points
 	
 		"geo": {
 			"armada": "armgeo",
-			"cortex": "corgeo",
-			"legion": "leggeo"
+			"cortex": "corgeo"
 		},
 		"mex": {
 			"armada": "armmex",
-			"cortex": "cormex",
-			"legion": "legmex"
+			"cortex": "cormex"
 		},
 	// buildpower -  Mobile buildpower to metal income ratio,
 	// works but with regard to behaviour->UnitDef->build_speed. With 1.25 and m-income=100 means AI will try to build at max 125 mobile build_speed in total.
@@ -155,15 +121,13 @@
 		//"terra": "armsy",
 		"assist": {
 			"armada": "armnanotc",
-			"cortex": "cornanotc",
-			"legion": "legnanotc"
+			"cortex": "cornanotc"
 		},
 	
 		// Unknown UnitDef replacer
 		"default": {
 			"armada": "armwin",
-			"cortex": "corwin",
-			"legion": "legwin"
+			"cortex": "corwin"
 		}
 	}
 	}
