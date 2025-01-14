@@ -44,7 +44,7 @@
 				"tier3": [ 0.00,    0.30,    0.05,       0.20,      0.20,     0.00,      0.10,     0.00],
 				"tier4": [ 0.00,    0.20,    0.05,       0.20,      0.40,     0.00,      0.20,     0.00],
 				"tier5": [ 0.00,    0.10,    0.05,       0.20,      0.60,     0.00,      0.30,     0.00],
-				"tier5": [ 0.00,    0.00,    0.00,       0.00,      0.00,     0.00,      0.00,     0.00]
+				"tier6": [ 0.00,    0.00,    0.00,       0.00,      0.00,     0.00,      0.00,     0.00]
 			},
 	
 			"caretaker": 6
@@ -53,7 +53,7 @@
 		"armalab": {
 			"importance": [0.0, 1.0],
 	
-			"require_energy": false,
+			"require_energy": true,
 	
 			"income_tier": [60, 70, 80, 90, 100, 120, 140],
 			//			 build	  butler	sprinter  zeus		fatboy		gunsl		hound  aa		seaslug		radar		jam		reclaim		recl	snipe		tumble		platy
@@ -113,7 +113,7 @@
 		"armavp": {
 			"importance": [0.0, 1.0],
 	
-			"require_energy": false,
+			"require_energy": true,
 	
 			"income_tier": [40, 60, 100, 150],
 	
@@ -148,7 +148,7 @@
 		"armshltx": {
 			"importance": [0.0, 3.0],
 	
-			"require_energy": false,
+			"require_energy": true,
 	
 			"income_tier": [100, 200],
 	
@@ -194,7 +194,7 @@
 			"armaap": {
 				"importance": [0.0, 1.0],
 	
-				"require_energy": false,
+				"require_energy": true,
 	
 				"income_tier": [25, 50, 75, 100],
 	
@@ -228,7 +228,7 @@
 			"armapt3": {
 				"importance": [0.0, 3.0],
 	
-				"require_energy": false,
+				"require_energy": true,
 	
 				"income_tier": [200],
 	
@@ -274,7 +274,7 @@
 		"armasy": {
 			"importance": [0.0, 6.0],
 	
-			"require_energy": false,
+			"require_energy": true,
 	
 			"income_tier": [50, 100],
 	
