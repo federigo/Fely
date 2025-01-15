@@ -1019,43 +1019,52 @@
 //===================================================================================================================================
 
 		"armllt": { //Sentry
-			"role": ["static"]
+			"role": ["static"],
+			"since": 90
 		},
 		"armbeamer": { //Beamer
 			"role": ["static"],
-			"since": 360
+			"since": 300
 		},
 		"armhlt": { //Overwatch
-			"role": ["static"]
+			"role": ["static"],
+			"since": 600
 		},
         "armfhlt": { //Manta
 			"role": ["static"]
 		},
 		"armguard": { //Gauntlet
 			"role": ["static"],
-			"on": false
+			"on": false,
+			"since": 900
 		},
 		"armclaw": { //Dragon's Claw
 			"role": ["static"],
-			"since": 300
+			"since": 600
 		},
 		"armlwall": { //Dragon's Fury
-			"role": ["static"]
+			"role": ["static"],
+			"since": 900
 		},
 		"armpb": { //Pitbull
-			"role": ["static"]
+			"role": ["static"],
+			"since": 600
 		},
 		"armamb": { //Rattlesnake
-			"role": ["static"]
+			"role": ["static"],
+			"since": 1200
 		},
 		"armanni": { //Pulsar
-			"role": ["static"]
+			"role": ["static"],
+			"since": 1200
 		},
 		"armannit3": { //Epic Pulsar
-			"role": ["static"]
+			"role": ["static"],
+			"since": 1800
 		},
 		"armbrtha": { //Basilica
-			"role": ["static"]
+			"role": ["static"],
+			"since": 1200
 		},
 		"armgplat": { //GunPlatForm
 			"role": ["static"]
@@ -1067,19 +1076,24 @@
 			"role": ["anti_air"]
 		},
 		"armminivulc": { //MiniRagnarok
-			"role": ["static"]
+			"role": ["static"],
+			"since": 900
 		},
 		"armvulc": { //Ragnarok
-			"role": ["super", "static"]
+			"role": ["super", "static"],
+			"since": 2400
 		},
 		"armbotrail": { //Pawnlauncher
-			"role": ["super", "static"]
+			"role": ["super", "static"],
+			"since": 2400
 		},
         "armsilo":{ //nuke
-			"role":	["super", "static"]
+			"role":	["super", "static"],
+			"since": 1200
         },
         "armamd":{ //antinuke
-			"role":	["super", "static"]
+			"role":	["super", "static"],
+			"since": 600
         },
 		"armrl": { //Nettle
 			"role": ["anti_air"]
@@ -2425,8 +2439,8 @@
 			"retreat": 0.0
 		},
 		"armthund": {
-			"role": ["bomber", "air", "static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0,
+			"role": ["bomber", "static", "anti_air", "raider", "riot", "assault", "skirmish", "artillery", "builder", "builderT2", "support"],
+			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
 			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
 			"ignore": false,
 			"pwr_mod": 1.0,
