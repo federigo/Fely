@@ -25,7 +25,7 @@
 
 	"land":  [0, 3, 15, 16, 5, 6, 4, 8, 10, 12, 14, 29, 29],
 	"water": [1, 1, 4, 9, 10, 9, 10],
-	"prevent": 10,  // number of preventive defences
+	"prevent": 2,  // number of preventive defences
 	"amount": {  // income bound factor
 		"offset": [-2.0, 2.0],
 		// Amount factor: 10x10 ~ 48.0, 20x20 ~ 32.0

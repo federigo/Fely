@@ -178,9 +178,6 @@
 		"armap": {
 			//"hub": [[{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 		},
-		"armapt3": {
-			//"hub": [[{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
-		},
 		"corap": {
 			//"hub": [[{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 		},
