@@ -1944,7 +1944,7 @@
 		"armflea": {	//"main", "enemy", "enemy", "etc"
 			"role": ["scout"],
 			"attribute": ["melee"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 5.0, "skirmish": 2.0, "raider": 2.0, "assault": 1.0, "artillery": 0.5}},
 			"ignore": true,
 			"retreat": 0.0
@@ -1952,7 +1952,7 @@
 		"armpw": {
 			"role": ["raider"],
 			//"attribute": ["melee"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 5.0, "skirmish": 2.0, "raider": 2.0, "assault": 1.0, "artillery": 0.5}},
 			"ignore": false,
 			"retreat": 0.0
@@ -1960,7 +1960,7 @@
 		"armrock": {
 			"role": ["artillery"],
 			"attribute": ["siege", "anti_stat", "support"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 5.0, "skirmish": 2.0, "raider": 2.0, "assault": 1.0, "artillery": 0.5}},
 			"ignore": false,
 			"retreat": 0.5
@@ -1968,7 +1968,7 @@
 		"armham": {
 			"role": ["assault"],
 			//"attribute": ["melee"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 1.0, "skirmish": 2.0, "raider": 1.0, "assault": 1.0, "artillery": 0.0}},
 			"ignore": false,
 			"retreat": 0.3
@@ -1976,14 +1976,14 @@
 		"armwar": {
 			"role": ["riot"],
 			//"attribute": ["melee"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 1.0, "skirmish": 2.0, "raider": 0.0, "assault": 1.0, "artillery": 0.0}},
 			"ignore": false,
 			"retreat": 0.2
 		},
 		"armjeth": {
 			"role": ["anti_air", "air"],
-			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
+			"thr_mod": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"riot": 5.0, "skirmish": 5.0, "raider": 5.0, "assault": 5.0, "artillery": 1.0}},
 			"ignore": false,
 			"retreat": 0.6
