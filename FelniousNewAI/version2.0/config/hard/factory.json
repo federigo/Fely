@@ -32,19 +32,17 @@
 			// If income*ecoFactor < income_tier[N] then 'tierN' probability will be used
 			
 			// metal income
-			"income_tier": [10, 20, 30, 40, 50, 75],
+			"income_tier": [5, 10, 15, 20],
 			
 			//			build	  pawn	  rezzer	 rockets	mace	  aa		cent	tick
 			"unit":      ["armck", "armpw", "armrectr", "armrock", "armham", "armjeth", "armwar", "armflea"],
 	
 			"land": {
-				"tier0": [ 0.55,    0.10,    0.10,       0.00,      0.00,     0.00,      0.00,     0.30],
-				"tier1": [ 0.15,    0.50,    0.10,       0.10,      0.00,     0.00,      0.00,     0.00],
-				"tier2": [ 0.05,    0.40,    0.10,       0.20,      0.10,     0.00,      0.00,     0.00],
-				"tier3": [ 0.00,    0.30,    0.10,       0.20,      0.20,     0.00,      0.10,     0.00],
-				"tier4": [ 0.00,    0.20,    0.10,       0.20,      0.40,     0.00,      0.20,     0.00],
-				"tier5": [ 0.00,    0.10,    0.10,       0.20,      0.60,     0.00,      0.30,     0.00],
-				"tier6": [ 0.00,    0.00,    0.10,       0.00,      0.00,     0.00,      0.00,     0.00]
+				"tier0": [ 0.90,    0.00,    0.00,       0.00,      0.00,     0.00,      0.00,     0.00],
+				"tier1": [ 0.75,    0.25,    0.00,       0.00,      0.00,     0.00,      0.00,     0.55],
+				"tier2": [ 0.35,    0.40,    0.10,       0.10,      0.10,     0.00,      0.10,     0.20],
+				"tier3": [ 0.10,    0.70,    0.10,       0.20,      0.20,     0.00,      0.20,     0.00],
+				"tier4": [ 0.00,    0.50,    0.10,       0.80,      0.80,     0.00,      0.30,     0.00]
 			},
 	
 			"caretaker": 6
@@ -55,7 +53,7 @@
 	
 			"require_energy": true,
 	
-			"income_tier": [30, 50, 70, 90, 110, 130, 150],
+			"income_tier": [20, 30, 40, 50, 60],
 			//			 	builder		butler		decoy			spybot		radar		jammer		reclaimer	sprinter	zeus		gunslinger	hound		recluse		fatboy		sniper			tumbleweed		platypus	archangel	antinuke
 			"unit":      [	"armack", 	"armfark", 	"armdecom", 	"armspy", 	"armmark", 	"armaser", 	"armspid", 	"armfast", 	"armzeus", 	"armmav", 	"armfido", 	"armsptk", 	"armfboy", 	"armsnipe", 	"armvader", 	"armamph", 	"armaak", 	"armscab"],
 			"land": {
