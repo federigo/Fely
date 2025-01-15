@@ -662,15 +662,15 @@
 		"armalab": { //Advanced Bot lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
+			"build_mod": 750.0,
 			"limit": 1,
 			"since": 360
 		},
 		"armshltx": { //Armada T3 lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
-			"midposoffset": [1, 1, 21],
+			"build_mod": 250.0,
+			"midposoffset": [0, 0, 21],
 			"limit": 1
 		},
 		"armvp": { //Vehicle lab
@@ -682,7 +682,7 @@
 		"armavp": { //Advanced Vehicle lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
+			"build_mod": 750.0,
 			"limit": 1,
 			"since": 360
 		},
@@ -695,7 +695,7 @@
 		"armasy": { //Advanced Naval lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
+			"build_mod": 750.0,
 			"limit": 1,
 			"since": 360
 		},
@@ -739,14 +739,14 @@
 		"armaap": { //Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
+			"build_mod": 750.0,
 			"limit": 1,
 			"since": 420
 		},
         "armapt3": { //T3 Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 1000.0,
+			"build_mod": 250.0,
 			"limit": 1,
 			"since": 1200
 		},
