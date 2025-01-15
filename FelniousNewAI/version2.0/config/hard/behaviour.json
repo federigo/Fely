@@ -1019,244 +1019,94 @@
 //===================================================================================================================================
 
 		"armllt": { //Sentry
-			"role": ["static"],
-			"since": 70,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armbeamer": { //Beamer
 			"role": ["static"],
-			"since": 360,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"since": 360
 		},
 		"armhlt": { //Overwatch
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
         "armfhlt": { //Manta
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armguard": { //Gauntlet
 			"role": ["static"],
-			"on": false,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"on": false
 		},
 		"armclaw": { //Dragon's Claw
 			"role": ["static"],
-			"since": 420,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"since": 300
 		},
 		"armlwall": { //Dragon's Fury
-			"role": ["static"],
-			"since": 420,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armpb": { //Pitbull
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armamb": { //Rattlesnake
-			"role": ["static"],
-			"on": false,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armanni": { //Pulsar
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armannit3": { //Epic Pulsar
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armbrtha": { //Basilica
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armgplat": { //GunPlatForm
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armfrock": { //Scumbag Naval
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armfrt": { //Naval Nettle
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armminivulc": { //MiniRagnarok
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armvulc": { //Ragnarok
-			"role": ["static", "super"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["super", "static"]
 		},
 		"armbotrail": { //Pawnlauncher
-			"role": ["static", "super"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["super", "static"]
 		},
         "armsilo":{ //nuke
-			"role":	["super", "static"],
-			"limit": 5,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role":	["super", "static"]
         },
         "armamd":{ //antinuke
-			"role":	["super", "static"],
-			"limit": 5,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role":	["super", "static"]
         },
 		"armrl": { //Nettle
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armferret": { //Ferret
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armcir": { //Chainsaw
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armflak": { //Arbalest
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armfflak": { //Arbalest Naval
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armmercury": { //Mercury
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"armtl": { //Harpoon
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armatl": { //Moray
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"armkraken": { //Gorgon
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 0.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		
 //===================================================================================================================================
@@ -1264,236 +1114,93 @@
 //===================================================================================================================================
 
 		"corllt": { //Guard
-			"role": ["static"],
-			"since": 70,
-			"build_mod": 300,
-			"midposoffset": [0, 0, 2.38],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"corhllt": { //Twinguard
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"corhlt": { //Warden
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"corfhlt": { //Coral
 			"role": ["static"],
-			"since": 360,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"since": 360
 		},
 		"cormaw": { //Dragons Maw
 			"role": ["static"],
-			"since": 300,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"since": 300
 		},
 		"cormwall": { //Dragon's Rage
 			"role": ["static"],
-			"since": 300,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"since": 300
 		},
 		"corpun": { //Agitator
 			"role": ["static"],
-			"on": false,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"on": false
 		},
 		"corrl": { //Thistle
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"cormadsam": { //Sam
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corerad": { //Eradicator
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corflak": { //Birdshot
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corenaa": { //Naval Birdshot
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corfrt": { //Slingshot
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corfrock": { //Janitor
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"corscreamer": { //Screamer
-			"role": ["anti_air"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["anti_air"]
 		},
 		"cortl": { //Urchin
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"coratl": { //Lamprey
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"corgplat": { //Gunplatform
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"corvipe": { //Scorpion
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
 		},
 		"cortoast": { //Persecutor
 			"role": ["static"],
-			"on": false,
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"on": false
 		},
 		"cordoom": { //Bulwark
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
         },
 		"cordoomt3": { //Epic Bulwark
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
         },
 		"corint": { //Basilisk
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
         },
 		"corminibuzz": { //MiniCalamity
-			"role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static"]
         },
 		"corbuzz": { //Calamity
-			"role": ["static", "super"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role": ["static", "super"]
         },
         "corfdoom": { //Devastator Sea
-            "role": ["static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+            "role": ["static"]
 		},
         "corsilo":{ //Nuke
-			"role":	["super", "static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role":	["super", "static"]
         },
         "corfmd":{ //Antinuke
-			"role":	["super", "static"],
-			"thr_mod": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-			"vs": {"builder": 0.0, "static": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
-			"ignore": false,
-			"pwr_mod": 1.0,
-			"retreat": 0.0
+			"role":	["super", "static"]
         },
 	
 //===================================================================================================================================
@@ -1504,69 +1211,28 @@
 			"role": ["static"],
 			"since": 70,
 			"build_mod": 300,
-			"midposoffset": [0, 0, 2.38],
-			"threat": {
-				"air": 0.2,  
-				"surf": 1.0, 
-				"water": 0.1, 
-				"default": 1.0,
-				"vs": {"artillery": 0.3, "assault": 0.8, "raider": 1.3}
-			}
+			"midposoffset": [0, 0, 2.38]
 		},
 		"leghive": { //Hive
-			"role": ["static"],
-			"threat": {
-				"air": 0.2,  
-				"surf": 1.0, 
-				"water": 0.1, 
-				"default": 1.0,
-				"vs": {"artillery": 0.3, "assault": 0.8}
-			}
+			"role": ["static"]
 		},
 		"legfhive": { //Hive naval
-			"role": ["static"],
-			"threat": {
-				"air": 0.2,  
-				"surf": 1.0, 
-				"water": 0.1, 
-				"default": 1.0,
-				"vs": {"artillery": 0.3, "assault": 0.8}
-			}
+			"role": ["static"]
 		},
 		"legmg": { //Cacophony
-			"role": ["static"],
-			"threat": {
-				"air": 0.2,  
-				"water": 0.1, 
-				"vs": {"artillery": 0.5, "assault": 0.8}
-			}
+			"role": ["static"]
 		},
 		"legdtr": { //dragons jaw
 			"role": ["static"],
-			"since": 300,
-			"threat": {
-				"air": 0.0,
-				"water": 0.0,
-				"surf": 1.5, 
-				"vs": {"assault": 0.7}
-			}
+			"since": 300
 		},
 		"legrwall": { //Dragon's Constitution
 			"role": ["static"],
-			"since": 300,
-			"threat": {
-				"air": 0.0,
-				"water": 0.0,
-				"surf": 1.5, 
-				"vs": {"assault": 0.7}
-			}
+			"since": 300
 		},
 		"legcluster": { //Amputator
 			"role": ["static"],
-			"on": false,
-			"threat": {"air": 0.0, "water": 0.1,"surf": 0.5},
-            "since": 600,
-			"limit": 3
+			"on": false
 		},
 		"legrl": { //Bramble
 			"role": ["anti_air"]
