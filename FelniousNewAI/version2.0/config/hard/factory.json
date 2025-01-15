@@ -179,7 +179,7 @@
 	
 		// ARMADA Aircraft
 			"armap": {
-				"importance": [0.2, 0.2],
+				"importance": [0.1, 0.0],
 				
 				"require_energy": false,
 				
