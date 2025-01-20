@@ -3,7 +3,7 @@ const int MINUTE = 60 * SECOND;
 
 const int ASSIGN_TIMEOUT = 5 * MINUTE;
 
-const int SQUARE_SIZE = 5;
+const int SQUARE_SIZE = 3;
 
 const AIFloat3 RgtVector(1.0f, 0.0f, 0.0f);
 

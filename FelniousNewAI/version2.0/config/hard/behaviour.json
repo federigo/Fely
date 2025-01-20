@@ -7,17 +7,19 @@
 	
 		"quota": {
 			"scout": 2,  				// max scout units out of raiders
-			"raid": [3.0, 65.0],  		// [<min>, <avg>] power of raider squad 2.5,48
+			"raid": [1.0, 50.0],  		// [<min>, <avg>] power of raider squad 2.5,48
 			"attack": 30.0,  			// min power of attack group ---- was 40
 			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
 				"attack": [0.25, 0.3],	//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
-				"defence": [0.95, 0.95],	//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
-				"mobile": 1.05,  		// initial modifier for power of attack group based on mobile enemy threat; org= 1.05
-				"static": 1.2,  		// initial modifier for power of attack group based on static enemy threat; org= 1.2
+				"defence": [0.3, 0.5],	//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
+				"mobile": 0.1,  		// initial modifier for power of attack group based on mobile enemy threat; org= 1.05
+				"static": 0.3,  		// initial modifier for power of attack group based on static enemy threat; org= 1.2
 				"comm": 1.0   			// because of power of dgun
 			},
+			
 			// anti-air threat threshold, air factories will stop production when AA threat exceeds
 			"aa_threat": [[8, 500.0], [24, 500.0]],  // [[<map_start>, <threat_start>], [<map_end>, <threat_end>]]
+			
 			"slack_mod": {
 				"all": 0.4,  			// threat map 64-elmos slack multiplier for all units
 				"static": 0.6,  		// additional 64-elmo-cells for static units
@@ -28,9 +30,9 @@
 	
 		// If unit's health drops below specified percent it will retreat
 		"retreat": {
-			"builder": [0.0, 1.0],  	// [<default>, <UnitDef modifier>] for all builders
-			"fighter": [0.0, 0.5],  	// [<default>, <UnitDef modifier>] for all not-builder units
-			"shield": [0.25, 0.275]  	// [<empty>, <full>] shield power
+			"builder": [1.0, 1.0],  	// [<default>, <UnitDef modifier>] for all builders
+			"fighter": [0.2, 0.2],  	// [<default>, <UnitDef modifier>] for all not-builder units
+			"shield":  [0.2, 0.5]  	// [<empty>, <full>] shield power
 		},
 	
 	
@@ -664,7 +666,7 @@
 			"attribute": ["support"],
 			"build_mod": 750.0,
 			"limit": 1,
-			"since": 360
+			"since": 300
 		},
 		"armshltx": { //Armada T3 lab
 			"role": ["static"],
@@ -767,7 +769,8 @@
 			"attribute": ["support"],
 			"build_speed": 10.0,
 			"midposoffset": [0, 0, -4],
-			"limit": 1
+			"limit": 1,
+			"since": 300
 		},
 		"corgant": { //Advanced T3 Bot Lab
 			"role": ["static"],
@@ -947,67 +950,82 @@
 //T1 Nanos
 		"armnanotc": {
 			"role": ["static"],
-			"build_speed": 10.0
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"cornanotc": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"legnanotc": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 //T1 Sea Nanos
 		"armnanotcplat": {
 			"role": ["static"],
-			"build_speed": 10.0
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"cornanotcplat": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"legnanotcplat": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 //T2 Nanos
 		"armnanotct2": {
 			"role": ["static"],
-			"build_speed": 10.0
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"cornanotct2": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"legnanotct2": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 //T2 Sea Nanos
 		"armnanotc2plat": {
 			"role": ["static"],
-			"build_speed": 10.0
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"cornanotc2plat": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"legnanotc2plat": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 //T3 Base Nano
 		"armrespawn": {
 			"role": ["static"],
-			"build_speed": 10.0
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"correspawn": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 		"legnanotcbase": {
 			"role": ["static"],
-			"build_speed": 10.0 
+			"build_speed": 10.0,
+			"build_mod": 1000.0
 		},
 
 //===================================================================================================================================
@@ -1021,110 +1039,139 @@
 		"armllt": { //Sentry
 			"role": ["static"],
 			"since": 90,
+			"build_mod": 1000.0,
 			"threat": {"surf": 1.0, "air": 0.0, "water": 0.0,
 			"vs": {"assault": 2.0, "artillery": 2.0}}
 		},
 		"armbeamer": { //Beamer
 			"role": ["static"],
 			"since": 300,
+			"build_mod": 1000.0,
 			"threat": {"surf": 500.0, "air": 0.0, "water": 0.0,
 			"vs": {"assault": 0.0, "artillery": 0.0}}
 		},
 		"armhlt": { //Overwatch
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 600
 		},
         "armfhlt": { //Manta
 			"role": ["static"]
+			"build_mod": 1000.0,
 		},
 		"armguard": { //Gauntlet
 			"role": ["static"],
 			"on": false,
+			"build_mod": 1000.0,
 			"since": 900
 		},
 		"armclaw": { //Dragon's Claw
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 600
 		},
 		"armlwall": { //Dragon's Fury
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 900
 		},
 		"armpb": { //Pitbull
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 600
 		},
 		"armamb": { //Rattlesnake
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 1200
 		},
 		"armanni": { //Pulsar
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 1200
 		},
 		"armannit3": { //Epic Pulsar
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 1800
 		},
 		"armbrtha": { //Basilica
 			"role": ["static"],
+			"build_mod": 1000.0,
 			"since": 1200
 		},
 		"armgplat": { //GunPlatForm
-			"role": ["static"]
+			"role": ["static"],
+			"build_mod": 1000.0
 		},
 		"armfrock": { //Scumbag Naval
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armfrt": { //Naval Nettle
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armminivulc": { //MiniRagnarok
 			"role": ["static"],
-			"since": 900
+			"since": 900,
+			"build_mod": 1000.0
 		},
 		"armvulc": { //Ragnarok
 			"role": ["super", "static"],
-			"since": 2400
+			"since": 2400,
+			"build_mod": 1000.0
 		},
 		"armbotrail": { //Pawnlauncher
 			"role": ["super", "static"],
-			"since": 2400
+			"since": 2400,
+			"build_mod": 1000.0
 		},
         "armsilo":{ //nuke
 			"role":	["super", "static"],
-			"since": 1200
+			"since": 1200,
+			"build_mod": 1000.0
         },
         "armamd":{ //antinuke
 			"role":	["super", "static"],
-			"since": 600
+			"since": 600,
+			"build_mod": 1000.0
         },
 		"armrl": { //Nettle
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armferret": { //Ferret
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armcir": { //Chainsaw
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armflak": { //Arbalest
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armfflak": { //Arbalest Naval
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armmercury": { //Mercury
-			"role": ["anti_air"]
+			"role": ["anti_air"],
+			"build_mod": 1000.0
 		},
 		"armtl": { //Harpoon
-			"role": ["static"]
+			"role": ["static"],
+			"build_mod": 1000.0
 		},
 		"armatl": { //Moray
-			"role": ["static"]
+			"role": ["static"],
+			"build_mod": 1000.0
 		},
 		"armkraken": { //Gorgon
-			"role": ["static"]
+			"role": ["static"],
+			"build_mod": 1000.0
 		},
 		
 //===================================================================================================================================

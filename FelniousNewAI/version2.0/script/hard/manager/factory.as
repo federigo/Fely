@@ -29,7 +29,7 @@ string armsy   ("armsy");
 string armasy  ("armasy");
 string armap   ("armap");
 string armaap  ("armaap");
-string armshltx("armshltx");
+string armshltx ("armshltx");
 string armapt3 ("armapt3");
 
 string corlab  ("corlab");
@@ -141,7 +141,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 float MakeSwitchLimit()
 {	//					Second = 30
-	return AiRandom(1200, 6000) * SECOND;
+	return AiRandom(1800, 3000) * SECOND;
 }
 
 }  // namespace Factory
