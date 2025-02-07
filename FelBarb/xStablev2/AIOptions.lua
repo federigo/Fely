@@ -21,7 +21,7 @@ local options = {
 		desc    = 'Enable global sight',
 		type    = 'bool',
 		section = 'performance',
-		def     = true,
+		def     = false,
 	},
 	{ -- bool
 		key     = 'comm_merge',
@@ -52,7 +52,7 @@ local options = {
 		name    = 'Disabled units',
 		desc    = 'Disable usage of specific units.\nSyntax: armwar+armpw+raveparty\nkey: disabledunits',
 		type    = 'string',
-		def     = 'corhp+armhp+armvp+armap+armkam+armasp+armbrawl+armblade+corbw+corasp+corawac+corape+corcrw+armestor+armuwes+armmstor+armuwadvms+armuwms+cormstor+coruwms+coruwadvms+corestor+coruwes+corlab+corvp+corfink+corbw+corcrw+corape+corawac',
+		def     = '',
 	},
 --	{ -- string
 --		key     = 'json',
