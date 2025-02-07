@@ -26,7 +26,7 @@ void AiUnitAdded(CCircuitUnit@ unit, Unit::UseAs usage)
 		return;
 
 	// constructor with BASE attribute is assigned to tasks near base
-	if (cdef.costM < 200.f) {
+	if (cdef.costM < 150.f) {
 		if (energizer1 is null
 			&& (uint(cdef.count) > aiMilitaryMgr.GetGuardTaskNum() || cdef.IsAbleToFly()))
 		{

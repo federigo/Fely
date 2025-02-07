@@ -29,7 +29,8 @@ string armsy   ("armsy");
 string armasy  ("armasy");
 string armap   ("armap");
 string armaap  ("armaap");
-string armshltx("armshltx");
+string armshltx ("armshltx");
+
 string corlab  ("corlab");
 string coralab ("coralab");
 string corvp   ("corvp");
@@ -39,6 +40,16 @@ string corasy  ("corasy");
 string corap   ("corap");
 string coraap  ("coraap");
 string corgant ("corgant");
+
+string leglab  ("leglab");
+string legalab ("legalab");
+string legvp   ("legvp");
+string legavp  ("legavp");
+//string legsy   ("legsy");
+//string legasy  ("legasy");
+string legap   ("legap");
+string legaap  ("legaap");
+string leggant ("leggant");
 
 float switchLimit = MakeSwitchLimit();
 
@@ -127,7 +138,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 float MakeSwitchLimit()
 {
-	return AiRandom(16000, 30000) * SECOND;
+	return AiRandom(450, 750) * SECOND;
 }
 
 }  // namespace Factory

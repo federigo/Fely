@@ -6,41 +6,43 @@
 		//But there's possibility that AI will just run from enemy till it has big enough group, but it may loose its base. So if with attack=0.8..1.0 AI is not loosing base then everything is ok and i think this range is optimal.
 	
 		"quota": {
-			"scout": 2,  // max scout units out of raiders
-			"raid": [3.0, 65.0],  // [<min>, <avg>] power of raider squad 2.5,48
-			"attack": 30.0,  // min power of attack group ---- was 40
+			"scout": 1,  // max scout units out of raiders
+			"raid": [3.0, 55.0],  // [<min>, <avg>] power of raider squad 2.5,48
+			"attack": 25.0,  // min power of attack group ---- was 40
 			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
-				"attack": [0.2, 0.3],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
-				"defence": [0.1, 0.2],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
-				"mobile": 0.2,  // initial modifier for power of attack group based on mobile enemy threat; org=1.05
-				"static": 0.2,  // initial modifier for power of attack group based on static enemy threat; org= 1.2
-				"comm": 0.2   // because of power of dgun
+				"attack": [0.02, 0.03],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
+				"defence": [0.01, 0.02],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
+				"mobile": 0.02,  // initial modifier for power of attack group based on mobile enemy threat; org=1.05
+				"static": 0.02,  // initial modifier for power of attack group based on static enemy threat; org= 1.2
+				"comm": 0.02   // because of power of dgun
 			},
 			// anti-air threat threshold, air factories will stop production when AA threat exceeds
-			"aa_threat": [[8, 500.0], [24, 500.0]],  // [[<map_start>, <threat_start>], [<map_end>, <threat_end>]]
+			"aa_threat": [[8, 5000.0], [24, 5000.0]],  // [[<map_start>, <threat_start>], [<map_end>, <threat_end>]]
 			"slack_mod": {
 				"all": 0.5,  // threat map 64-elmos slack multiplier for all units
-				"static": 1.0,  // additional 64-elmo-cells for static units
-				"speed": [0.75, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
+				"static": 0.5,  // additional 64-elmo-cells for static units
+				"speed": [1.00, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
 			},
 			"num_batch": 3 //repeat unit build if response factory build is called
 		},
 	
 		// If unit's health drops below specified percent it will retreat
 		"retreat": {
-			"builder": [0.0, 1.0],  // [<default>, <UnitDef modifier>] for all builders
-			"fighter": [0.0, 1.0],  // [<default>, <UnitDef modifier>] for all not-builder units
+			"builder": [0.0, 1.00],  // [<default>, <UnitDef modifier>] for all builders
+			"fighter": [0.0, 0.05],  // [<default>, <UnitDef modifier>] for all not-builder units
 			"shield": [0.25, 0.275]  // [<empty>, <full>] shield power
 		},
 	
 	
 		// following block is all about defense
 		"defence": {
-			   "infl_rad": 5,  // influenece cell radius for defendAlly map
+			"infl_rad": 5,  // influenece cell radius for defendAlly map
 			"base_rad": [800.0, 1400.0],  // BASE DEFENDING RADIUS: defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000)
 			"comm_rad": [800.0, 400.0],  // 0 distance from base ~ 1000, base_rad ~ 500.0 => comm_rad is radius within which it checks for enemy. It's largest near base and smaller at the edge of base_rad
 			"escort": [3, 1, 540]  // [<builders_count>, <defenders_count>, <escort rule until this time>]  2,2,360
 		},
+		
+		
 		// read of "escort":  [number of builders with defenders, number of defenders for each builder, timeframe were only escorted builders are able to expand (=build mex, porc)]
 		// base radius: ai checks if is withing base_rad. if there is enemy it checks if it is withing comm radius which is variable and depend on distance from base
 		// if there is, then ai checks speed, direction and threat on enemys position. if all conditions positive => com attacks
@@ -662,14 +664,14 @@
 		"armalab": { //Advanced Bot lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 750.0,
+			"build_mod": 1000.0,
 			"limit": 1,
 			"since": 300
 		},
 		"armshltx": { //Armada T3 lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 250.0,
+			"build_mod": 1000.0,
 			"midposoffset": [0, 0, 21],
 			"limit": 1
 		},
@@ -682,7 +684,7 @@
 		"armavp": { //Advanced Vehicle lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 750.0,
+			"build_mod": 1000.0,
 			"limit": 1,
 			"since": 360
 		},
@@ -695,7 +697,7 @@
 		"armasy": { //Advanced Naval lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 750.0,
+			"build_mod": 1000.0,
 			"limit": 1,
 			"since": 360
 		},
@@ -739,14 +741,14 @@
 		"armaap": { //Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 750.0,
+			"build_mod": 1000.0,
 			"limit": 1,
 			"since": 420
 		},
         "armapt3": { //T3 Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_mod": 250.0,
+			"build_mod": 1000.0,
 			"limit": 1,
 			"since": 1200
 		},
@@ -758,14 +760,14 @@
 		"corlab": { //Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"midposoffset": [-3.239746, 0, -2],
 			"limit": 1
 		},
 		"coralab": { //Advanced Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"midposoffset": [0, 0, -4],
 			"limit": 1,
 			"since": 300
@@ -773,79 +775,79 @@
 		"corgant": { //Advanced T3 Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corgantuw": { //Advanced T3 Sea Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corvp": { //Vehicle Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"coravp": { //Advanced Vehicle Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corap": { //Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"coraap": { //Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corsy": { //Naval Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corasy": { //Advanced Naval Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corhp": { //Hovercraft Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"corfhp": { //Hovercraft Lab Sea
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
         "coramsub": { //Amphib Complex
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
         "corplat": { //Seaplane Platform
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
         "corapt3": { //Advanced T3 Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 
@@ -856,88 +858,88 @@
 		"leglab": { //Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"midposoffset": [-3.239746, 0, -2],
 			"limit": 1
 		},
 		"legalab": { //Advanced Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"midposoffset": [0, 0, -4],
 			"limit": 1
 		},
 		"leggant": { //Advanced T3 Bot Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"legvp": { //Vehicle Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 
 		},
 		"legavp": { //Advanced Vehicle Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"legap": { //Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"legaap": { //Advanced Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		//"corsy": { //Naval Lab			--PLACEHOLDER
 		//	"role": ["static"],
 		//	"attribute": ["support"],
-		//	"build_speed": 10.0,
+		//	"build_mod": 1000.0,
 		//	"limit": 1
 		//},
 		//"corasy": { //Advanced Naval Lab	--PLACEHOLDER
 		//	"role": ["static"],
 		//	"attribute": ["support"],
-		//	"build_speed": 10.0,
+		//	"build_mod": 1000.0,
 		//	"limit": 1
 		//},
 		"leghp": { //Hovercraft Lab
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 		"legfhp": { //Hovercraft Lab Sea
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
         "legamsub": { //Amphib Complex
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
         //"corplat": { //Seaplane Platform	--PLACEHOLDER
 		//	"role": ["static"],
 		//	"attribute": ["support"],
-		//	"build_speed": 10.0,
+		//	"build_mod": 1000.0,
 		//	"limit": 1
 		//},
         "legapt3": { //Advanced T3 Air Plant
 			"role": ["static"],
 			"attribute": ["support"],
-			"build_speed": 10.0,
+			"build_mod": 1000.0,
 			"limit": 1
 		},
 
@@ -1037,193 +1039,135 @@
 		"armllt": { //Sentry
 			"role": ["static"],
 			"since": 90,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armbeamer": { //Beamer
 			"role": ["static"],
 			"since": 300,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armhlt": { //Overwatch
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 600,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 600
 		},
         "armfhlt": { //Manta
 			"role": ["static"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armguard": { //Gauntlet
 			"role": ["static"],
 			"on": false,
 			"build_mod": 1000.0,
-			"since": 900,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 900
 		},
 		"armclaw": { //Dragon's Claw
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 600,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 600
 		},
 		"armlwall": { //Dragon's Fury
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 900,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 900
 		},
 		"armpb": { //Pitbull
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 600,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 600
 		},
 		"armamb": { //Rattlesnake
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 1200,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 1200
 		},
 		"armanni": { //Pulsar
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 1200,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 1200
 		},
 		"armannit3": { //Epic Pulsar
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 1800,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 1800
 		},
 		"armbrtha": { //Basilica
 			"role": ["static"],
 			"build_mod": 1000.0,
-			"since": 1200,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"since": 1200
 		},
 		"armgplat": { //GunPlatForm
 			"role": ["static"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armfrock": { //Scumbag Naval
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armfrt": { //Naval Nettle
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armminivulc": { //MiniRagnarok
 			"role": ["static"],
 			"since": 900,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armvulc": { //Ragnarok
 			"role": ["super", "static"],
 			"since": 2400,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armbotrail": { //Pawnlauncher
 			"role": ["super", "static"],
 			"since": 2400,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
         "armsilo":{ //nuke
 			"role":	["super", "static"],
 			"since": 1200,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
         },
         "armamd":{ //antinuke
 			"role":	["super", "static"],
 			"since": 600,
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
         },
 		"armrl": { //Nettle
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armferret": { //Ferret
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armcir": { //Chainsaw
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armflak": { //Arbalest
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armfflak": { //Arbalest Naval
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armmercury": { //Mercury
 			"role": ["anti_air"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armtl": { //Harpoon
 			"role": ["static"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armatl": { //Moray
 			"role": ["static"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		"armkraken": { //Gorgon
 			"role": ["static"],
-			"build_mod": 1000.0,
-			"threat": {"surf": 0.0, "air": 0.0, "water": 0.0,
-			"vs": {"assault": 0.0, "artillery": 0.0, "riot": 0.0, "skirmish": 0.0}}
+			"build_mod": 1000.0
 		},
 		
 //===================================================================================================================================
@@ -1560,79 +1504,82 @@
 
 		"armmex" : { //mex
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armmoho" : { //t2 mex
 			"role": ["static"],
-			"build_mod": 200
+			"build_mod": 1000
 		},
 		"armmakr" : { //converter
 			"role": ["static"],
 			"limit": 10,
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armfmkr" : { //converter naval
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armuwmmm" : { //naval converter
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armwin" : { //wind
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armtide" : { //wind
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armwint2" : { //t2 wind
 			"role": ["static"],
-			"build_mod": 300
+			"build_mod": 1000
 		},
 		"armsolar" : { //solar
             "role": ["static"],
-            "build_mod": 300,
-			"limit": 4
+            "build_mod": 1000
         },
 		"armadvsol" : { //advsolar
             "role": ["static"],
-            "build_mod": 600,
-			"limit": 6
+            "build_mod": 1000
         },
 		"armgeo": { //geo
 			"role": ["static"],
+            "build_mod": 1000,
 			"midposoffset": [0, 0, -2]
 		},
 		"armgmm": { //Prudegeo
 			"role": ["static"],
+            "build_mod": 1000,
 			"midposoffset": [0, 0, -2]
 		},
 		"armageo": { //ageo
 			"role": ["static"],
+            "build_mod": 1000,
 			"midposoffset": [0, 0, -2]
 		},
 		"armuwgeo": { //geo naval
 			"role": ["static"],
+            "build_mod": 1000,
 			"midposoffset": [0, 0, -2]
 		},
 		"armuwageo": { //ageo naval
 			"role": ["static"],
+            "build_mod": 1000,
 			"midposoffset": [0, 0, -2]
 		},
         "armfus" : { //fusion
             "role": ["static"],
-            "build_mod": 2000,
+            "build_mod": 1000,
 		   "since": 780
         },
         "armafus" : { //afus
             "role": ["static"],
-            "build_mod": 4000
+            "build_mod": 1000
         },
 		"armuwfus" : { //navel fusion
             "role": ["static"],
-            "build_mod": 4000
+            "build_mod": 1000
         },
 	
 //===================================================================================================================================

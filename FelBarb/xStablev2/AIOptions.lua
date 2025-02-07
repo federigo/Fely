@@ -77,49 +77,9 @@ local options = {
 		def     = 'armbots',
 		items   = {
 			{
-				key  = 'armbots',
-				name = 'Armada Bots',
-				desc = 'Armada Bots Only',
-			},
-			{
-				key  = 'armveh',
-				name = 'Armada Vehicles',
-				desc = 'Armada Vehicles Only',
-			},
-			{
-				key  = 'armair',
-				name = 'Armada Air',
-				desc = 'Armada Air Only',
-			},
-			{
-				key  = 'corbots',
-				name = 'Armada Bots',
-				desc = 'Armada Bots Only',
-			},
-			{
-				key  = 'corveh',
-				name = 'Cortex Vehicles',
-				desc = 'Cortex Vehicles Only',
-			},
-			{
-				key  = 'corair',
-				name = 'Cortex Air',
-				desc = 'Cortex Air Only',
-			},
-			{
-				key  = 'legbots',
-				name = 'Legion Bots',
-				desc = 'Legion Bots Only',
-			},
-			{
-				key  = 'legveh',
-				name = 'Legion Vehicles',
-				desc = 'Legion Vehicles Only',
-			},
-			{
-				key  = 'legair',
-				name = 'Legion Air',
-				desc = 'Legion Air Only',
+				key  = 'hard',
+				name = 'Hard Mode',
+				desc = 'Hard -- Edits: Felnious',
 			},
 		},
 	},
