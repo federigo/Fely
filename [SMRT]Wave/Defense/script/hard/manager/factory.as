@@ -29,7 +29,7 @@ string armsy   ("armsy");
 string armasy  ("armasy");
 string armap   ("armap");
 string armaap  ("armaap");
-string armshltx("armshltx");
+string armshltx ("armshltx");
 string corlab  ("corlab");
 string coralab ("coralab");
 string corvp   ("corvp");

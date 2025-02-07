@@ -167,7 +167,7 @@
 		"fac_land_t2": ["armalab", "armavp", "coralab", "coravp"],
 		"fac_land_t1": ["armlab", "armvp", "armhp", "corlab", "corvp", "corhp"],
 		"fac_water": ["armsy", "armasy", "corsy", "corasy"],
-		"fac_air":["armap","armaap", "corap", "coraap"],
+		"fac_air":["armap","armaap","armapt3", "corap", "coraap", "corapt3"],
 		"fac_strider": ["armshltx", "corgant"],
 		"solar": ["armsolar", "corsolar"],
 		"advsolar":["armadvsol", "coradvsol"],
@@ -181,7 +181,7 @@
 		"converter": ["armmakr", "cormakr", "armmmkr", "cormmkr", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],
 		"def_low": ["armllt", "corllt", "armbeamer", "corhllt"],
 		"def_mid": ["armclaw", "cormaw", "armpb", "corvipe", "armhlt", "corhlt"],
-		"def_hvy":  ["armamb", "armanni", "cortoast", "cordoom", "armguard", "corpun", "armkraken", "corfdoom", "armsilo"],
+		"def_hvy":  ["armamb", "armanni", "cortoast", "cordoom", "armguard", "corpun", "armkraken", "corfdoom", "armsilo", "armgate", "armgatet3", "corgate", "corgatet3"],
 		"def_air": ["armferret", "armcir", "corrl", "cormadsam", "corerad"],
 		"caretaker": ["armnanotc", "armasp", "cornanotc", "corasp"],
 		"small": ["armrad", "corrad"]
