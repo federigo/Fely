@@ -30,7 +30,7 @@
 		"require_energy": false,
 
 		// If income*ecoFactor < income_tier[N] then 'tierN' probability will be used
-		"income_tier": [1, 15,  35],
+		"income_tier": [2, 25,  35],
 
 		"unit":      ["armck", "armpw", "armrectr", "armrock", "armham", "armjeth", "armwar", "armflea"],
 

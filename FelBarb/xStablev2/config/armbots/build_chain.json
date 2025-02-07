@@ -134,8 +134,11 @@
 					{"unit": "armmmakr", "category": "convert", "offset": {"back": 20}, "condition": {"energy": false}, "priority": "now"},
 					{"unit": "armsilo", "category": "defence", "offset": {"front": 10}, "condition": {"energy": false}, "priority": "high"},
 					{"unit": "armsilo", "category": "defence", "offset": {"front": 20}, "condition": {"energy": false}, "priority": "high"},
+					{"unit": "armsilo", "category": "defence", "offset": {"front": 10}, "condition": {"energy": false}, "priority": "high"},
+					{"unit": "armsilo", "category": "defence", "offset": {"front": 20}, "condition": {"energy": false}, "priority": "high"},
 					{"unit": "armamd", "category": "defence", "offset": {"front": 50}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "armamd", "category": "defence", "offset": {"front": 60}, "condition": {"energy": false}, "priority": "high"}
+					{"unit": "armamd", "category": "defence", "offset": {"front": 60}, "condition": {"energy": false}, "priority": "high"},
+					{"unit": "armafus", "category": "energy", "offset": {"front": 60}, "condition": {"energy": false}, "priority": "high"}
 				]
 			]
 		},

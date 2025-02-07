@@ -183,7 +183,7 @@
 		"def_mid": ["armclaw", "cormaw", "armpb", "corvipe", "armhlt", "corhlt"],
 		"def_hvy":  ["armamb", "armanni", "cortoast", "cordoom", "armguard", "corpun", "armkraken", "corfdoom", "armsilo"],
 		"def_air": ["armferret", "armcir", "corrl", "cormadsam", "corerad"],
-		"caretaker": ["armnanotc", "armasp", "cornanotc", "corasp"],
+		"caretaker": ["armnanotc", "cornanotc"],
 		"small": ["armrad", "corrad"]
 		
 //engy_low: wind

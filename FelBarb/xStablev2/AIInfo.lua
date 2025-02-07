@@ -16,12 +16,12 @@
 local infos = {
 	{
 		key    = 'shortName',
-		value  = '[SMRT]Wave', -- AI name - !This comment is used for parsing!
+		value  = 'FelBarb', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
 	},
 	{
 		key    = 'version',
-		value  = 'Defense2', -- AI version - !This comment is used for parsing!
+		value  = 'xStablev2', -- AI version - !This comment is used for parsing!
 	},
 	{
 		key    = 'name',
