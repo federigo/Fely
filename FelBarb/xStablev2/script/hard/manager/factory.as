@@ -41,16 +41,6 @@ string corap   ("corap");
 string coraap  ("coraap");
 string corgant ("corgant");
 
-string leglab  ("leglab");
-string legalab ("legalab");
-string legvp   ("legvp");
-string legavp  ("legavp");
-//string legsy   ("legsy");
-//string legasy  ("legasy");
-string legap   ("legap");
-string legaap  ("legaap");
-string leggant ("leggant");
-
 float switchLimit = MakeSwitchLimit();
 
 IUnitTask@ AiMakeTask(CCircuitUnit@ unit)

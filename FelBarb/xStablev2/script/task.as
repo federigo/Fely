@@ -41,7 +41,7 @@ enum BuildType {
 }
 
 enum FightType {
-	RALLY, // = 0
+	RALLY = 0,
 	GUARD,
 	DEFEND,
 	SCOUT,
