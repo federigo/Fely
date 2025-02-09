@@ -74,12 +74,32 @@ local options = {
 		name    = 'Difficulty profile',
 		desc    = 'Difficulty or play-style of AI (see init.as).\nkey: profile',
 		type    = 'list',
-		def     = 'armbots',
+		def     = 'hard',
 		items   = {
 			{
+				key  = 'extreme',
+				name = 'Extreme | Brutal',
+				desc = 'Difficulty: Extreme |Playstyle: Aggressive |Made by [SMRT]Felnious',
+			},
+			{
 				key  = 'hard',
-				name = 'Hard Mode',
-				desc = 'Hard -- Edits: Felnious',
+				name = 'Hard | Balanced',
+				desc = 'Difficulty: Hard |Playstyle: Balanced |Made by [SMRT]Felnious',
+			},
+			{
+				key  = 'medium',
+				name = 'Medium | Lazy',
+				desc = 'Difficulty: Medium |Playstyle: Learning mechanics |Made by [SMRT]Felnious',
+			},
+			{
+				key  = 'easy',
+				name = 'Easy | Slow',
+				desc = 'Difficulty: Easy |Playstyle: First launch |Made by [SMRT]Felnious',
+			},
+			{
+				key  = 'novice',
+				name = 'Novice | Very Slow',
+				desc = 'Difficulty: Easy |Playstyle: First launch |Made by [SMRT]Felnious',
 			},
 		},
 	},

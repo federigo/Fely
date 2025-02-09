@@ -77,24 +77,29 @@ local options = {
 		def     = 'hard',
 		items   = {
 			{
+				key  = 'extreme',
+				name = 'Extreme | Brutal',
+				desc = 'Difficulty: Extreme |Playstyle: Aggressive |Made by [SMRT]Felnious',
+			},
+			{
 				key  = 'hard',
 				name = 'Hard | Balanced',
-				desc = 'Difficulty: Hard |Playstyle: Balanced |Made by Flaka',
+				desc = 'Difficulty: Hard |Playstyle: Balanced |Made by [SMRT]Felnious',
 			},
 			{
 				key  = 'medium',
 				name = 'Medium | Lazy',
-				desc = 'Difficulty: Medium |Playstyle: Learning mechanics',
+				desc = 'Difficulty: Medium |Playstyle: Learning mechanics |Made by [SMRT]Felnious',
 			},
 			{
 				key  = 'easy',
 				name = 'Easy | Slow',
-				desc = 'Difficulty: Easy |Playstyle: First launch',
+				desc = 'Difficulty: Easy |Playstyle: First launch |Made by [SMRT]Felnious',
 			},
 			{
-				key  = 'dev',
-				name = 'Testing AI',
-				desc = 'Testing config',
+				key  = 'novice',
+				name = 'Novice | Very Slow',
+				desc = 'Difficulty: Easy |Playstyle: First launch |Made by [SMRT]Felnious',
 			},
 		},
 	},

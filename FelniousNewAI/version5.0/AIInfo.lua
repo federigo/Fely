@@ -25,7 +25,7 @@ local infos = {
 	},
 	{
 		key    = 'name',
-		value  = 'BARbarIAn',
+		value  = 'FelniousNewAI',
 		desc   = 'human readable name.',
 	},
 	{
