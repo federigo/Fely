@@ -125,9 +125,9 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 /* --- Utils --- */
 
-float MakeSwitchLimit()
+float MakeSwitchLimit() //When does AI Decided to Change Factories or Tech?
 {
-	return AiRandom(16000, 30000) * SECOND;
+	return AiRandom(1800, 3250) * SECOND;
 }
 
 }  // namespace Factory
