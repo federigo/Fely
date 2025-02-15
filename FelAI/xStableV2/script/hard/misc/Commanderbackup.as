@@ -174,73 +174,7 @@ SOpener@ GetOpenInfo()
 		}},
 		{Factory::corgantuw, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::RAIDER)})
-		}},
-		
-//=======================================================
-//Legion Land Factories
-//=======================================================
-
-		{Factory::leglab, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		{Factory::legalab, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER2)})
-		}},
-		{Factory::legvp, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		{Factory::legavp, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER2)})
-		}},
-		{Factory::leghp, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		
-//=======================================================
-//Legion Sea Factories
-//=======================================================
-
-		{Factory::legfhp, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		//{Factory::legsy, array<SQueue> = {
-		//	SQueue(1.0f, {SO(RT::BUILDER)})
-		//}},
-		//{Factory::legasy, array<SQueue> = {
-		//	SQueue(1.0f, {SO(RT::BUILDER2)})
-		//}},
-		{Factory::legamsub, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		
-		
-//=======================================================
-//Legion Air Factories
-//=======================================================
-
-		{Factory::legap, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		{Factory::legaap, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER2)})
-		}},
-		{Factory::legplat, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER)})
-		}},
-		{Factory::legapt3 array<SQueue> = {
-			SQueue(1.0f, {SO(RT::RAIDER)})
-		}},
-
-//=======================================================
-//Legion T3 Factories
-//=======================================================
-
-		{Factory::leggant, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::RAIDER)})
 		}}
-		//{Factory::leggantuw, array<SQueue> = {
-		//	SQueue(1.0f, {SO(RT::BUILDER)})
-		//}}
 
 //=======================================================
 //Default if given no Orders
