@@ -74,32 +74,32 @@ local options = {
 		name    = 'Difficulty profile',
 		desc    = 'Difficulty or play-style of AI (see init.as).\nkey: profile',
 		type    = 'list',
-		def     = 'hard',
+		def     = 'extreme',
 		items   = {
 			{
 				key  = 'extreme',
 				name = 'Extreme Difficulty',
-				desc = 'Playstyle : What is Going ON! |Made by [SMRT]Felnious',
+				desc = 'Playstyle : The Horde Arises, Nothin Survives |Configs by [SMRT]Felnious[AI]',
 			},
 			{
 				key  = 'hard',
 				name = 'Hard Difficulty',
-				desc = 'Playstyle : Some Aggression |Made by [SMRT]Felnious',
+				desc = 'Playstyle : Alot of Aggression |Configs by [SMRT]Felnious[AI]',
 			},
 			{
 				key  = 'medium',
 				name = 'Medium Difficulty',
-				desc = 'Playstyle : Learning Strategies |Made by [SMRT]Felnious',
+				desc = 'Playstyle : Learning Team Strategies |Configs by [SMRT]Felnious[AI]',
 			},
 			{
 				key  = 'easy',
 				name = 'Easy Difficulty',
-				desc = 'Playstyle : Lazy |Made by [SMRT]Felnious',
+				desc = 'Playstyle : Lazy but Hostile |Configs by [SMRT]Felnious[AI]',
 			},
 			{
 				key  = 'novice',
 				name = 'Novice Difficulty',
-				desc = 'Playstyle : Very Laid Back |Made by [SMRT]Felnious',
+				desc = 'Playstyle : Very Laid Back |Configs by [SMRT]Felnious[AI]',
 			},
 		},
 	},
