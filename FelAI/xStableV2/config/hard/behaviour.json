@@ -10,8 +10,8 @@
 			"raid": [3.0, 32.5],  // [<min>, <avg>] power of raider squad 2.5,48
 			"attack": 15.0,  // min power of attack group ---- was 40
 			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
-				"attack": [0.02, 0.03],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
-				"defence": [0.01, 0.02],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
+				"attack": [0.6, 0.8],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
+				"defence": [0.3, 0.5],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
 				"mobile": 0.02,  // initial modifier for power of attack group based on mobile enemy threat; org=1.05
 				"static": 0.02,  // initial modifier for power of attack group based on static enemy threat; org= 1.2
 				"comm": 0.01   // because of power of dgun
@@ -28,8 +28,8 @@
 	
 		// If unit's health drops below specified percent it will retreat
 		"retreat": {
-			"builder": [0.0, 0.0, 0.3],  // [<default>, <UnitDef modifier>] for all builders
-			"fighter": [0.0, 0.0, 0.05],  // [<default>, <UnitDef modifier>] for all not-builder units
+			"builder": [1.0, 1.0, 1.0],  // [<default>, <UnitDef modifier>] for all builders
+			"fighter": [0.05, 0.05, 0.05],  // [<default>, <UnitDef modifier>] for all not-builder units
 			"shield": [0.25, 0.275]  // [<empty>, <full>] shield power
 		},
 	
@@ -497,11 +497,13 @@
 			"corap": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 5.0 //bp 100
 			},
 			"coraap": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 10.0 //bp 200
 			},
 			"corplat": {
@@ -513,6 +515,7 @@
 			"corapt3": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 10.0 //bp 200
 			},
 
@@ -523,7 +526,9 @@
 			"corgant": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
+				"limit": 1,
 				"build_speed": 45.0 //bp 300
+				
 			},
 			"corgantuw": {
 				"role": ["static"],
@@ -538,24 +543,28 @@
 			"leglab": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 15.0,  //bp 100
 				"midposoffset": [-3.239746, 0, -2]
 			},
 			"legalab": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"midposoffset": [0, 0, -4],
 				"build_speed": 30.0 // bp 300
 			},
 			"legvp": {
 				"role": ["builder"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 15.0 // bp 100
 	
 			},
 			"legavp": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 30.0  //bp 300
 			},
 			"leghp": {
@@ -598,11 +607,13 @@
 			"legap": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 5.0 //bp 100
 			},
 			"legaap": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 10.0 //bp 200
 			},
 			"legplat": {
@@ -614,6 +625,7 @@
 			"legapt3": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"limit": 1,
 				"build_speed": 10.0 //bp 200
 			},
 
@@ -624,11 +636,13 @@
 			"leggant": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
+				"limit": 1,
 				"build_speed": 45.0 //bp 300
 			},
 			"leggantuw": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
+				"limit": 1,
 				"build_speed": 45.0 //bp 300
 			},
 	
@@ -1273,17 +1287,22 @@
 //####|| Static Economy -- Armada  ||#####################################################################################
 //########################################################################################################################
 	
+			//Land T1 Economy
 			"armmex" : {
 				"role": ["static"],
 				"build_mod": 300
 			},
-			"armmakr": {
+			"armmakr" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"armmstor" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"armwin": {
 				"role": ["static"],
 				"since": 300
-			},
-			"armmoho" : {
-				"role": ["static"],
-				"build_mod": 200
 			},
 			"armsolar" : {
 				"role": ["static"],
@@ -1299,56 +1318,96 @@
 				"role": ["static"],
 				"midposoffset": [0, 0, -2]
 			},
-			"armfus" : {
-				"role": ["static"],
-				"build_mod": 2000,
-				"cooldown": 3
-			},
-			"armafus" : {
-				"role": ["static"],
-				"build_mod": 4000
-			},
-			"armuwfus" : {
-				"role": ["static"],
-				"build_mod": 4000
-			},
 			"armestor" : {
 				"role": ["static"],
 				"since": 240,
 				"limit": 1
 			},
-			"armuwes" : {
+			//Land T2 Economy
+			"armmoho" : {
 				"role": ["static"],
-				"since": 240,
-				"limit": 1
+				"build_mod": 200
 			},
-			"armmstor" : {
+			"armshockwave" : {
 				"role": ["static"],
-				"since": 500,
-				"limit": 1
+				"build_mod": 200
 			},
 			"armuwadvms" : {
 				"role": ["static"],
+				"build_mod": 200
+			},
+			"armgmm" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"armageo" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"armfus" : {
+				"role": ["static"],
+				"build_mod": 200,
+				"cooldown": 3
+			},
+			"armckfus" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"armafus" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"armuwfus" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+
+//########################################################################################################################
+//####|| Static Economy -- Cortex  ||#####################################################################################
+//########################################################################################################################
+			
+			//Land T1 Economy
+			"cormex" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"corexp" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"cormstor" : {
+				"role": ["static"],
+				"since": 500,
 				"limit": 1
 			},
 			"cormakr": {
 				"role": ["static"],
 				"since": 300
 			},
-			"cormex" : {
+			"corwin": {
 				"role": ["static"],
 				"build_mod": 300
-			},
-			"coradvsol" : {
-				"role": ["static"],
-				"build_mod": 600,
-				"limit": 6
 			},
 			"corsolar" : {
 				"role": ["static"],
 				"build_mod": 300,
 				"limit": 4
 			},
+			"coradvsol" : {
+				"role": ["static"],
+				"build_mod": 600,
+				"limit": 6
+			},
+			"corgeo" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"corestor" : {
+				"role": ["static"],
+				"since": 240,
+				"limit": 1
+			},
+			//Land T2 Economy
 			"cormoho" : {
 				"role": ["static"],
 				"build_mod": 200
@@ -1367,11 +1426,6 @@
 				"role": ["static"],
 				"build_mod": 4000
 			},
-			"cormstor" : {
-				"role": ["static"],
-				"since": 500,
-				"limit": 1
-			},
 			"coruwms" : {
 				"role": ["static"],
 				"since": 500,
@@ -1379,11 +1433,6 @@
 			},
 			"coruwadvms" : {
 				"role": ["static"],
-				"limit": 1
-				},
-			"corestor" : {
-				"role": ["static"],
-				"since": 240,
 				"limit": 1
 			},
 			"coruwes" : {
@@ -1393,46 +1442,42 @@
 			},
 	
 	
-	// ignore
+	// Walls (Neutral BARbAI Refuse to Shoot (Only T2+T3 can break))
 			"armdrag": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"cordrag": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
+			},
+			"legdrag": {
+				"role": ["static"]
 			},
 			"armfort": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"corfort": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
+			},
+			"legforti": {
+				"role": ["static"]
 			},
 			"armdrag_scav": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"cordrag_scav": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"armfort_scav": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"corfort_scav": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"corscavdrag": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 			"corscavdrag_scav": {
-				"role": ["static"],
-				"ignore": true
+				"role": ["static"]
 			},
 	
 	// ============================================   M O B I L E    U N I T S   =======================================0
@@ -2621,6 +2666,364 @@
 			"corhal": {
 				"role": ["heavy", "skirmish"]
 			},
+
+			// LEGION BOTLAB (leglab)
+		"legcen": {
+			"role": ["raider"],
+			"since": 240,
+			"threat": {"air": 0.0, "water": 0.0,
+				"vs": {"artillery":3.0, "anti_air": 2.0, "riot":0.5, "anti_heavy": 3.0, "anti_heavy_ass":3.0}	
+			},
+			"limit": 8
+		},
+		"legbal": {
+			"role": ["assault"],
+			"attribute": ["siege"],
+			"retreat": 0.5,
+			"limit": 10,
+			"threat": {"air": 0.0, "water": 0.0, "surf": 0.8,
+				"vs": {"artillery": 1.8, "anti_air": 1.8, "raiders":0.5}
+			}
+		},
+		"leglob": {
+			"role": ["skirmish"],
+			"attribute": ["scout"],
+			"threat": {"air": 0.0, "water": 0.0,
+				"vs": {"artillery": 2.0, "anti_air": 2.0}
+			}
+		},
+		"legkark": {
+			"role": ["riot", "siege"],
+			"threat": {"surf": 1.2, "vs":{"raider": 2.0}},
+			"retreat": 0.5
+		},
+		"leggob": {
+			"role": ["skirmish"],
+			"attribute": ["scout"],
+			"threat":{"air": 0.05, "water": 0.0,
+					"vs":{"artillery": 2.0, "anti_air": 2.0}
+			}
+		},
+	
+	
+	
+	
+		// adv bot - legalab
+	
+		"leginfestor": {
+			"role": ["Builder", "Support", "raider"]
+		},
+		"legstr": {
+			"role": ["raider"],
+			"attribute":["melee"],
+			"threat":{"vs":{"artillery": 4.0}},
+			"retreat": 0.4
+		},
+		"leginc": {
+			"role": ["heavy", "assault"],
+			"attribute": ["siege"],
+			"threat":{"air":0.5, "scout":0.1},
+			"retreat": 0.4
+		},
+		"legshot": {
+			"role": ["assault"],
+			"attribute": ["support"],
+			"retreat": 0.3
+		},
+		"legbart": {
+			"role": ["assault", "Skirmish"],
+			"retreat": 0.5
+		},
+		"legdecom": {
+			"role": ["builder"],
+			"buildspeed": 6.0, 
+			"limit": 2
+		},
+		"legsnapper": {
+			"role": ["scout"],
+			"attribute": ["melee"],
+			"retreat": 0,
+			"limit": 2
+		},
+		"legsrail": {
+			"role": ["anti_heavy_ass"],
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "water": 0.0,"vs": {"scout":0.3, "raider":0.5}},
+			"retreat": 0.4
+		},
+	
+	
+	
+	
+		// T3 LEGION EXPERIMENTAL - leggant
+		"leegmech": { // To be replaced
+			"role": ["skirmish"],
+			"retreat": 0.5
+		},
+		"legkeres": {
+			"role": ["assault", "heavy"],
+			"retreat": 0.6
+		},
+		"legpede": { // To be replaced
+			"role": ["artillery"],
+			"attribute": ["siege"],
+			"threat": {"surf": 0.5, "vs":{"static":4.0, "artillery":4.0}},
+			"power": 0.5,
+			"retreat": 0.3
+		},
+		"legjav": {
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.5, "water": 0.0, "surf": 0.8}	
+		},
+	
+	
+	
+	
+		// LEGION T1 VEHICLE - legvp
+	
+		"legscout": {
+			"role": ["scout"],
+			"threat":{"vs":{"artillery": 2.0}}
+		},
+		"leghades": {
+			"role": ["raider"],
+			"attribute": ["scout"],
+			"threat":{"vs":{"artillery": 2.0}},
+			"limit": 30
+		},
+		"legamphtank": {
+			"role": ["raider"],
+			"threat":{"vs":{"artillery": 2.0}},
+			"limit": 25
+		},
+		"leggat": {
+			"role": ["skirmish"],
+			"threat":{"vs":{"artillery": 2.0}}
+		},
+		"leghelios": {
+			"role": ["skirmish"],
+			"threat": {"surf": 1.2, "vs":{"raider": 2.0}},
+			"retreat": 0.4
+		},
+		"legbar": {
+			"role": ["artillery"],
+			"attribute":["siege"],
+			"threat": {"surf": 0.2, "vs":{"static":5.0, "artillery":5.0}}
+		},
+		"legrail": {
+			"role": ["artillery"],
+			"attribute": ["support", "siege"]
+		},
+	
+	
+	
+	
+		// 	LEGION ADV VELICLE PLANT
+		"legfloat": {
+			"role": ["raider"]
+		},
+		"legskirmtank": {
+			"role": ["skirmish"]
+		},
+		"legmrv": {
+			"role": ["raider"]
+		},
+		"legaheattank": {
+			"role": ["heavy"],
+			"attribute":["siege"],
+			"threat": {"surf": 1.5}
+		},
+		"legmcluster": {
+			"role": ["artillery"],
+			"threat": {"surf": 0.5, "vs":{"static":2.0, "artillery":2.0}},
+			"retreat": 0.6
+		},
+		"legavroc": {
+			"role": ["artillery"],
+			"threat": {"surf": 0.2, "vs":{"static":5.0, "artillery":5.0}},
+			"retreat": 0.7
+		},
+		"legmed": {
+			"role":	["assault"], 
+			"attribute": ["siege"],  
+			"retreat": 0.5
+		},
+		"legvcarry": {
+			"role":	["riot"], 
+			"attribute": ["siege"],  
+			"retreat": 0.7
+		},
+		"leginf": {
+			"role": ["artillery"],
+			"attribute": ["siege"],
+			"retreat": 0.6
+		},
+	
+	
+	
+	
+		// LEGION SHIPS - legsy?
+	
+		// Hornet add to this pls <3
+	
+	
+	
+	
+		// LEGION ADV SHIPYARD - legasy?
+	
+		// Hornet add to this pls <3
+	
+	
+	
+	
+		// aircraft - legap
+	
+		"legcib": {
+			"role": ["super", "air"],
+			"retreat": 0.8,
+			"limit": 5
+		},
+		"legfig": {
+			"role": ["anti_air", "air"],
+			"power": 0.5,
+			"retreat": 0.25
+		},
+		"legkam": {
+			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
+			"retreat": 0
+		},
+		"legmos": {
+			"role": ["skirmish", "air"], //skirmish with support doesnt work
+			"threat": {"surf": 0.2},
+			"power": 0.1,
+			"retreat": 0.75
+		},
+	
+	
+	
+	
+		// LEGION ADV AIRCRAFT aircraft - legaap
+	
+		"legwhisper": {
+			"role": ["scout", "air"],
+			"retreat": 0.6
+		},
+		"legionnaire": {
+			"role": ["anti_air", "air"],
+			"retreat": 0
+		},
+		"legvenator": {
+			"role": ["anti_air", "air", "skirmish"],
+			"retreat": 0
+		},
+		"legphoenix": {
+			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
+			"retreat": 0
+		},
+		"legnap": {
+			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
+			"retreat": 0
+		},
+		"legstronghold": {
+			"role": ["raider", "air"],
+			"retreat": 0
+		},
+		"legfort": {
+			"role": ["heavy", "air"],
+			"retreat": 0
+		},
+	
+		
+	
+	
+		// LEGION HOVERS
+	
+		"legsh": {
+			"role": ["raider"]
+		},
+		"legner": {
+			"role": ["skirmish"]
+		},
+		"legmh": {
+			"role": ["artillery"],
+			"threat": {"surf": 0.2, "vs":{"static":5.0, "artillery":5.0}},
+			"limit": 6
+		},
+		"legah": {
+			"role": ["anti_air"],
+			"attribute":["support"]
+		},
+		"legcar": {
+			"role": ["heavy", "skirmish"]
+		},
+	
+	
+	
+	
+		// Constructors
+		"legch": {
+			"role": ["builder"],
+			"limit": 10,
+			"build_speed": 6.0
+		},
+		"legcs": {
+			"role": ["builder"],
+			"retreat": 0.6,
+			"limit": 6,
+			"build_speed": 6.0
+		},
+		"legaca": {
+			"role": ["builder", "air"],
+			"attribute": ["solo"],
+			"retreat": 0.6,
+			"limit": 15,
+			"build_speed": 5.0
+		},
+		"legca": {
+			"role": ["builder", "air"],
+			"retreat": 0.6,
+			"limit": 15,
+			"build_speed": 3.0
+		},
+		"legacv": {
+			"role": ["builderT2"],
+			"attribute": ["solo"],
+			"limit": 15,
+			"build_speed": 12.5  //bp 250
+		},
+			"legmlv": {
+			"role": ["support"],
+			"limit": 0
+		},
+		"legotter": {
+			"role": ["builder"],
+			"attribute": ["solo"],
+			"limit": 6,
+			"build_speed": 4.0
+		},
+		"legcv": {
+			"role": ["builder"],
+			"limit": 10,
+			"build_speed": 4.5  //bp 90
+		},
+		"legaceb": {
+			"role": ["builder"],
+			"limit": 16,
+			"build_speed": 7.0,
+			"since": 1300
+		},
+		"legack": {
+			"role": ["builderT2"],
+			"attribute": ["solo"],
+			"limit": 10,
+			"build_speed": 9.0  
+		},
+		"legck": {
+			"role": ["builder"],
+			//"attribute": ["solo"],
+			"limit": 12,
+			"build_speed": 3.75  
+		},
 	
 	
 			// RAPTORS --------------------------------------------------------------------
