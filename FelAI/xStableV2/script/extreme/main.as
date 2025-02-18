@@ -8,6 +8,8 @@ namespace Main {
 
 void AiMain()  // Initialize config params
 {
+	AiLog("AI Loaded Correctly");
+	
 	for (Id defId = 1, count = ai.GetDefCount(); defId <= count; ++defId) {
 		CCircuitDef@ cdef = ai.GetCircuitDef(defId);
 		if (cdef.costM >= 200.f && !cdef.IsMobile() && aiEconomyMgr.GetEnergyMake(cdef) > 1.f)

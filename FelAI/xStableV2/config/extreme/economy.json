@@ -8,7 +8,7 @@
 			// limit = random(<lower limit>..<upper limit>)
 			//efficiency calculation: engy.cond.score = SQUARE(engy.make) / (cdef->GetCostM() * cdef->GetDef()->GetXSize() * cdef->GetDef()->GetZSize());
 			//higer value => more efficient | e-output * e-output / mcost*x*y
-			"armwin": [30, 60],
+			"armwin": [15, 25],
 			"armsolar": [12, 14, 0, 0, 0.030],  // efficiency=0.025806 --- increased eff to make it better against wind
 			"armadvsol": [20, 30, 12, 220, 0.200], 	// efficiency=0.237542
 			"armgeo": [4, 8, 16, 300, 0.6], //eff 0.6
@@ -19,7 +19,7 @@
 			"armafus": [50,100, 70, 4000, 6.44],
 			"armuwfus": [6, 12, 35, 600, 2.8],  // efficiency=6.443299
 
-			"corwin": [30, 60],
+			"corwin": [15, 25],
 			"corsolar": [9, 12, 0, 0, 0.060], // efficiency=0.026667
 			"coradvsol": [20, 30, 12, 220, 0.220], //efficiency=0.237542
 			"corgeo": [4, 8, 16, 300, 0.6], //0.6
@@ -28,8 +28,9 @@
 			"corafus": [50, 100, 60, 4000, 6.44],
 			"coruwfus": [6, 12, 35, 600, 2.8], // efficiency=6.443299
 
-			"legwin": [30, 60],
-			"legmext15": [1, 10],
+			"legwin": [15, 25],
+			"legmex": [3, 25],
+			"legmext15": [3, 12, 20, 200, 0.005],
 			"legsolar": [12, 14, 0, 0, 0.030],  // efficiency=0.025806 --- increased eff to make it better against wind
 			"legadvsol": [20, 30, 12, 220, 0.200], 	// efficiency=0.237542
 			"leggeo": [4, 8, 16, 300, 0.6], //eff 0.6
@@ -142,6 +143,6 @@
 		"armada": "armwin",
 		"cortex": "corwin",
 		"legion": "legwin"
+		}
 	}
-}
 }

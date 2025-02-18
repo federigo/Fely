@@ -586,6 +586,14 @@
 		"legmex": {
 //			"energy": [200, true],
 			"porc": true
+		},
+		"legmext15": {
+//			"energy": [200, true],
+			"porc": true
+		},
+		"legmoho": {
+//			"energy": [200, true],
+			"porc": true
 		}
 	},
 

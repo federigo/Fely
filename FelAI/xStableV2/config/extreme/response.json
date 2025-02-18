@@ -54,29 +54,22 @@
 		"artillery": {
 			"vs":         ["static", "artillery", "super"],
 			"ratio":      [ 0.70,     0.00,        0.70],
-			"importance": [ 15.00,    0.00,        0.0],
+			"importance": [ 15.00,    0.00,        40.00],
 			"max_percent": 0.66,
 			"eps_step": 0.00
 		},
 		"anti_air": {
 			"vs":         ["air"],
-			"ratio":      [ 1.0],
-			"importance": [ 100.0],
-			"max_percent": 0.3,
-			"eps_step": 0.8
+			"ratio":      [ 0.75],
+			"importance": [ 950.0],
+			"max_percent": 0.5,
+			"eps_step": 0.6
 		},
 		"anti_sub": {
 			"vs":         ["sub"],
-			"ratio":      [ 1.0],
-			"importance": [ 100.0],
-			"max_percent": 0.80,
-			"eps_step": 0.00
-		},
-		"anti_boat": {
-			"vs":         ["boat"],
-			"ratio":      [ 1.0],
-			"importance": [ 100.0],
-			"max_percent": 0.80,
+			"ratio":      [ 0.0],
+			"importance": [ 0.0],
+			"max_percent": 0.00,
 			"eps_step": 0.00
 		},
 		"anti_heavy": {
@@ -94,10 +87,10 @@
 			"eps_step": 0.00
 		},
 		"bomber": {
-			"vs":         ["heavy", "anti_heavy", "artillery", "super", "static", "land_range_t2"],
-			"ratio":      [ 0.00,    0.50,         0.50,        0.90,        0.90],
-			"importance": [ 0.00,    50.00,        50.00,       70.00,       70.00],
-			"max_percent": 0.7,
+			"vs":         ["heavy", "anti_heavy", "artillery", "super"],
+			"ratio":      [ 0.00,    0.50,         0.50,        0.50],
+			"importance": [ 0.00,    50.00,        50.00,       50.00],
+			"max_percent": 0.5,
 			"eps_step": 0.00
 		},
 		"super": {
@@ -120,34 +113,6 @@
 			"importance": [ 1000.00,  1000.00,   1000.00],
 			"max_percent": 0.1,
 			"eps_step": 0.1
-		},
-		"land_range_t2": {
-			"vs":         ["static", "builder"],
-			"ratio":      [ 1.00,     1.00],
-			"importance": [ 1000.00,  1000.00],
-			"max_percent": 0.1,
-			"eps_step": 0.1
-		},
-		"juno": {
-			"vs":         ["jammer", "anti_nuke"],
-			"ratio":      [ 0.10,     0.10],
-			"importance": [ 100.00,  100.00],
-			"max_percent": 0.3,
-			"eps_step": 0
-		},
-		"emp": {
-			"vs":         ["anti_nuke"],
-			"ratio":      [ 0.10,     0.10],
-			"importance": [ 100.00,  100.00],
-			"max_percent": 0.3,
-			"eps_step": 0
-		},
-		"anti_spam": {
-			"vs":         ["spam"],
-			"ratio":      [ 0.20],
-			"importance": [ 100.00],
-			"max_percent": 0.1,
-			"eps_step": 0
 		}
 	}
-}
+	}
