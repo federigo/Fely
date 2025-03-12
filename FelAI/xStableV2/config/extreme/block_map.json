@@ -63,7 +63,7 @@
 	// 			Integer radius of a blocker or description string.
 	// 			Available string values: explosion, expl_ally
 	//			"radius": "explosion",  // default: "explosion"
-				"yard": [10,10],  // "default": "explosion"
+				"yard": [20,20],  // "default": "explosion"
 				"ignore": ["engy_low"]
 			},
 			"geo": {
@@ -126,8 +126,9 @@
 			},
 			"caretaker": {
 				"type": ["rectangle", "nano"],
-				"yard": [9, 9],
-				"ignore": ["mex", "def_low", "engy_mid", "engy_high"]
+				"offset": [0, 2],
+				"ignore": ["mex"],
+				"not_ignore": ["factory"]
 			},
 			"superweapon": {
 				"type": ["circle", "special"],
@@ -167,11 +168,11 @@
 		"instance": {
 			"fac_land_t2": ["armalab", "armavp", "coralab", "coravp", "legalab", "legavp"],
 			"fac_land_t1": ["armlab", "armvp", "corlab", "corvp", "leglab", "legvp"],
-			"fac_water": ["armsy", "armasy", "corsy", "corasy", "corfhp",  "armfhp", "legfhp", "corhp",  "armhp", "leghp"], //add legion navy later
+			"fac_water": ["armsy", "armasy", "corsy", "corasy"], //add "corfhp", "armfhp", "legfhp", "corhp",  "armhp", "leghp"
 			"fac_air":["armap","armaap", "corap", "coraap", "legap", "legaap"],
 			"fac_strider": ["armshltx", "corgant", "leggant"],
 			"solar": ["armsolar", "corsolar", "legsolar"],
-			"advsolar":["armadvsol", "coradvsol", ";legadvsol"],
+			"advsolar":["armadvsol", "coradvsol", "legadvsol"],
 			"wind": ["armwin", "corwin", "legwin", "armtide", "cortide"], //add legion tide later
 			"geo": ["armgeo", "corgeo", "leggeo"],
 			"geo2": ["armageo", "corageo", "legageo"],

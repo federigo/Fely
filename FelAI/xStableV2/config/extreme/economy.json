@@ -8,15 +8,15 @@
 			// limit = random(<lower limit>..<upper limit>)
 			//efficiency calculation: engy.cond.score = SQUARE(engy.make) / (cdef->GetCostM() * cdef->GetDef()->GetXSize() * cdef->GetDef()->GetZSize());
 			//higer value => more efficient | e-output * e-output / mcost*x*y
-			"armwin": [15, 25],
-			"armsolar": [12, 14, 0, 0, 0.030],  // efficiency=0.025806 --- increased eff to make it better against wind
-			"armadvsol": [20, 30, 12, 220, 0.200], 	// efficiency=0.237542
+			"armwin": [30, 60, 0, 0, 0.25],
+			"armsolar": [12, 14, 0, 0, 0.005],  // efficiency=0.025806 --- increased eff to make it better against wind
+			"armadvsol": [12, 14, 25, 500, 0.050], 	// efficiency=0.237542
 			"armgeo": [4, 8, 16, 300, 0.6], //eff 0.6
 			"armgmm":[4, 8, 25, 600, 2.2],
 			"armageo":[0, 1, 35, 1000, 3.0], //eff 3.0
-			"armfus": [3, 4, 50, 900, 1.9],		// efficiency=1.937984
-			"armckfus": [1, 3, 50, 2000, 0.230], // efficiency=2.400266
-			"armafus": [50,100, 70, 4000, 6.44],
+			"armfus": [3, 4, 25, 500, 1.9],		// efficiency=1.937984
+			//"armckfus": [1, 3, 50, 2000, 0.230], // efficiency=2.400266
+			"armafus": [50, 100, 35, 2000, 6.44],
 			"armuwfus": [6, 12, 35, 600, 2.8],  // efficiency=6.443299
 
 			"corwin": [15, 25],
@@ -61,7 +61,7 @@
 			"coruwfus": [50, 100, 35, 600, 2.8]  // efficiency=2.756296
 		},
 
-		"factor": [[6.0, 1], [20, 300], [30, 420], [60.0, 3600]], //desired energy factor at a certain time
+		"factor": [[40, 1], [300, 300], [600, 420], [100000, 3600]], //desired energy factor at a certain time
 		// desired energy rule #1: e-income >= m-income * factor
 		// income factor for energy, time is in seconds
 		// [[<start_factor>, <start_time>], [<end_factor>, <end_time>]]
@@ -102,7 +102,7 @@
 
 //mspull - // Mobile constructor to static constructor metal pull ratio; [[<value>, <start_mex_percent>], [<value>, <end_mex_percent>]]
 
-	"mex_up": 4,  // maximum number of simultaneous mex upgrades 2/3
+	"mex_up": 3,  // maximum number of simultaneous mex upgrades 2/3
 	"calc_mex": false,  // always calculate mex spots (global)
 	"goal_exec": 50.0,  // assign builders till targeted time (in s) to build reached => low value: builders focus on few projects; high value: builder do more task; old values: 45, 50
 	"build_mod": 1000.0,  // default build_mod for UnitDef, if it's not specified

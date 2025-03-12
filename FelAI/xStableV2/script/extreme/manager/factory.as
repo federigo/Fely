@@ -28,9 +28,9 @@ string armlab  		("armlab");
 string armalab 		("armalab");
 string armvp   		("armvp");
 string armavp  		("armavp");
-string armhp   		("armhp");
+//string armhp   		("armhp");
 //Armada Sea Factories
-string armfhp  		("armfhp");
+//string armfhp  		("armfhp");
 string armsy   		("armsy");
 string armasy  		("armasy");
 string armamsub 	("armamsub");
@@ -49,9 +49,9 @@ string corlab  		("corlab");
 string coralab 		("coralab");
 string corvp   		("corvp");
 string coravp  		("coravp");
-string corhp  		("corhp");
+//string corhp  		("corhp");
 //Cortex Land Factories
-string corfhp  		("corfhp");
+//string corfhp  		("corfhp");
 string corsy   		("corsy");
 string corasy  		("corasy");
 string coramsub 	("coramsub");
@@ -70,9 +70,9 @@ string leglab  		("leglab");
 string legalab 		("legalab");
 string legvp   		("legvp");
 string legavp  		("legavp");
-string leghp  		("leghp");
+//string leghp  		("leghp");
 //Legion Land Factories
-string legfhp  		("legfhp");
+//string legfhp  		("legfhp");
 //string legsy   	("legsy"); //Add Later
 //string legasy  	("legasy"); //Add Later
 string legamsub 	("legamsub");
@@ -172,7 +172,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 float MakeSwitchLimit()
 {
-	return AiRandom(800, 1200) * SECOND;
+	return AiRandom(3000, 8000) * SECOND;
 }
 
 }  // namespace Factory
