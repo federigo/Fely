@@ -1787,8 +1787,7 @@
 	
 			"armpw": {
 				"role": ["raider"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
 				"ignore": true,
 				"power": 1.0,
 				"retreat": 0.0
@@ -1802,23 +1801,19 @@
 			},
 			"armham": {
 				"role": ["skirmish"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}}		
-				
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armjeth": {
 				"role": ["anti_air"]
 			},
 			"armwar": {
 				"role": ["riot"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
 				"attribute": ["melee"]
 			},
 			"armflea": {
 				"role": ["scout"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},			
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
 				"ignore": true,
 				"power": 1.0,
 				"retreat": 0.0
@@ -1830,31 +1825,35 @@
 			// adv bot - armalab
 	
 			"armfast": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armamph": {
 				"role": ["raider", "anti_air"]
 			},
 			"armzeus": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armfboy": {
-				"role": ["heavy"]
+				"role": ["heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armmav": {
 				"role": ["riot"]
 			},
 			"armfido": {
 				"role": ["assault"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armvader": {
 				"role": ["raider"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armaak": {
 				"role": ["anti_air"]
-	
 			},
 			"armmark": {
 				"role": ["support"]
@@ -1863,15 +1862,17 @@
 				"role": ["support"]
 			},
 			"armspid": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armsptk": {
-				"role": ["support"]
-				
+				"role": ["support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}				
 			},
 			"armsnipe": {
 				"role": ["anti_heavy_ass"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armscab": {
 				"role": ["support"]
@@ -1886,26 +1887,32 @@
 			// T3 bot - armshltx
 	
 			"armmar": { //rauder
-				"role": ["raider", "heavy"]
+				"role": ["raider", "heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armlun": { //hovertank
-				"role": ["skirmish", "heavy"]
+				"role": ["skirmish", "heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armraz": { //razorback
 				"role": ["riot", "heavy"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armvang": { //vanguard
 				"role": ["artillery"],
-				"attribute": ["siege", "support"]
+				"attribute": ["siege", "support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armbanth": { //Titan
 				"role": ["heavy"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armthor":{ //thor
 				"role":["super"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -1917,24 +1924,30 @@
 				"role": ["support"]
 			},
 			"armfav": {
-				"role": ["scout"]
+				"role": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armflash": {
-				"role": ["scout"]
+				"role": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armpincer": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armstump": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armart": {
 				"role": ["artillery"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armjanus": {
 				"role": ["assault"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armsam": {
 				"role": ["anti_air"],
@@ -1948,25 +1961,31 @@
 			// adv vehicles - armavp
 	
 			"armlatnk": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armgremlin": {
-					"role": ["scout"]
+				"role": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armbull": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armmanni": {
 				"role": ["anti_heavy_ass"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armmart": {
 				"role": ["artillery"],
-				"attribute":["siege"]
+				"attribute":["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armmerl": {
 				"role": ["artillery"],
-				"attribute":["siege"]
+				"attribute":["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armyork": {
 				"role": ["anti_air"]
@@ -1988,16 +2007,15 @@
 			},
 			"armfig": {
 				"role": ["anti_air", "air"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"anti_air": 10.0}}	
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armthund": {
 				"role": ["bomber", "static", "assault", "anti_air"],
-				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
-				"vs": {"anti_air": 10.0}}	
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armkam": {
-				"role": ["raider", "air"]
+				"role": ["raider", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2012,22 +2030,27 @@
 				"role": ["anti_air", "air"]
 			},
 			"armpnix": {
-				"role": ["bomber", "air"]
+				"role": ["bomber", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armbrawl": {
 				"role": ["raider", "air"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armblade": {
 				"role": ["heavy", "air"], //heavy
-				"attribute": "support"
+				"attribute": "support",
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armstil": {
 				"role": ["assault", "air"],
-				"attribute": "support"
+				"attribute": "support",
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armliche": {
-				"role": ["bomber", "air"]
+				"role": ["bomber", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2035,7 +2058,8 @@
 	
 			// Naval Aircrafts
 			"armsaber": {
-				"role": ["skirmish", "air"]
+				"role": ["skirmish", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2050,20 +2074,24 @@
 				"role": ["scout", "anti_air"]
 			},
 			"armdecade": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armpship": {
 				"role": ["riot"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armsub": {
 				"role": ["sub"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 				
 			},
 			"armroy": {
 				"role": ["anti_sub"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2072,18 +2100,21 @@
 			// adv shipyard - armasy
 	
 			"armsubk": {
-				"role": ["anti_sub", "sub"]	
+				"role": ["anti_sub", "sub"]	,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armserp": {
 				"role":["sub"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},	
 			"armaas": {
 				"role": ["anti_air"]
 			},
 			"armcrus": {
 				"role": ["skirmish"],
-				"attribute": ["anti_sub"]
+				"attribute": ["anti_sub"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armsjam": {
 				"role": ["support"]
@@ -2093,15 +2124,18 @@
 			},
 			"armmship": {
 				"role": ["artillery"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armbats": {
 				"role": ["heavy"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armepoch": {
 				"role": ["artillery"],
-				"attribute": ["super"]
+				"attribute": ["super"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2110,18 +2144,22 @@
 			// ARMADA HOVERS
 	
 			"armsh": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armanac": {
-				"role": ["assault"]
+				"role": ["assault"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armmh": {
 				"role": ["artillery"],
-				"limit": 6
+				"limit": 6,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"armah": {
 				"role": ["anti_air"],
-				"attribute": ["skirmish"]
+				"attribute": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 		
 	
@@ -2131,17 +2169,20 @@
 	
 			"corak": {
 				"role": ["raider"],
-				"attribute": ["scout"]
+				"attribute": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cornecro": {
 				"role": ["rezzer"]
 			},
 			"corstorm": {
 				"role": ["artillery"],  //assault
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corthud": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcrash": {
 				"role": ["anti_air"]
@@ -2153,27 +2194,33 @@
 			// adv bot - coralab
 	
 			"cortermite": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corpyro": {
 				"role": ["raider"],
-				"attribute":["melee"]
+				"attribute":["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsumo": {
 				"role": ["heavy"],
-				"attribute": ["support"]
+				"attribute": ["support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcan": {
 				"role": ["skirmish"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cormort": {
 				"role": ["assault"],
-				"attribute":["support"]
+				"attribute":["support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corhrk": {
 				"role": ["artillery"],
-				"attribute":["siege"]
+				"attribute":["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"coraak": {
 				"role": ["anti_air"]
@@ -2186,11 +2233,13 @@
 			},
 			"corroach": {
 				"role": ["scout"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsktl": {
 				"role": ["raider"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corvoyr": {
 				"role": ["support"]
@@ -2199,7 +2248,8 @@
 				"role": ["support"]
 			},
 			"coramph": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corspy": {
 				"role": ["scout"]
@@ -2210,25 +2260,31 @@
 	
 			// T3 CORE EXPERIMENTAL - corgant
 			"corsok": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corshiva": {
-				"role": ["assault", "heavy"]
+				"role": ["assault", "heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corkarg": {
-				"role": ["raider", "heavy"]
+				"role": ["raider", "heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcat": {
 				"role": ["artillery"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corkorg": {
 				"role": ["super"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corjugg": {
 				"role": ["super"],
-				"attribute": ["melee"]
+				"attribute": ["melee"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 		
 	
@@ -2237,24 +2293,30 @@
 			// CORE T1 VEHICLE - corvp
 	
 			"corfav": {
-				"role": ["scout"]
+				"role": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corgator": {
 				"role": ["raider"],
-				"attribute": ["scout"]
+				"attribute": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corgarp": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corraid": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corlevlr": {
-				"role": ["riot"]
+				"role": ["riot"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corwolv": {
 				"role": ["artillery"],
-				"attribute":["siege"]
+				"attribute":["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cormist": {
 				"role": ["anti_air"],
@@ -2266,34 +2328,42 @@
 	
 			// 	CORE ADV VELICLE PLANT
 			"corseal": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corparrow": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"correap": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corgol": {
 				"role": ["heavy"],
-				"attribute":["siege"]
+				"attribute":["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cormart": {
-				"role": ["artillery"]
+				"role": ["artillery"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsent": {
 				"role": ["anti_air"]
 			},
 			"corvroc": {
-				"role": ["artillery"]
+				"role": ["artillery"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corban": {
 				"role":	["assault"], 
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cortrem": {
 				"role": ["artillery"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corvrad": {
 				"role": ["support"]
@@ -2316,20 +2386,25 @@
 			},
 			"corpt": {
 				"role": ["anti_air"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"coresupp": {
-				"role": ["scout"]
+				"role": ["scout"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corpship": {
-				"role": ["riot"]
+				"role": ["riot"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corroy": {
 				"role": ["anti_sub"], 				//assault
-				"attribute": ["siege", "support"]
+				"attribute": ["siege", "support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsub": {
-				"role": ["raider", "sub"]		
+				"role": ["raider", "sub"]	,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}	
 			},
 		
 	
@@ -2339,36 +2414,44 @@
 	
 			"corshark": {
 				"role": ["anti_sub", "sub"],
-				"attribute": ["anti_sub"]
+				"attribute": ["anti_sub"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corssub": {
 				"role": ["sub"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corarch": {
 				"role": ["anti_air"],
-				"limit": 5
+				"limit": 5,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcrus": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsjam": {
-				"role": ["support"]
+				"role": ["support"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcarry": {
 				"role": ["support"]
 			},
 			"cormship": {
 				"role": ["artillery"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corbats": {
 				"role": ["heavy"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corblackhy": {
 				"role": ["super"],
-				"attribute": ["siege"]
+				"attribute": ["siege"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2383,10 +2466,12 @@
 				"role": ["anti_air", "air"]
 			},
 			"corshad": {
-				"role": ["bomber", "air"]
+				"role": ["bomber", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corbw": {
-				"role": ["skirmish", "air"]
+				"role": ["skirmish", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 		
 	
@@ -2395,19 +2480,23 @@
 			// CORE ADV AIRCRAFT aircraft - coraap
 	
 			"corawac": {
-				"role": ["scout", "air"]
+				"role": ["scout", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corvamp": {
 				"role": ["anti_air", "air"]
 			},
 			"corhurc": {
-				"role": ["bomber", "air"]
+				"role": ["bomber", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corape": {
-				"role": ["raider", "air"]
+				"role": ["raider", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corcrw": {
-				"role": ["heavy", "air"]
+				"role": ["heavy", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 	
@@ -2416,7 +2505,8 @@
 			// CORE NAVAL AIRCRAFT - corplat
 			"corcut": {
 				"role": ["raider", "air"],
-				"retreat": 0.8
+				"retreat": 0.8,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	
 			
@@ -2425,41 +2515,50 @@
 			// CORTEX HOVERS
 	
 			"corsh": {
-				"role": ["raider"]
+				"role": ["raider"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corsnap": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"cormh": {
-				"role": ["artillery"]
+				"role": ["artillery"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 			"corah": {
 				"role": ["anti_air"],
 				"attribute":["support"]
 			},
 			"corhal": {
-				"role": ["heavy", "skirmish"]
+				"role": ["heavy", "skirmish"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 
 			// LEGION BOTLAB (leglab)
 		"legcen": {
 			"role": ["raider"],
-			"since": 240
+			"since": 240,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legbal": {
 			"role": ["assault"],
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leglob": {
 			"role": ["skirmish"],
-			"attribute": ["scout"]
+			"attribute": ["scout"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legkark": {
-			"role": ["riot", "siege"]
+			"role": ["riot", "siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leggob": {
 			"role": ["skirmish"],
-			"attribute": ["scout"]
+			"attribute": ["scout"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2468,34 +2567,42 @@
 		// adv bot - legalab
 	
 		"leginfestor": {
-			"role": ["Builder", "Support", "raider"]
+			"role": ["Builder", "Support", "raider"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legstr": {
 			"role": ["raider"],
-			"attribute":["melee"]
+			"attribute":["melee"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leginc": {
 			"role": ["heavy", "assault"],
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legshot": {
 			"role": ["assault"],
-			"attribute": ["support"]
+			"attribute": ["support"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legbart": {
-			"role": ["assault", "Skirmish"]
+			"role": ["assault", "Skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legdecom": {
 			"role": ["builder"],
-			"buildspeed": 6.0
+			"buildspeed": 6.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legsnapper": {
 			"role": ["scout"],
-			"attribute": ["melee"]
+			"attribute": ["melee"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legsrail": {
 			"role": ["anti_heavy_ass"],
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2503,17 +2610,21 @@
 	
 		// T3 LEGION EXPERIMENTAL - leggant
 		"leegmech": { // To be replaced
-			"role": ["skirmish"]
+			"role": ["skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legkeres": {
-			"role": ["assault", "heavy"]
+			"role": ["assault", "heavy"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legpede": { // To be replaced
 			"role": ["artillery"],
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legjav": {
-			"role": ["raider", "heavy"]	
+			"role": ["raider", "heavy"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2522,28 +2633,35 @@
 		// LEGION T1 VEHICLE - legvp
 	
 		"legscout": {
-			"role": ["scout"]
+			"role": ["scout"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leghades": {
 			"role": ["raider"],
-			"attribute": ["scout"]
+			"attribute": ["scout"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legamphtank": {
-			"role": ["raider"]
+			"role": ["raider"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leggat": {
-			"role": ["skirmish"]
+			"role": ["skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leghelios": {
-			"role": ["skirmish"]
+			"role": ["skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legbar": {
 			"role": ["artillery"],
-			"attribute":["siege"]
+			"attribute":["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legrail": {
 			"role": ["artillery"],
-			"attribute": ["support", "siege"]
+			"attribute": ["support", "siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2551,35 +2669,44 @@
 	
 		// 	LEGION ADV VELICLE PLANT
 		"legfloat": {
-			"role": ["raider"]
+			"role": ["raider"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legskirmtank": {
-			"role": ["skirmish"]
+			"role": ["skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmrv": {
-			"role": ["raider"]
+			"role": ["raider"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legaheattank": {
 			"role": ["heavy"],
-			"attribute":["siege"]
+			"attribute":["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmcluster": {
-			"role": ["artillery"]
+			"role": ["artillery"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legavroc": {
-			"role": ["artillery"]
+			"role": ["artillery"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmed": {
 			"role":	["assault"], 
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legvcarry": {
 			"role":	["riot"], 
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"leginf": {
 			"role": ["artillery"],
-			"attribute": ["siege"]
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 		// aircraft - legap
@@ -2587,7 +2714,8 @@
 		"legcib": {
 			"role": ["super", "air"],
 			"retreat": 0.8,
-			"limit": 5
+			"limit": 5,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legfig": {
 			"role": ["anti_air", "air"],
@@ -2596,10 +2724,12 @@
 		},
 		"legkam": {
 			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
-			"retreat": 0
+			"retreat": 0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmos": {
-			"role": ["skirmish", "air"]
+			"role": ["skirmish", "air"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2609,11 +2739,13 @@
 	
 		"legwhisper": {
 			"role": ["scout", "air"],
-			"retreat": 0.6
+			"retreat": 0.6,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legionnaire": {
 			"role": ["anti_air", "air"],
-			"retreat": 0
+			"retreat": 0,
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legvenator": {
 			"role": ["anti_air", "air", "skirmish"],
@@ -2621,19 +2753,23 @@
 		},
 		"legphoenix": {
 			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
-			"retreat": 0
+			"retreat": 0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legnap": {
 			"role": ["bomber", "air", "raider", "riot", "assault", "skirmish"],
-			"retreat": 0
+			"retreat": 0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legstronghold": {
 			"role": ["raider", "air"],
-			"retreat": 0
+			"retreat": 0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legfort": {
 			"role": ["heavy", "air"],
-			"retreat": 0
+			"retreat": 0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 		
@@ -2642,20 +2778,25 @@
 		// LEGION HOVERS
 	
 		"legsh": {
-			"role": ["raider"]
+			"role": ["raider"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legner": {
-			"role": ["skirmish"]
+			"role": ["skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmh": {
-			"role": ["artillery"]
+			"role": ["artillery"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legah": {
 			"role": ["anti_air"],
-			"attribute":["support"]
+			"attribute":["support"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legcar": {
-			"role": ["heavy", "skirmish"]
+			"role": ["heavy", "skirmish"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
 	
@@ -2665,26 +2806,30 @@
 		"legch": {
 			"role": ["builder"],
 			"limit": 10,
-			"build_speed": 6.0
+			"build_speed": 6.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legcs": {
 			"role": ["builder"],
 			"retreat": 0.6,
 			"limit": 6,
-			"build_speed": 6.0
+			"build_speed": 6.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legaca": {
 			"role": ["builder", "air"],
 			"attribute": ["solo"],
 			"retreat": 0.6,
 			"limit": 15,
-			"build_speed": 5.0
+			"build_speed": 5.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legca": {
 			"role": ["builder", "air"],
 			"retreat": 0.6,
 			"limit": 15,
-			"build_speed": 3.0
+			"build_speed": 3.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legacv": {
 			"role": ["builderT2"],
@@ -2692,7 +2837,7 @@
 			"limit": 15,
 			"build_speed": 12.5  //bp 250
 		},
-			"legmlv": {
+		"legmlv": {
 			"role": ["support"],
 			"limit": 0
 		},
@@ -2700,18 +2845,21 @@
 			"role": ["builder"],
 			"attribute": ["solo"],
 			"limit": 6,
-			"build_speed": 4.0
+			"build_speed": 4.0,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legcv": {
 			"role": ["builder"],
 			"limit": 10,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
 			"build_speed": 4.5  //bp 90
 		},
 		"legaceb": {
 			"role": ["builder"],
 			"limit": 16,
 			"build_speed": 7.0,
-			"since": 1300
+			"since": 1300,
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legack": {
 			"role": ["builderT2"],
