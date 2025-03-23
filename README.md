@@ -1,6 +1,6 @@
 Hello, I am an Independant AI Developer for Beyond All Reason. 
 
-This Ai has been worked on for the past 600 Hours.
+This Ai has been worked on for the past 600 Hours it is not finished or fully merged. This AI is for LEGION TESTING!
 I Am excited to Release the Prototype to the General Public for Testing Phase 1!
 
 Note: THERE WILL BE MANY ISSUES NOT FULLY FIXED! Do not be toxic about the bot! Only Helpful Comments will be welcomed!
