@@ -107,15 +107,15 @@
 			"hub": [
 					[{"unit": "armmmakr", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"}],
 					[{"unit": "armmmakr", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armsilo", "category": "defence", "offset": [5, 5], "condition": {"energy": false}, "priority": "normal"}],
+					[{"unit": "armsilo", "category": "defence", "offset": [5, 5], "condition": {"chance":1.0}, "priority": "normal"}],
 					[{"unit": "armamd", "category": "defence", "offset": {"front": 10}, "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 0], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 2], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 4], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 6], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 8], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armnanotc", "category": "nano", "offset": [2, 10], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armafus", "category": "energy", "offset": {"back": 9}, "condition": {"energy": false}, "priority": "now"}]
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 16], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 24], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 32], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 40], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotc", "category": "nano", "offset": [0, 48], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armafus", "category": "energy", "offset": {"back": 12}, "condition": {"energy": false}, "priority": "now"}]
 			]
 		},
 		"armafus": {
@@ -286,18 +286,18 @@
 	"factory": {
 		"armlab": {
 			"hub": [
-				[{"unit": "armnanotc", "category": "nano", "offset": {"front": 8}, "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": {"front": 16}, "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": {"front": 24}, "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": {"front": 32}, "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
 			]
 		},
 		"armvp": {
 			"hub": [
-				[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
 			]
 		},
 		"corlab": {
@@ -410,10 +410,10 @@
 
 		"armap": {
 			"hub": [
-				[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
 			]
 		},
 		"corap": {
@@ -434,10 +434,10 @@
 		},
 		"armaap": {
 			"hub": [
-				[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "armnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
 			]
 		},
 		"coraap": {
@@ -538,6 +538,17 @@
 
 		"mex": {
 			"armmex": {
+				"hub": [
+					[{"unit": "armrl", "category": "defence", "offset": {"back": 5},"condition": {"air": true}, "priority": "now"}],
+					[{"unit": "armrl", "category": "defence", "offset": {"back": 15},"condition": {"air": true}, "priority": "now"}],
+					[{"unit": "armllt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+					[{"unit": "armhlt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+					[{"unit": "armjamt", "category": "defence", "offset": [-60, 0], "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armbeamer", "category": "defence", "offset": [120, 100], "priority": "now"}]
+				],
 	//			"terra": true,
 	//			"energy": [200, true], //AI will force-build 1 solar near every mex till it reaches 200 energy income
 				"porc": true
@@ -552,24 +563,32 @@
 			}
 		},
 
-		"radar":{
-		"armrad": {
-			"hub": [
-				[{"unit": "armllt", "category": "defence", "offset": {"front": 100}, "priority": "now"}],
-				[{"unit": "armrl", "category": "defence", "offset": {"back": 10},"condition": {"air": true}, "priority": "high"}],
-				[{"unit": "armguard", "category": "defence", "offset": [120, 100], "priority": "normal"}],
-				[
-					{"unit": "armamb", "category": "defence", "offset": [120, -100], "priority": "high"},
-					{"unit": "armpb", "category": "defence", "offset": [140, 100], "priority": "normal"}
-				],
-				[
-					{"unit": "armanni", "category": "defence", "offset": [70, 100], "condition": {"chance":0.5}, "priority": "low"}
-				],
-				[
-					{"unit": "armjamt", "category": "defence", "offset": [-60, 0], "priority": "low"},
-					{"unit": "armarad", "category": "defence", "offset": [-100, 0], "condition": {"chance":0.4}, "priority": "low"}, 
-					{"unit": "armbrtha", "category": "defence", "offset": [-100, 0], "condition": {"chance":0.3}, "priority": "low"}
+		"defence":{
+			"armrad": {
+				"hub": [
+					[{"unit": "armrl", "category": "defence", "offset": {"back": 5},"condition": {"air": true}, "priority": "now"}],
+					[{"unit": "armrl", "category": "defence", "offset": {"back": 15},"condition": {"air": true}, "priority": "now"}],
+					[{"unit": "armllt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+					[{"unit": "armhlt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+					[{"unit": "armjamt", "category": "defence", "offset": [-60, 0], "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "armbeamer", "category": "defence", "offset": [120, 100], "priority": "now"}]
 				]
+			},
+		"armarad": {
+			"hub": [
+				[{"unit": "armrl", "category": "defence", "offset": {"back": 5},"condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armrl", "category": "defence", "offset": {"back": 15},"condition": {"air": true}, "priority": "now"}],
+				[{"unit": "armllt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+				[{"unit": "armhlt", "category": "defence", "offset": [120, 100], "priority": "now"}],
+				[{"unit": "armjamt", "category": "defence", "offset": [-60, 0], "priority": "now"}],
+				[{"unit": "armrad", "category": "defence", "offset": [-60, 0], "priority": "now"}],
+				[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotcplat", "category": "nano", "offset": [0, 12], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armbeamer", "category": "defence", "offset": [120, 100], "priority": "now"}]
 			]
 		},
 		"corrad": {

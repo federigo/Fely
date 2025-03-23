@@ -91,5 +91,5 @@ Type COMM    = Unit::Role::COMM.type;
 // Custom roles
 Type AHA      = Unit::Role::AHA.type;
 Type BUILDER2 = Unit::Role::BUILDER2.type;
-Type REZZER = Unit::Role::REZZER.type;
+Type REZZER   = Unit::Role::REZZER.type;
 }  // namespace RT

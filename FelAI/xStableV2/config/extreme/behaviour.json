@@ -1,14 +1,14 @@
     // Mono-space font required
 	{
-		//attack = 0.3 means enemy threat = enemy_threat*0.3
+		//attack = 0.3 means enemy threat = enemy_threat*0.3																																																																																																																																																																																																																																																			[Reworked by [SMRT]Felnious[AI]]
 		//and attack group select only targets that have threat lower than the group's power. Power is like threat, but behaviour.json has separate modifiers for threat (enemy) and power (own).
 		//with attack=0.8..1.0 AI acts more careful, if it would also fight superior enemy near own static defences then those values would be great. 
 		//But there's possibility that AI will just run from enemy till it has big enough group, but it may loose its base. So if with attack=0.8..1.0 AI is not loosing base then everything is ok and i think this range is optimal.
 	
 		"quota": {
 			"scout": 1,  // max scout units out of raiders
-			"raid": [3.0, 15.5],  // [<min>, <avg>] power of raider squad 2.5,48
-			"attack": 5.0,  // min power of attack group ---- was 40
+			"raid": [3.0, 32.5],  // [<min>, <avg>] power of raider squad 2.5,48
+			"attack": 15.0,  // min power of attack group ---- was 40
 			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
 				"attack": [0.6, 0.8],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
 				"defence": [0.3, 0.5],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
@@ -36,10 +36,10 @@
 	
 		// following block is all about defense
 		"defence": {
-			"infl_rad": 5,  // influenece cell radius for defendAlly map
-			"base_rad": [600.0, 1200.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
-			"comm_rad": [1000.0, 500.0],  // 0 distance from base ~ 1000, base_rad ~ 500.0
-			"escort": [1, 1, 300]  // [<builders_count>, <defenders_count>, <escort rule until this time>]  2,2,360
+			"infl_rad": 4,  // influenece cell radius for defendAlly map
+			"base_rad": [1200.0, 800.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
+			"comm_rad": [600.0, 1200.0]  // 0 distance from base ~ 1000, base_rad ~ 500.0
+			//"escort": [1, 1, 300]  // [<builders_count>, <defenders_count>, <escort rule until this time>]  2,2,360
 		},
 		// read of "escort":  [number of builders with defenders, number of defenders for each builder, timeframe were only escorted builders are able to expand (=build mex, porc)]
 		// base radius: ai checks if is withing base_rad. if there is enemy it checks if it is withing comm radius which is variable and depend on distance from base
@@ -337,26 +337,33 @@
 			"armlab": {
 				"role": ["static"],
 				"attribute": ["support"],
-				"build_speed": 15.0
+				"build_speed": 15.0,
+				"build_mod": 1000.0,
+				"limit": 5
 			},
 			"armalab": {
 				"role": ["static"],
 				"attribute": ["support"],
-				"build_speed": 30.0 //bp 300
+				"build_speed": 30.0,
+				"build_mod": 1000.0,
+				"limit": 3
 			},
 			"armvp": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"build_mod": 1000.0,
 				"build_speed": 15.0
 			},
 			"armavp": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"build_mod": 1000.0,
 				"build_speed": 30.0 //bp 300
 			},
 			"armhp": {
 				"role": ["static"],
 				"build_speed": 10.0, //bp 200
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			
@@ -367,22 +374,26 @@
 			"armfhp": {
 				"role": ["static"],
 				"build_speed": 10.0,
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			"armsy": {
 				"role": ["static"],
 				"build_speed": 8.0, // bp 165
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			"armasy": {
 				"role": ["static"],
 				"build_speed": 15.0, //bp 300
+				"build_mod": 1000.0,
 				//"since": 540,
 				"limit": 1
 			},
 			"armamsub": {
 				"role": ["static"],
 				"build_speed": 7.5, //bp 150
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 
@@ -393,23 +404,30 @@
 			"armap": {
 				"role": ["static"],
 				"attribute": ["support"],
-				"build_speed": 5 //bp 100
+				"build_speed": 5,
+				"build_mod": 1000.0,
+				"limit": 5
 			},
 			"armaap": {
 				"role": ["static"],
 				"attribute": ["support"],
-				"build_speed": 10.0 //bp 200
+				"build_speed": 10.0,
+				"build_mod": 1000.0,
+				"limit": 3
 			},
 			"armplat": {
 				"role": ["static"],
 				"build_speed": 10.0, //200
+				"build_mod": 1000.0,
 				"since": 420,
-				"limit": 1
+				"limit": 3
 			},
 			"armapt3": {
 				"role": ["static"],
 				"attribute": ["support"],
-				"build_speed": 10.0 //bp 200
+				"build_speed": 10.0, //bp 200
+				"build_mod": 1000.0,
+				"limit": 1
 			},
 
 //########################################################################################################################
@@ -420,13 +438,16 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				//"midposoffset": [0, 0, 21],
-				"build_speed": 45.0 // bp 600
+				"build_speed": 45.0, //bp 300
+				"build_mod": 1000.0,
+				"limit": 1
 			},
 			"armshltxuw": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				//"midposoffset": [0, 0, 21],
 				"build_speed": 1.0, //bp 300
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 	
@@ -438,27 +459,32 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"build_speed": 15.0,  //bp 100
+				"build_mod": 1000.0,
 				"midposoffset": [-3.239746, 0, -2]
 			},
 			"coralab": {
 				"role": ["static"],
 				"attribute": ["support"],
 				"midposoffset": [0, 0, -4],
+				"build_mod": 1000.0,
 				"build_speed": 30.0 // bp 300
 			},
 			"corvp": {
 				"role": ["builder"],
 				"attribute": ["support"],
+				"build_mod": 1000.0,
 				"build_speed": 15.0 // bp 100
 	
 			},
 			"coravp": {
 				"role": ["static"],
 				"attribute": ["support"],
+				"build_mod": 1000.0,
 				"build_speed": 30.0  //bp 300
 			},
 			"corhp": {
 				"role": ["static"],
+				"build_mod": 1000.0,
 				"build_speed": 10.0, //bp 200
 				"limit": 1
 			},
@@ -471,10 +497,12 @@
 				"role": ["static"],
 				"build_speed": 10.0, //bp 200
 				"since": 300,
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			"corsy": {
 				"role": ["static"],
+				"build_mod": 1000.0,
 				"build_speed": 8.0, //bp 165
 				"limit": 1
 			},
@@ -482,11 +510,13 @@
 				"role": ["static"],
 				"build_speed": 15.0,  //bp 300
 				"since": 480,
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			"coramsub": {
 				"role": ["builder"],
 				"build_speed": 7.5, //bp 150
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 	
@@ -498,24 +528,28 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 5.0 //bp 100
 			},
 			"coraap": {
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 10.0 //bp 200
 			},
 			"corplat": {
 				"role": ["builder"],
 				"build_speed": 10.0,  //bp 200
 				"since": 420,
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 			"corapt3": {
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 10.0 //bp 200
 			},
 
@@ -527,13 +561,16 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 				
 			},
 			"corgantuw": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
-				"build_speed": 45.0 //bp 300
+				"build_speed": 45.0, //bp 300
+				"build_mod": 1000.0,
+				"limit": 1
 			},
 	
 //########################################################################################################################
@@ -544,6 +581,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 15.0,  //bp 100
 				"midposoffset": [-3.239746, 0, -2]
 			},
@@ -551,6 +589,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"midposoffset": [0, 0, -4],
 				"build_speed": 30.0 // bp 300
 			},
@@ -558,6 +597,7 @@
 				"role": ["builder"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 15.0 // bp 100
 	
 			},
@@ -565,11 +605,13 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 30.0  //bp 300
 			},
 			"leghp": {
 				"role": ["static"],
 				"build_speed": 10.0, //bp 200
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 	
@@ -580,23 +622,27 @@
 			"legfhp": {
 				"role": ["static"],
 				"build_speed": 10.0, //bp 200
+				"build_mod": 1000.0,
 				"since": 300,
 				"limit": 1
 			},
 			//"legsy": {
 			//	"role": ["static"],
 			//	"build_speed": 8.0, //bp 165
+			//	"build_mod": 1000.0,
 			//	"limit": 1
 			//},
 			//"legasy": {
 			//	"role": ["static"],
 			//	"build_speed": 15.0,  //bp 300
+			//	"build_mod": 1000.0,
 			//	"since": 480,
 			//	"limit": 1
 			//},
 			"legamsub": {
 				"role": ["builder"],
 				"build_speed": 7.5, //bp 150
+				"build_mod": 1000.0,
 				"limit": 1
 			},
 	
@@ -608,17 +654,20 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 5.0 //bp 100
 			},
 			"legaap": {
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 10.0 //bp 200
 			},
 			"legplat": {
 				"role": ["builder"],
 				"build_speed": 10.0,  //bp 200
+				"build_mod": 1000.0,
 				"since": 420,
 				"limit": 1
 			},
@@ -626,6 +675,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 10.0 //bp 200
 			},
 
@@ -637,12 +687,14 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},
 			"leggantuw": {
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},
 	
@@ -653,66 +705,96 @@
 	// Nano - Armada
 			"armnanotc": {
 				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0  	// bp 200, lower values => more and earlier nanos (workaround) 
 			},
 			"armnanotct2": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"armnanotcplat": {
 				"role": ["static"],
-				"build_speed": 10.0  //lower values => more and earlier nanos (workaround) 
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"armrespawn": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 	// Nano - Cortex
 			"cornanotc": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"cornanotct2": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"cornanotcplat": {
 				"role": ["static"],
-				"build_speed": 10.0  //lower values => more and earlier nanos (workaround) 
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"correspawn": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 	// Nano - Legion
 			"legnanotc": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"legnanotct2": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"legnanotcplat": {
 				"role": ["static"],
-				"build_speed": 10.0  //lower values => more and earlier nanos (workaround) 
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"legnanotcbase": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 	//Assist Drones
 			"armassistdrone": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 			"corassistdrone": {
-				"role": ["static"],		// nanos with role "support" are considered "low priority"
-				"build_speed": 10.0  // bp 200, lower values => more and earlier nanos (workaround) 
+				"role": ["static"],
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0 
 			},
 			"legassistdrone": {
 				"role": ["static"],
-				"build_speed": 10.0  //lower values => more and earlier nanos (workaround) 
+				"attribute": ["support"],
+				"build_mod": 1000.0,
+				"build_speed": 10.0
 			},
 	
 //########################################################################################################################
@@ -1113,7 +1195,7 @@
 			},
 			//"corjuno":{
 			//	"role":["super", "static"],
-				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
+			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
 			//	"since": 900
 			//},			
 			"legdtr": {
@@ -1298,7 +1380,7 @@
 			},
 			"armmstor" : {
 				"role": ["static"],
-				"since": 999,
+				"since": 300,
 				"build_mod": 300
 			},
 			"armwin": {
@@ -1321,7 +1403,7 @@
 			},
 			"armestor" : {
 				"role": ["static"],
-				"since": 999,
+				"since": 300,
 				"limit": 1
 			},
 			//Land T2 Economy
@@ -1443,7 +1525,7 @@
 			},
 	
 	
-	// Walls (Neutral BARbAI Refuse to Shoot (Only T2+T3 can break))
+	// Walls (Neutral BARbAI Refuse to Shoot (Only T2+T3 can break through Running over)) -- Needs a Revamp or a Rework to make non neutral
 			"armdrag": {
 				"role": ["static"]
 			},
@@ -1619,7 +1701,7 @@
 			"armconsul": {
 				"role": ["builder"],
 				//"attribute": ["support"],
-				"build_speed": 1.0 ,  //bp 150 																test!!!
+				"build_speed": 1.0 ,  //bp 150 																
 				"since": 1500,
 				"limit": 20
 			},
@@ -1719,13 +1801,18 @@
 				"attribute": ["siege"]
 			},
 			"armham": {
-				"role": ["skirmish"]
+				"role": ["skirmish"],
+				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
+				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}}		
+				
 			},
 			"armjeth": {
 				"role": ["anti_air"]
 			},
 			"armwar": {
 				"role": ["riot"],
+				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
+				"vs": {"builder": 0.0, "scout": 0.0, "raider": 0.0, "riot": 0.0, "assault": 0.0, "skirmish": 0.0, "artillery": 0.0, "anti_air": 0.0, "anti_sub": 0.0, "anti_heavy": 0.0, "bomber": 0.0, "support": 0.0, "mine": 0.0, "transport": 0.0, "air": 0.0, "sub": 0.0, "static": 0.0, "heavy": 0.0, "super": 0.0, "commander": 0.0}},
 				"attribute": ["melee"]
 			},
 			"armflea": {
@@ -1900,10 +1987,14 @@
 				"role": ["scout", "air"]
 			},
 			"armfig": {
-				"role": ["anti_air", "air"]
+				"role": ["anti_air", "air"],
+				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
+				"vs": {"anti_air": 10.0}}	
 			},
 			"armthund": {
-				"role": ["bomber", "static", "assault", "anti_air"]
+				"role": ["bomber", "static", "assault", "anti_air"],
+				"threat": {"surf": 0.0, "air": 0.0, "water": 0.0, 
+				"vs": {"anti_air": 10.0}}	
 			},
 			"armkam": {
 				"role": ["raider", "air"]

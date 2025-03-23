@@ -48,7 +48,7 @@ SOpener@ GetOpenInfo()
 			//standard
 			//SQueue(0.4f, {SO(RT::SCOUT), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2), SO(RT::BUILDER), SO(RT::RAIDER, 2)}),
 			// raider serial production
-			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::SCOUT, 10), SO(RT::RAIDER, 12), SO(RT::BUILDER)})
+			SQueue(0.3f, {SO(RT::BUILDER), SO(RT::SCOUT, 5), SO(RT::RAIDER, 12), SO(RT::BUILDER)})
 			// scout start
 			//SQueue(0.2f, {SO(RT::SCOUT, 4), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER)}),
 			//defensive eco start
@@ -58,7 +58,7 @@ SOpener@ GetOpenInfo()
 			//standard
 			//SQueue(0.4f, {SO(RT::SCOUT), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER, 3), SO(RT::BUILDER), SO(RT::RAIDER)}),
 			//early scout push
-			SQueue(0.3f, {SO(RT::SCOUT, 6), SO(RT::BUILDER), SO(RT::RAIDER, 5), SO(RT::BUILDER)}),
+			SQueue(0.3f, {SO(RT::SCOUT, 5), SO(RT::BUILDER), SO(RT::RAIDER, 5), SO(RT::BUILDER)}),
 		}},
 		{Factory::armalab, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::HEAVY, 5), SO(RT::ASSAULT, 8), SO(RT::SKIRM), SO(RT::BUILDER2), SO(RT::AHA, 2), SO(RT::HEAVY), SO(RT::BUILDER2)})

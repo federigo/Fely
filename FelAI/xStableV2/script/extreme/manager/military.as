@@ -35,9 +35,9 @@ void AiSave(OStream& ostream)
 
 void AiMakeDefence(int cluster, const AIFloat3& in pos)
 {
-	if ((ai.frame > 5 * MINUTE)
+	if ((ai.frame > 4 * MINUTE)
 		|| (aiEconomyMgr.metal.income > 10.f)
-		|| (aiEnemyMgr.mobileThreat > 0.f))
+		|| (aiEnemyMgr.mobileThreat > 1.f))
 	{
 		aiMilitaryMgr.DefaultMakeDefence(cluster, pos);
 	}
