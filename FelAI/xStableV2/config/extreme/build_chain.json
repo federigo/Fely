@@ -187,23 +187,6 @@
 				]
 			]
 		},
-		"legadvsol": {
-			"hub": [
-				[ 
-					{"unit": "leglht", "category": "defence", "offset": {"front": 80}, "condition": {"chance": 0.25}}
-				],
-				[ 
-					{"unit": "cormakr", "category": "convert", "offset": [80, 80], "condition": {"energy": true}}
-				]
-			]
-		},
-		"legsolar": {
-			"hub": [
-				[  // chain1
-					{"unit": "cormakr", "category": "convert", "offset": [80, 80], "condition": {"energy": true}}
-				]
-			]
-		},
 		"legfus": {
 			"hub": [
 				[  
