@@ -6,6 +6,9 @@ I Am excited to Release the Prototype to the General Public for Testing Phase 1!
 Note: THERE WILL BE MANY ISSUES NOT FULLY FIXED! Do not be toxic about the bot! Only Helpful Comments will be welcomed!
 
 
+LEGION IS STILL BEING WORKED ON
+
+
 Armada:
 
 100% Coded
