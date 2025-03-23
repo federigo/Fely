@@ -14,7 +14,21 @@ FELAI/xSTABLEV2 --Prototype BarbAI
 SMRTCharlie -- DOES NOT WORK DO NOT USE
 
 
+################################################################################
+HOW TO INSTALL!!!!!!:::::::
 
+NAVIGATE HERE:
+
+C:\Program Files\Beyond-All-Reason\data\engine\rel2501.2025.01.6\AI\Skirmish
+
+DOWNLOAD FELAI/xStableV2 and put inside Skirmish Folder
+
+Then Navigate here and Follow Instructions:
+https://docs.google.com/document/d/1pWk-s2HmTH2Dhxfh4Q4vptfS9fRbxgWeA_pjELyhGhM/edit?tab=t.ygaz0x8rb3tm
+
+################################################################################
+
+AI INFO::
 
 Armada:
 
