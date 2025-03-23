@@ -32,26 +32,29 @@ AI INFO::
 
 Armada:
 
-100% Coded
+90% Coded
 Air is still being Reworked (Still cheeseable)
 Radar still broken
 Walls still broken
+Sea needs reworked
 
 Cortex:
 
-100% Coded
+90% Coded
 Air is still being Reworked (Still cheeseable)
 Radar still broken
 Walls still broken
+Sea needs reworked
 
 Legion:
 
-40% Coded
+30% Coded
 Air is still being Reworked (Still cheeseable)
 Radar still broken
 Walls still broken
 Legion is not fully made to be Efficient at this point!
-
+Sea needs reworked
+Base Needs Efficiency
 
 ------## CURRENT LIST OF ISSUES ##------
 
