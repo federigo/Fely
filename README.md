@@ -55,6 +55,7 @@ Walls still broken
 Legion is not fully made to be Efficient at this point!
 Sea needs reworked
 Base Needs Efficiency
+Defense Front Needs Adjustment
 
 ------## CURRENT LIST OF ISSUES ##------
 
