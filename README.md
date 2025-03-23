@@ -1,4 +1,4 @@
-Hello, I am an Independant AI Developer for Beyond all reason. 
+Hello, I am an Independant AI Developer for Beyond All Reason. 
 
 This Ai has been worked on for the past 600 Hours.
 I Am excited to Release the Prototype to the General Public for Testing Phase 1!
@@ -7,23 +7,26 @@ Note: THERE WILL BE MANY ISSUES NOT FULLY FIXED! Do not be toxic about the bot! 
 
 
 Armada:
---100% Coded
---Air is still being Reworked (Still cheeseable)
---Radar still broken
---Walls still broken
+
+100% Coded
+Air is still being Reworked (Still cheeseable)
+Radar still broken
+Walls still broken
 
 Cortex:
---100% Coded
---Air is still being Reworked (Still cheeseable)
---Radar still broken
---Walls still broken
+
+100% Coded
+Air is still being Reworked (Still cheeseable)
+Radar still broken
+Walls still broken
 
 Legion:
---40% Coded
---Air is still being Reworked (Still cheeseable)
---Radar still broken
---Walls still broken
---Legion is not fully made to be Efficient at this point!
+
+40% Coded
+Air is still being Reworked (Still cheeseable)
+Radar still broken
+Walls still broken
+Legion is not fully made to be Efficient at this point!
 
 
 ------## CURRENT LIST OF ISSUES ##------
@@ -32,3 +35,7 @@ Legion:
 2. Walls
 3. Jammers
 4. Sea Defenses on Void Water Map (New Donut Map)
+
+
+------## Tweak for Better Gameplay ##------
+!bset tweakunits LS1KYW1tZXIvV2FsbCBSZXN0aWN0aW9uCmxvY2FsIHJlc3RyaWN0ZWQgPSB7CgogICAgLS0gSmFtbWVyCmFybWphbXQgPTAsCmNvcnNocm91ZCA9MCwKbGVnamFtID0wLAphcm12ZWlsID0wLApjb3JzaHJvdWQgPTAsCmxlZ2FqYW0gPTAsCgogICAgLS0gV2FsbHMKYXJtZm9ydCA9MCwKYXJtZHJhZyA9MCwKY29yZm9ydCA9MCwKY29yZHJhZyA9MCwKbGVnZHJhZyA9MCwKbGVnZm9ydGkgPTAKCn0KCmZvciBuYW1lLCB1ZCBpbiBwYWlycyhVbml0RGVmcykgZG8KCiAgICAtLSBkaXNhYmxlIGphbW1pbmcKICAgIGlmIHVkLnJhZGFyZGlzdGFuY2VqYW0gYW5kIHVkLnJhZGFyZGlzdGFuY2VqYW0+MCB0aGVuCiAgICAgICAgdWQucmFkYXJkaXN0YW5jZWphbSA9IDAKICAgICAgICB1ZC5zdGVhbHRoID0gdHJ1ZQogICAgZW5kCgogICAgLS0gcmVzdHJpY3QgdW5pdCBhbW91bnQKICAgIGZvciByZXN0cmljdGVkTmFtZSwgYW1vdW50IGluIHBhaXJzKHJlc3RyaWN0ZWQpIGRvCiAgICAgICAgaWYgbmFtZSA9PSByZXN0cmljdGVkTmFtZSB0aGVuCiAgICAgICAgICAgIHVkLm1heHRoaXN1bml0ID0gYW1vdW50CiAgICAgICAgZW5kCiAgICBlbmQKCiAgICAtLSBtYWtlIHdhbGxzIG1vcmUgZXhwZW5zaXZlIChsb29rcyBsaWtlIHlvdSBuZWVkIGEgZ2FkZ2V0IHRvIG1ha2UgdGhlIGFpIGF0dGFjayB0aGVtKQogICAgaWYgbmFtZSA9PSAiYXJtZm9ydCIgb3IgbmFtZSA9PSAiYXJtZHJhZyIgb3IgbmFtZSA9PSAiY29yZm9ydCIgb3IgbmFtZSA9PSAiY29yZHJhZyIgdGhlbgogICAgICAgIHVkLm1ldGFsY29zdCA9IHVkLm1ldGFsY29zdCAqIDUKICAgIGVuZAoKICAgIC0tIHBsYXR5cHVzIGxvcyBuZXJmCiAgICBpZiBuYW1lID09ICJhcm1hbXBoIiB0aGVuCiAgICAgICAgdWQuc2lnaHRkaXN0YW5jZSA9IDMwMAogICAgZW5kCmVuZA
