@@ -82,6 +82,11 @@ local options = {
 				desc = 'Playstyle : The Horde Arises, Nothin Survives |Configs by [SMRT]Felnious[AI]',
 			},
 			{
+				key  = 'fiendishdevil',
+				name = 'Extreme Difficulty',
+				desc = 'Playstyle : Custom AI Tweak for Fiendish Devil Code |Configs by [SMRT]Felnious[AI]',
+			},
+			{
 				key  = 'hard',
 				name = 'Hard Difficulty',
 				desc = 'Playstyle : Alot of Aggression |Configs by [SMRT]Felnious[AI]',
