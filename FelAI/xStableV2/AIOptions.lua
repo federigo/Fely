@@ -86,6 +86,11 @@ local options = {
 				name = 'fiendishdevil TweakAI',
 				desc = 'Playstyle : Custom AI Tweak for Fiendish Devil Code |Configs by [SMRT]Felnious[AI]',
 			},
+			{
+				key  = 'extraunits',
+				name = 'Extra Units',
+				desc = 'Playstyle : Custom AI Tweak for Fiendish Devil Code |Configs by [SMRT]Felnious[AI]',
+			},
 		},
 	},
 }
