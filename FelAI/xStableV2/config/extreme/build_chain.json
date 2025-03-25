@@ -5,17 +5,20 @@
 		//              0           	1         		2        		3           	4          		5     			6				7				8				9   
 			"armada":  ["armllt",		"armtl",   		"armrl",  		"armbeamer", 	"armhlt",  		"armclaw",		"armferret",	"armcir", 		"armpb",   		"armatl",
 						"armflak",   	"armamb",  		"armanni", 		"armguard", 	"armamd", 		"armrad",		"armjamt",		"armestor", 	"armmstor", 	"armadvsol",
-						"armnanotc",	"armarad",		"armtarg",		"armuwadves",  	"armemp",		"armveil",		"armckfus",     "armsolar",     "armgate",      "armfhlt"],
+						"armnanotc",	"armarad",		"armtarg",		"armuwadves",  	"armemp",		"armveil",		"armckfus",     "armsolar",     "armgate",      "armfhlt",
+						"armsd"],
 		//	
 		//              0          		1          		2          		3            	4           	5          		6				7				8				9
 			"cortex":  ["corllt",		"cortl",   		"corrl",  		"corhllt",   	"corhlt",   	"cormaw",  		"cormadsam",  	"corerad",		"corvipe", 		"coratl", 
 						"corflak",   	"cortoast", 	"cordoom", 		"corpun",    	"corfmd",		"corrad",		"corjamt",		"corestor",		"cormstor",		"coradvsol", 
-						"cornanotc",	"corarad",		"cortarg",		"coruwadves",	"cortron", 		"corshroud",	"corfus",       "corsolar",     "corgate",      "corfhlt"],
+						"cornanotc",	"corarad",		"cortarg",		"coruwadves",	"cortron", 		"corshroud",	"corfus",       "corsolar",     "corgate",      "corfhlt",
+						"corsd"],
 		//	
 		//              0          		1          		2          		3            	4           	5          		6				7				8				9
-			"legion":  	["leglht",		"cortl",   		"legrl",  		"leghive",   	"legmg",   		"legdtr",  		"legrhapsis",  	"leglupara",	"legbombard", 	"coratl", 
+			"legion":  ["leglht",		"cortl",   		"legrl",  		"leghive",   	"legmg",   		"legdtr",  		"legrhapsis",  	"leglupara",	"legbombard", 	"coratl", 
 						"legflak",   	"legacluster", 	"legbastion", 	"legcluster",   "legabm",		"legrad",		"legjam",		"legestor",		"legmstor",		"legadvsol", 
-						"legnanotc",	"corarad",		"cortarg",		"coruwadves",	"legperdition", "corshroud",	"corfus",       "legsolar",     "corgate",      "corfhlt"]
+						"legnanotc",	"legarad",		"legtarg",		"legadvestore",	"legperdition", "legajam",		"legfus",       "legsolar",     "legdeflector", "corfhlt",
+						"legsd"]
 		},
 		
 		// Actual number of defences per cluster bounded by income - the order of defenses that should be build with numbers as above.
@@ -29,7 +32,7 @@
 			"factor": [48.0, 32.0],
 			"map": [10, 20]
 		},
-		"point_range": 600.0,  // maximum distance between 2 points in hierarchical cluster within economy cluster
+		"point_range": 300.0,  // maximum distance between 2 points in hierarchical cluster within economy cluster
 	
 		// Base defence and time to build it, in seconds
 		"base": [
@@ -39,13 +42,13 @@
 		//superweapons get only build when there is nothing else to do
 		"superweapon": {
 			"unit": {
-				"armada": ["armmercury", 	"armamd", 	"armemp", 	"armsilo", 		"armbrtha",  	"armvulc"], //"armmercury", "armamd", "armemp", "armsilo"
-				"cortex": ["corscreamer", 	"corfmd", 	"cortron", 	"corsilo", 		"corint",  		"corbuzz"], //"corscreamer", "corfmd", "cortron", "corsilo"
-				"legion": ["leglupara", 	"legabm", 	"cortron", 	"legsilo", 		"leglrpc",  	"legstarfall"] //"corscreamer", "corfmd", "cortron", "corsilo"
+				"armada": ["armmercury", 	"armamd", 	"armemp", 			"armsilo", 		"armbrtha",  	"armvulc"], //"armmercury", "armamd", "armemp", "armsilo"
+				"cortex": ["corscreamer", 	"corfmd", 	"cortron", 			"corsilo", 		"corint",  		"corbuzz"], //"corscreamer", "corfmd", "cortron", "corsilo"
+				"legion": ["leglupara", 	"legabm", 	"legperdition", 	"legsilo", 		"leglrpc",  	"legstarfall"] //"corscreamer", "corfmd", "cortron", "corsilo"
 			},
-			"weight":     [0.3,      		0.4,      	0.1,      	0.3,      		0.5,      		0.15  ],
+			"weight":     [0.4,      		0.6,      	0.2,      			0.1,      		0.5,      		0.1  ],
 	
-			"condition": [40, 600]  // [<Minimum income>, <maximum seconds to build>]
+			"condition": [40, 480]  // [<Minimum income>, <maximum seconds to build>]
 		},
 	
 		// Fallback defence
@@ -107,7 +110,6 @@
 			"hub": [
 					[{"unit": "armmmakr", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"}],
 					[{"unit": "armmmakr", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"}],
-					[{"unit": "armsilo", "category": "defence", "offset": [5, 5], "condition": {"chance":1.0}, "priority": "normal"}],
 					[{"unit": "armamd", "category": "defence", "offset": {"front": 10}, "condition": {"energy": false}, "priority": "now"}],
 					[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
 					[{"unit": "armnanotc", "category": "nano", "offset": [0, 16], "condition": {"energy": false}, "priority": "now"}],
@@ -153,20 +155,16 @@
 		},
 		"corfus": {
 			"hub": [
-				[  
-					{"unit": "cormmakr", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cormmakr", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "corsilo", "category": "defence", "offset": [5, 5], "condition": {"energy": false}, "priority": "normal"},
-					{"unit": "coramd", "category": "defence", "offset": {"back": 20}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [8, 0], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [16, 8], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [24, 16], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [32, 24], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [40, 32], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [48, 40], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "corafus", "category": "energy", "offset": {"back": 30}, "condition": {"energy": false}, "priority": "now"}
-					
-				]
+					[{"unit": "cormmakr", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cormmakr", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "coramd", "category": "defence", "offset": {"back": 20}, "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [8, 0], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [16, 8], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [24, 16], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [32, 24], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [40, 32], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "cornanotc", "category": "nano", "offset": [48, 40], "condition": {"energy": false}, "priority": "now"}],
+					[{"unit": "corafus", "category": "energy", "offset": {"back": 30}, "condition": {"energy": false}, "priority": "now"}]
 			]
 		},
 		"corafus": {
@@ -187,19 +185,25 @@
 				]
 			]
 		},
+		"legadvsol": {
+			"hub": [
+				[  
+					{"unit": "legeconv", "category": "convert", "condition": {"energy": false}, "priority": "now"}					
+				]
+			]
+		},
 		"legfus": {
 			"hub": [
 				[  
-					{"unit": "cormmakr", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cormmakr", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "corsilo", "category": "defence", "offset": [5, 5], "condition": {"energy": false}, "priority": "normal"},
-					{"unit": "coramd", "category": "defence", "offset": {"front": 20}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [8, 0], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [16, 8], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [24, 16], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [32, 24], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [40, 32], "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cornanotc", "category": "nano", "offset": [48, 40], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": [15, 25], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": [15, 35], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legabm", "category": "defence", "offset": {"front": 20}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [8, 0], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [16, 8], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [24, 16], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [32, 24], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [40, 32], "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": [48, 40], "condition": {"energy": false}, "priority": "now"},
 					{"unit": "legafus", "category": "energy", "offset": {"back": 30}, "condition": {"energy": false}, "priority": "now"}
 					
 				]
@@ -208,11 +212,11 @@
 		"legafus": {
 			"hub": [
 				[  
-					{"unit": "cormmakr", "category": "convert", "offset": {"back": 5}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cormmakr", "category": "convert", "offset": {"back": 10}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cormmakr", "category": "convert", "offset": {"back": 15}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "cormmakr", "category": "convert", "offset": {"back": 20}, "condition": {"energy": false}, "priority": "now"},
-					{"unit": "legsilo", "category": "defence", "offset": {"back": 30}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": {"back": 5}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": {"back": 10}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": {"back": 15}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legadveconv", "category": "convert", "offset": {"back": 20}, "condition": {"energy": false}, "priority": "now"},
+					{"unit": "legsilo", "category": "defence", "offset": {"back": 30}, "condition": {"energy": false}, "priority": "low"},
 					{"unit": "legabm", "category": "defence", "offset": {"back": 50}, "condition": {"energy": false}, "priority": "now"},
 					{"unit": "legnanotc", "category": "nano", "offset": [8, 0], "condition": {"energy": false}, "priority": "now"},
 					{"unit": "legnanotc", "category": "nano", "offset": [16, 8], "condition": {"energy": false}, "priority": "now"},
@@ -301,10 +305,10 @@
 		},
 		"leglab": {
 			"hub": [
-				[{"unit": "legnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}]
 			]		 
 		},
 		"legvp": {
@@ -393,10 +397,10 @@
 
 		"armap": {
 			"hub": [
-				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
-				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
-				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
-				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
+				[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
 			]
 		},
 		"corap": {
@@ -417,26 +421,26 @@
 		},
 		"armaap": {
 			"hub": [
-				[{"unit": "armrl", "category": "defence", "offset": [12, -15], "condition": {"air": true}, "priority": "now"}],
-				[{"unit": "armrl", "category": "defence", "offset": [-12, -15], "condition": {"air": true}, "priority": "now"}],
-				[{"unit": "armllt", "category": "defence", "offset": [8, 25], "priority": "now"}],
-				[{"unit": "armllt", "category": "defence", "offset": [-8, 25], "priority": "now"}]
+				[{"unit": "armnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "armnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
 			]
 		},
 		"coraap": {
 			"hub": [
-				[{"unit": "cornanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "cornanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "cornanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "cornanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "cornanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "cornanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "cornanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "cornanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}]
 			]
 		},
 		"legaap": {
 			"hub": [
-				[{"unit": "legnanotc", "category": "nano", "offset": [0, 8], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [8, 16], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [16, 24], "condition": {"energy": false}, "priority": "now"}],
-				[{"unit": "legnanotc", "category": "nano", "offset": [24, 32], "condition": {"energy": false}, "priority": "now"}]
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}],
+				[{"unit": "legnanotc", "category": "nano", "condition": {"energy": false}, "priority": "now"}]
 			]	
 		},
 

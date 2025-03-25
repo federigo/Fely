@@ -83,28 +83,8 @@ local options = {
 			},
 			{
 				key  = 'fiendishdevil',
-				name = 'Extreme Difficulty',
+				name = 'fiendishdevil TweakAI',
 				desc = 'Playstyle : Custom AI Tweak for Fiendish Devil Code |Configs by [SMRT]Felnious[AI]',
-			},
-			{
-				key  = 'hard',
-				name = 'Hard Difficulty',
-				desc = 'Playstyle : Alot of Aggression |Configs by [SMRT]Felnious[AI]',
-			},
-			{
-				key  = 'medium',
-				name = 'Medium Difficulty',
-				desc = 'Playstyle : Learning Team Strategies |Configs by [SMRT]Felnious[AI]',
-			},
-			{
-				key  = 'easy',
-				name = 'Easy Difficulty',
-				desc = 'Playstyle : Lazy but Hostile |Configs by [SMRT]Felnious[AI]',
-			},
-			{
-				key  = 'novice',
-				name = 'Novice Difficulty',
-				desc = 'Playstyle : Very Laid Back |Configs by [SMRT]Felnious[AI]',
 			},
 		},
 	},

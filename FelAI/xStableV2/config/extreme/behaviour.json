@@ -346,6 +346,7 @@
 				"attribute": ["support"],
 				"build_speed": 30.0,
 				"build_mod": 1000.0,
+				"since": 480,
 				"limit": 3
 			},
 			"armvp": {
@@ -358,6 +359,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"build_mod": 1000.0,
+				"since": 480,
 				"build_speed": 30.0 //bp 300
 			},
 			"armhp": {
@@ -387,7 +389,7 @@
 				"role": ["static"],
 				"build_speed": 15.0, //bp 300
 				"build_mod": 1000.0,
-				//"since": 540,
+				"since": 300,
 				"limit": 1
 			},
 			"armamsub": {
@@ -413,6 +415,7 @@
 				"attribute": ["support"],
 				"build_speed": 10.0,
 				"build_mod": 1000.0,
+				"since": 300,
 				"limit": 3
 			},
 			"armplat": {
@@ -440,6 +443,7 @@
 				//"midposoffset": [0, 0, 21],
 				"build_speed": 45.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 			"armshltxuw": {
@@ -448,6 +452,7 @@
 				//"midposoffset": [0, 0, 21],
 				"build_speed": 1.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 	
@@ -467,6 +472,7 @@
 				"attribute": ["support"],
 				"midposoffset": [0, 0, -4],
 				"build_mod": 1000.0,
+				"since": 480,
 				"build_speed": 30.0 // bp 300
 			},
 			"corvp": {
@@ -480,6 +486,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"build_mod": 1000.0,
+				"since": 480,
 				"build_speed": 30.0  //bp 300
 			},
 			"corhp": {
@@ -509,7 +516,7 @@
 			"corasy": {
 				"role": ["static"],
 				"build_speed": 15.0,  //bp 300
-				"since": 480,
+				"since": 300,
 				"build_mod": 1000.0,
 				"limit": 1
 			},
@@ -536,6 +543,7 @@
 				"attribute": ["support"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 300,
 				"build_speed": 10.0 //bp 200
 			},
 			"corplat": {
@@ -561,6 +569,7 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"since": 1200,
 				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 				
@@ -570,6 +579,7 @@
 				"attribute": ["support", "solo"],
 				"build_speed": 45.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 	
@@ -590,6 +600,7 @@
 				"attribute": ["support"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 480,
 				"midposoffset": [0, 0, -4],
 				"build_speed": 30.0 // bp 300
 			},
@@ -606,6 +617,7 @@
 				"attribute": ["support"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 480,
 				"build_speed": 30.0  //bp 300
 			},
 			"leghp": {
@@ -636,7 +648,7 @@
 			//	"role": ["static"],
 			//	"build_speed": 15.0,  //bp 300
 			//	"build_mod": 1000.0,
-			//	"since": 480,
+			//	"since": 300,
 			//	"limit": 1
 			//},
 			"legamsub": {
@@ -661,6 +673,7 @@
 				"role": ["static"],
 				"attribute": ["support"],
 				"limit": 1,
+				"since": 300,
 				"build_mod": 1000.0,
 				"build_speed": 10.0 //bp 200
 			},
@@ -687,6 +700,7 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"since": 1200,
 				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},
@@ -694,6 +708,7 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
+				"since": 1200,
 				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},
@@ -947,7 +962,7 @@
 			"armsilo":{
 				"role":	["super", "static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
-				"power": 1.0
+				"since": 1200
 			},
 	// T1 Sea Defenses -- Armada
 			"armfrad": {
@@ -1094,6 +1109,10 @@
 				"role": ["static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
+			"corbhmth" : {
+				"role": ["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+			},
 			"corint": {
 				"role": ["static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
@@ -1127,7 +1146,7 @@
 			"corsilo":{
 				"role":	["super", "static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
-				"limit": 5
+				"since": 1200
 			},
 	// T1 Sea Defenses -- Cortex
 			"cordl": {
@@ -1238,28 +1257,28 @@
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 			},
 	// T2 Defenses -- Legion
-			//"legarad":{
-			//	"role":["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
-			//},
-			//"legshroud":{
-			//	"role":["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
-			//},
-			//"legsd":{
-			//	"role":["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
-			//	"limit": 3
-			//},
-			//"legtarg": {
-			//	"role": ["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
-			//	"limit": 3
-			//},
-			//"leggate": {
-			//	"role": ["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
-			//},
+			"legarad":{
+				"role":["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+			},
+			"legajam":{
+				"role":["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+			},
+			"legsd":{
+				"role":["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
+				"limit": 3
+			},
+			"legtarg": {
+				"role": ["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
+				"limit": 3
+			},
+			"legdeflector": {
+				"role": ["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+			},
 			//"leggatet3": {
 			//	"role": ["static"],
 			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
@@ -1313,8 +1332,8 @@
 			},
 			"legsilo":{
 				"role":	["super", "static"],
-				"limit": 5,
-				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}},
+				"since": 1200
 			},
 	// T1 Sea Defenses -- Legion
 			//"corfrad": {
@@ -1411,6 +1430,10 @@
 				"role": ["static"],
 				"build_mod": 200
 			},
+			"armmmkr" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
 			"armshockwave" : {
 				"role": ["static"],
 				"build_mod": 200
@@ -1464,8 +1487,7 @@
 				"limit": 1
 			},
 			"cormakr": {
-				"role": ["static"],
-				"since": 300
+				"role": ["static"]
 			},
 			"corwin": {
 				"role": ["static"],
@@ -1495,12 +1517,21 @@
 				"role": ["static"],
 				"build_mod": 200
 			},
+			"cormmkr" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
 			"cormexp" : {
 				"role": ["static"],
 				"build_mod": 500,
 				"limit":0
 			},
 			"corfus" : {
+				"role": ["static"],
+				"build_mod": 4000,
+				"cooldown": 3
+			},
+			"corafus" : {
 				"role": ["static"],
 				"build_mod": 4000,
 				"cooldown": 3
@@ -1518,11 +1549,123 @@
 				"role": ["static"],
 				"limit": 1
 			},
+			"corageo" : {
+				"role": ["static"],
+				"limit": 1
+			},
 			"coruwes" : {
 				"role": ["static"],
 				"since": 240,
 				"limit": 1
 			},
+
+//########################################################################################################################
+//####|| Static Economy -- Legion  ||#####################################################################################
+//########################################################################################################################
+			
+			//Land T1 Economy
+			"legmex" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"legmext15" : {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"legeconv": {
+				"role": ["static"]
+			},
+			"legmstor" : {
+				"role": ["static"],
+				"since": 999,
+				"limit": 1
+			},
+			"legwin": {
+				"role": ["static"],
+				"build_mod": 300
+			},
+			"legsolar" : {
+				"role": ["static"],
+				"build_mod": 300,
+				"limit": 4
+			},
+			"legadvsol" : {
+				"role": ["static"],
+				"build_mod": 300,
+				"limit": 6
+			},
+			"leggeo" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"legestor" : {
+				"role": ["static"],
+				"since": 999,
+				"limit": 1
+			},
+			//Land T2 Economy
+			"legmoho" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"legadveconv" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"legamstor" : {
+				"role": ["static"],
+				"build_mod": 200,
+				"limit": 1,
+				"since": 99999
+			},
+			"legageo" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"legrampart" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			/*"cormexp" : {
+				"role": ["static"],
+				"build_mod": 500,
+				"limit":0
+			},*/
+			"legfus" : {
+				"role": ["static"],
+				"build_mod": 4000,
+				"cooldown": 3
+			},
+			"legafus" : {
+				"role": ["static"],
+				"build_mod": 4000,
+				"cooldown": 3
+			},
+			"legadvestore" : {
+				"role": ["static"],
+				"build_mod": 4000,
+				"cooldown": 3,
+				"limit": 1,
+				"since": 99999
+			},
+			/*"coruwfus" : {
+				"role": ["static"],
+				"build_mod": 4000
+			},
+			"coruwms" : {
+				"role": ["static"],
+				"since": 500,
+				"limit": 1
+			},
+			"coruwadvms" : {
+				"role": ["static"],
+				"limit": 1
+			},
+			"coruwes" : {
+				"role": ["static"],
+				"since": 240,
+				"limit": 1
+			},*/
 	
 	
 	// Walls (Neutral BARbAI Refuse to Shoot (Only T2+T3 can break through Running over)) -- Needs a Revamp or a Rework to make non neutral
@@ -2609,7 +2752,7 @@
 	
 	
 		// T3 LEGION EXPERIMENTAL - leggant
-		"leegmech": { // To be replaced
+		"leegmech": {
 			"role": ["skirmish"],
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
@@ -2617,13 +2760,33 @@
 			"role": ["assault", "heavy"],
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
-		"legpede": { // To be replaced
+		"legpede": {
 			"role": ["artillery"],
 			"attribute": ["siege"],
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legjav": {
-			"role": ["raider", "heavy"],
+			"role": ["raider", "static"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+		},
+		"legelrpcmech": {
+			"role": ["artillery", "static"],
+			"attribute": ["siege"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+		},
+		"legerailtank": {
+			"role": ["artillery", "static"],
+			"attribute": ["melee"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+		},
+		"legeshotgunmech": {
+			"role": ["assault", "static"],
+			"attribute": ["melee"],
+			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
+		},
+		"legeheatraymech": {
+			"role": ["super", "static"],
+			"attribute": ["melee"],
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	
@@ -2728,7 +2891,7 @@
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 		"legmos": {
-			"role": ["skirmish", "air"],
+			"role": ["skirmish", "static", "assault", "skirmish", "raider"],
 			"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"artillery": 0.0, "assault": 0.0}}
 		},
 	

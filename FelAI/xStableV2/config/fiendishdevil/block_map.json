@@ -177,7 +177,7 @@
 			"wind": ["armwin", "corwin", "legwin", "armtide", "cortide"], //add legion tide later
 			"geo": ["armgeo", "corgeo", "leggeo"],
 			"geo2": ["armageo", "corageo", "legageo"],
-			"fusion":["armfus", "armuwfus", "armafus", "corfus", "coruwfus", "corafus", "legfus", "legafus"],  //add legion underwater fusion later
+			"fusion":["armfus", "armuwfus", "armafus", "corfus", "coruwfus", "corafus", "legfus", "legafus", "freefusion"],  //add legion underwater fusion later
 			"store": ["armmstor", "armestor", "cormstor", "corestor", "legmstor", "legestor"],
 			"mex": ["armmex", "cormex", "legmex", "armuwmex", "coruwmex"], //add legion underwater mex later
 			"mex2": ["armmoho", "cormoho", "legmoho", "armuwmme", "coruwmme"], //add legion uwmme

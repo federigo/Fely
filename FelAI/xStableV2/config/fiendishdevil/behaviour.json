@@ -440,6 +440,7 @@
 				//"midposoffset": [0, 0, 21],
 				"build_speed": 45.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 			"armshltxuw": {
@@ -448,6 +449,7 @@
 				//"midposoffset": [0, 0, 21],
 				"build_speed": 1.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 	
@@ -562,6 +564,7 @@
 				"attribute": ["support", "solo"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 1200,
 				"build_speed": 45.0 //bp 300
 				
 			},
@@ -570,6 +573,7 @@
 				"attribute": ["support", "solo"],
 				"build_speed": 45.0, //bp 300
 				"build_mod": 1000.0,
+				"since": 1200,
 				"limit": 1
 			},
 	
@@ -688,6 +692,7 @@
 				"attribute": ["support", "solo"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 1200,
 				"build_speed": 45.0 //bp 300
 			},
 			"leggantuw": {
@@ -695,6 +700,7 @@
 				"attribute": ["support", "solo"],
 				"limit": 1,
 				"build_mod": 1000.0,
+				"since": 1200,
 				"build_speed": 45.0 //bp 300
 			},
 	
@@ -1437,6 +1443,10 @@
 				"build_mod": 200
 			},
 			"armafus" : {
+				"role": ["static"],
+				"build_mod": 200
+			},
+			"freefusion" : {
 				"role": ["static"],
 				"build_mod": 200
 			},
