@@ -172,7 +172,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 float MakeSwitchLimit()
 {
-	return AiRandom(4000, 6000) * SECOND;
+	return AiRandom(550, 900) * SECOND;
 }
 
 }  // namespace Factory

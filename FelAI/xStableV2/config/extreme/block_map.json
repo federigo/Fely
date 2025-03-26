@@ -97,11 +97,11 @@
 	//			"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
 	//			"ignore": ["mex", "engy_low", "def_low", "nano"]
 	//		},
-	//		"store": {
-	//			"type": ["rectangle", "mex"],
-	//			"yard": [4, 4],
-	//			"not_ignore": ["factory", "terra"]
-	//		},
+			"store": {
+				"type": ["rectangle", "mex"],
+				"yard": [4, 4],
+				"not_ignore": ["factory", "terra"]
+			},
 			"mex": {
 				"type": ["rectangle", "mex"],
 				"ignore": ["all"],
@@ -196,7 +196,7 @@
 			"geo": ["armgeo", "corgeo", "leggeo"],
 			"geo2": ["armageo", "corageo", "legageo"],
 			"fusion":["armfus", "armuwfus", "armafus", "corfus", "coruwfus", "corafus", "legfus", "legafus"],  //add legion underwater fusion later
-			//"store": ["armmstor", "armestor", "cormstor", "corestor", "legmstor", "legestor"],
+			"store": ["armmstor", "armestor", "cormstor", "corestor", "legmstor", "legestor"],
 			"mex": ["armmex", "cormex", "legmex", "legmext15", "armuwmex", "coruwmex"], //add legion underwater mex later
 			"mex2": ["armmoho", "cormoho", "legmoho", "armuwmme", "coruwmme"], //add legion uwmme
 			"converter": ["armmakr", "cormakr", "legeconv", "armmmkr", "cormmkr","legadveconv", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],//add legion t2 maker and uwmmm

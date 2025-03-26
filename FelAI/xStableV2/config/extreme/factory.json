@@ -28,7 +28,7 @@
 			//   if factory's builder unavailable in current frame: priority ~= map_percent * importance0 / 10 + random(-20..+20)
 			// During game: priority ~= map_percent * importance1 + random(-20..+20)
 			// importanceN = 1.0 by default if not set
-			"importance": [0.9, 0.0],
+			"importance": [1.0, 0.2],
 			// 'require_energy' adds energy requirement for tierN (N>0): fallback to lowest tier on low energy
 			"require_energy": false,
 			// If income*ecoFactor < income_tier[N] then 'tierN' probability will be used
@@ -52,7 +52,7 @@
 		},
 		//CORTEX
 		"corlab": {
-			"importance": [0.9, 0.0],
+			"importance": [1.0, 0.2],
 			"require_energy": false,
 			"income_tier": [20, 30, 40],
 			"unit":      ["corck", "corak", "cornecro", "corstorm", "corthud", "corcrash"],
@@ -72,7 +72,7 @@
 		},
 		//LEGION
 		"leglab": {
-			"importance": [0.9, 0.0],	
+			"importance": [1.0, 0.2],	
 			"require_energy": false,	
 			"income_tier": [20, 30, 40],	
 			"unit":      [	"legck", 	"cornecro", "leggob", 	"leglob",	"legcen",  	"legbal",  	"legkark",  "corcrash"],	
@@ -88,8 +88,8 @@
 //=================================T2 BOT FACTORIES=================================\\
 		//ARMADA
 		"armalab": {
-			"importance": [0.0, 0.7],
-			"require_energy": true,
+			"importance": [0.0, 1.0],
+			"require_energy": false,
 			"income_tier": [40],
 			"unit":      [ "armack", "armfast", "armzeus", "armfboy", "armfark", "armmav", "armfido", "armaak", "armmark", "armspid", 	"armsptk", "armsnipe", "armvader", "armamph", "armspy"],
 			"land": {
@@ -104,8 +104,8 @@
 		},
 		//CORTEX
 		"coralab": {
-			"importance": [0.0, 0.8],
-			"require_energy": true,
+			"importance": [0.0, 1.0],
+			"require_energy": false,
 			"income_tier": [40],
 			"unit":      ["corack", "cortermite", "corpyro", "corsumo", "corcan", "corfast", "cormort", "corhrk", "coraak", "cormando", "corsktl", "corvoyr", "coramph", "corspy"],
 			"land": {
@@ -120,8 +120,8 @@
 		},
 		//LEGION
 		"legalab": {
-			"importance": [0.0, 0.8],		
-			"require_energy": true,	
+			"importance": [0.0, 1.0],		
+			"require_energy": false,	
 			"income_tier": [40, 60, 80, 100],
 			"unit":      ["legack",  "legaceb", "legdecom", "corspy", "corvoyr", "corspec",  	"legstr", "corhrk", "legbart", 	"leginfestor", "legsrail", 	"legshot", 		"leginc",	"legsnapper", 	"corsktl", "coramph", 	"coraak"],																														
 			"land": {                                                                                                                                       
@@ -143,7 +143,7 @@
 //=================================T1 VEHICLE FACTORIES=================================\\
 		//ARMADA
 		"armvp": {
-			"importance": [0.75, 0.0],
+			"importance": [1.0, 0.2],
 			"require_energy": false,
 			"income_tier": [20, 30, 40],
 			"unit":      ["armcv", "armbeaver", "armmlv", "armfav", "armflash", "armpincer", "armstump", "armart", "armjanus", "armsam"],
@@ -169,7 +169,7 @@
 		},
 		//CORTEX
 		"corvp": {
-			"importance": [0.75, 0.0],
+			"importance": [1.0, 0.2],
 			"require_energy": false,
 			"income_tier": [20, 30, 40],
 			"unit":      ["corcv", "cormuskrat", "cormlv", "corfav", "corgator", "corgarp", "corraid", "corlevlr", "corwolv", "cormist"],
@@ -195,21 +195,21 @@
 		},
 		//LEGION
 		"legvp": {
-			"importance": [0.75, 0.0],	
+			"importance": [1.0, 0.2],
 			"require_energy": false,	
 			"income_tier": [20, 30, 40],
 			"unit":      [ "legcv", "legotter", "legmlv", "legscout", 	"leghades", "leghelios",	"leggat",  "legbar", 	"legrail", "legamphtank"],
 			"land": {
 				"tier0": [ 0.10,    0.00,       0.00,     0.50,     	0.25,       0.25,      		0.00,      0.00,       	0.00,      0.00],
-				"tier1": [ 0.10,    0.00,       0.00,     0.00,     	0.50,       0.25,      		0.25,      0.25,       	0.25,      0.00],
-				"tier2": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.15,      		0.50,      0.45,       	0.10,      0.00],
-				"tier3": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.50,      0.25,       	0.50,      0.00]
+				"tier1": [ 0.10,    0.00,       0.00,     0.00,     	0.50,       0.25,      		0.35,      0.25,       	0.10,      0.00],
+				"tier2": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.35,      		0.35,      0.25,       	0.00,      0.00],
+				"tier3": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.25,      		0.50,      0.25,       	0.00,      0.00]
 			},
 			"air": {
-				"tier0": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.10,      0.00],
-				"tier1": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.10,      0.00],
-				"tier2": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.10,      0.00],
-				"tier3": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.10,      0.00]
+				"tier0": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.00,      0.00],
+				"tier1": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.00,      0.00],
+				"tier2": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.00,      0.00],
+				"tier3": [ 0.10,    0.00,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.00,      0.00]
 			},
 			"water": {
 				"tier0": [ 0.00,    0.10,       0.00,     0.00,     	0.00,       0.00,      		0.00,      0.00,       	0.00,      0.10],
@@ -222,8 +222,8 @@
 //=================================T2 VEHICLE FACTORIES=================================\\
 		//ARMADA
 		"armavp": {
-			"importance": [0.0, 0.7],
-			"require_energy": true,
+			"importance": [0.0, 1.0],
+			"require_energy": false,
 			"income_tier": [40],
 			"unit":      ["armacv", "armlatnk", "armbull", "armmanni", "armmart", "armmerl", "armyork", "armseer", "armgremlin"],
 			"land": {
@@ -238,8 +238,8 @@
 		},
 		//CORTEX
 		"coravp": {
-			"importance": [0.0, 0.8],
-			"require_energy": true,
+			"importance": [0.0, 1.0],
+			"require_energy": false,
 			"income_tier": [40],
 			"unit":      ["coracv", "correap", "corgol", "cormart", "corsent", "corvroc", "corban", "cortrem", "corvrad"],
 			"land": {
@@ -254,8 +254,8 @@
 		},
 		//LEGION
 		"legavp": {
-			"importance": [0.0, 0.8],
-			"require_energy": true,
+			"importance": [0.0, 1.0],
+			"require_energy": false,
 			"income_tier": [40, 60, 80, 100],
 			"unit":      [ "legacv",	"legavrad",	"legavjam", "legmrv",	"legaskirmtank",	"legavroc",	"legmed",	"legvcarry",	"legamcluster",	"leginf",	"legaheattank",	"legvflak",	"legfloat"],
 			"land": {
@@ -278,7 +278,7 @@
 //=================================T1 AIRCRAFT FACTORIES=================================\\
 		//ARMADA
 		"armap": {
-			"importance": [0.01, 0.01],
+			"importance": [0.5, 0.5],
 			"require_energy": false,
 			"income_tier": [10, 20, 30, 50],
 			"unit":      ["armca", "armfig", "armpeep", "armthund", "armkam"],
@@ -300,7 +300,7 @@
 		},
 		//CORTEX
 		"corap": {
-			"importance": [0.5, 0.1],
+			"importance": [0.5, 0.5],
 			"require_energy": false,
 			"income_tier": [30],
 			"unit":      ["corca", "corveng", "corfink", "corshad", "corbw"],
@@ -316,7 +316,7 @@
 		},
 		//LEGION
 		"legap": {
-			"importance": [0.5, 0.1],	
+			"importance": [0.5, 0.5],
 			"require_energy": true,	
 			"income_tier": [20, 40],	
 			"unit":      ["legca", "legfig", "legmos", "legcib", "legkam", "leglts", "legatrans"],	
@@ -331,7 +331,7 @@
 //=================================T2 AIRCRAFT FACTORIES=================================\\
 		//ARMADA
 		"armaap": {
-			"importance": [0.0, 0.7],
+			"importance": [0.0, 1.0],
 			"require_energy": true,
 			"income_tier": [50],
 			"unit":      ["armaca", "armhawk", "armawac", "armpnix", "armbrawl", "armblade", "armstil", "armliche"],
@@ -347,7 +347,7 @@
 		},
 		//CORTEX
 		"coraap": {
-			"importance": [0.0, 0.7],
+			"importance": [0.0, 1.0],
 			"require_energy": true,
 			"income_tier": [50],
 			"unit":      ["coraca", "corvamp", "corawac", "corhurc", "corape", "corcrw"],
@@ -363,15 +363,15 @@
 		},
 		//LEGION
 		"legaap": {
-			"importance": [0.0, 0.7],	
+			"importance": [0.0, 1.0],
 			"require_energy": true,	
-			"income_tier": [20, 40, 100],	
+			"income_tier": [40, 80, 120],	
 			"unit":      [ "legaca", "legionnaire", "legvenator", 	"legstronghold", 	"legfort",  	"legnap", 	"legmineb", "legphoenix",  	"legwhisper"],	
 			"land": {
-				"tier0": [ 0.10,     0.50,     		0.50,       	0.00,      			0.00,      		0.00,       0.00,      	0.00,      		0.05],
+				"tier0": [ 0.10,     0.50,     		0.50,       	0.25,      			0.00,      		0.00,       0.00,      	0.00,      		0.05],
 				"tier1": [ 0.10,     0.50,    		0.25,       	0.25,      			0.00,      		0.00,       0.00,      	0.00,      		0.05],
-				"tier2": [ 0.10,     0.50,    		0.00,       	0.50,      			0.00,      		0.15,       0.00,      	0.15,      		0.05],
-				"tier3": [ 0.10,     0.50,    		0.00,       	0.00,      			0.50,      		0.00,       0.00,      	0.00,      		0.05]
+				"tier2": [ 0.10,     0.50,    		0.00,       	0.25,      			0.00,      		0.00,       0.00,      	0.15,      		0.05],
+				"tier3": [ 0.10,     0.50,    		0.00,       	0.00,      			0.50,      		0.00,       0.00,      	0.25,      		0.05]
 			},
 			"air": {
 				"tier0": [ 0.10,     0.50,     		0.50,       	0.00,      			0.00,      		0.00,       0.00,      	0.00,      		0.00],
@@ -385,7 +385,7 @@
 //=================================T3 AIR FACTORY=================================\\   -- EXTRA UNITS BUILDING
 		//ARMADA
 		"armaapt3": {
-			"importance": [0.0, 0.7],
+			"importance": [0.0, 3.0],
 			"require_energy": true,
 			"income_tier": [50],
 			"unit":      ["armaca", "armhawk", "armawac", "armpnix", "armbrawl", "armblade", "armstil", "armliche"],
@@ -401,7 +401,7 @@
 		},
 		//CORTEX
 		"coraapt3": {
-			"importance": [0.0, 0.7],
+			"importance": [0.0, 3.0],
 			"require_energy": true,
 			"income_tier": [50],
 			"unit":      ["coraca", "corvamp", "corawac", "corhurc", "corape", "corcrw"],
@@ -417,7 +417,7 @@
 		},
 		//LEGION
 		"legaapt3": {
-			"importance": [0.0, 0.7],	
+			"importance": [0.0, 3.0],
 			"require_energy": true,	
 			"income_tier": [50],	
 			"unit":      ["legaca", "legionnaire", "legvenator", "legwhisper", "legphoenix", "legnap", "legstronghold", "legfort"],	
@@ -435,7 +435,7 @@
 //=================================T3 FACTORIES/UNDERWATER T3=================================\\
 		//ARMADA
 		"armshltx": {
-			"importance": [0.0, 1.0],
+			"importance": [0.0, 3.0],
 			"require_energy": true,
 			"income_tier": [100, 200],
 			"unit":      ["armmar", "armraz", "armvang", "armbanth", "armlun", "armthor"],
@@ -453,7 +453,7 @@
 		},	
 		//CORTEX
 		"corgant": {
-			"importance": [0.0, 1.0],
+			"importance": [0.0, 3.0],
 			"require_energy": true,
 			"income_tier": [100, 200],
 			"unit":      ["corsok", "corshiva", "corkarg", "corcat", "corkorg", "corjugg"],
@@ -471,23 +471,16 @@
 		},
 		//LEGION
 		"leggant": {
-			"importance": [0.0, 1.0],	
+			"importance": [0.0, 3.0],
 			"require_energy": true,	
-			"income_tier": [50, 100, 200, 300],	
+			"income_tier": [100, 200, 300, 400],	
 			"unit":      [ "legjav", 	"corkarg", "legelrpcmech", 	"legkeres", "legerailtank", "legeshotgunmech", 	"legeheatraymech", 	"corjugg", "corsok"],	
 			"land": {
 				"tier0": [ 0.50, 		0.40,      0.00,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.10],
-				"tier1": [ 0.50,		0.40,      0.00,      		0.10,     	0.00,      		0.00,				0.00,				0.00,		0.00],
-				"tier2": [ 0.25,		0.25,      0.00,      		0.10,     	0.20,      		0.20,				0.00,				0.00,		0.00],
-				"tier3": [ 0.00,		0.10,      0.25,      		0.10,     	0.40,      		0.10,				0.00,				0.00,		0.00],
-				"tier4": [ 0.00,		0.00,      0.00,      		0.00,     	0.35,      		0.00,				0.50,				0.00,		0.00]
-			},	
-			"water":{
-				"tier0": [ 0.50, 		0.00,      0.00,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.00],
-				"tier1": [ 0.50,		0.00,      0.00,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.00],
-				"tier2": [ 0.25,		0.00,      0.00,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.00],
-				"tier3": [ 0.00,		0.00,      0.00,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.00],
-				"tier4": [ 0.00,		0.00,      0.00,      		0.00,     	0.00,      		0.00,				0.50,				0.00,		0.00]
+				"tier1": [ 0.50,		0.40,      0.00,      		0.10,     	0.20,      		0.00,				0.00,				0.00,		0.00],
+				"tier2": [ 0.25,		0.25,      0.00,      		0.25,     	0.20,      		0.20,				0.00,				0.00,		0.00],
+				"tier3": [ 0.00,		0.10,      0.25,      		0.10,     	0.00,      		0.10,				0.00,				0.00,		0.00],
+				"tier4": [ 0.00,		0.00,      0.50,      		0.00,     	0.00,      		0.00,				0.00,				0.00,		0.00]
 			},
 	
 			"caretaker": 36

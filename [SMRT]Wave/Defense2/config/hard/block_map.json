@@ -25,25 +25,24 @@
 		"fac_land_t2":{
 			"type": ["rectangle", "factory"],
 			//"size": [8 ,8],
-			"yard": [12, 20],
+			"yard": [8, 8],
 			"offset": [4, 6],
 			"ignore": ["none"]
 		},		
 		"fac_air": {
 			"type": ["rectangle", "factory"],
-			//"yard": [6, 6],
+			"yard": [6, 6],
 			"not_ignore": ["convert", "factory", "special"]
 		},
 		"fac_water": {
 			"type": ["rectangle", "factory"],
-			
 			"yard": [10, 12],
 			"offset": [0, 4]
 		},
 		"fac_strider": {                        //t3 factory 9x9
 			"type": ["rectangle", "factory"],
 			"size": [9, 9],
-			"yard":[20, 5],
+			"yard":[9, 9],
 			"offset": [0, 5],
 			"ignore":["none"]
 		},
@@ -86,11 +85,11 @@
 //			"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
 //			"ignore": ["mex", "engy_low", "def_low", "nano"]
 //		},
-		"store": {
-			"type": ["rectangle", "mex"],
-			"yard": [4, 4],
-			"not_ignore": ["factory", "terra"]
-		},
+		//"store": {
+		//	"type": ["rectangle", "mex"],
+		//	"yard": [4, 4],
+		//	"not_ignore": ["factory", "terra"]
+		//},
 		"mex": {
 			"type": ["rectangle", "mex"],
 //			"yard": [2, 2],
@@ -103,8 +102,8 @@
 		},
 		"converter": {
 			"type": ["rectangle", "convert"],
-			"yard": [7, 7],
-			"ignore": ["convert"]
+			"yard": [5, 5],
+			"ignore": ["mex", "engy_low"]
 		},
 		"def_low": {
 			"type": ["circle", "def_low"],
@@ -175,7 +174,7 @@
 		"geo": ["armgeo", "corgeo"],
 		"geo2": ["armageo", "corageo"],
 		"fusion":["armfus", "armuwfus", "armckfus", "armafus", "corfus", "coruwfus", "corafus"],
-		"store": ["armmstor", "armestor", "cormstor", "corestor"],
+		//"store": ["armmstor", "armestor", "cormstor", "corestor"],
 		"mex": ["armmex", "cormex", "armuwmex", "coruwmex"],
 		"mex2": ["armmoho", "cormoho", "armuwmme", "coruwmme"],
 		"converter": ["armmakr", "cormakr", "armmmkr", "cormmkr", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],
