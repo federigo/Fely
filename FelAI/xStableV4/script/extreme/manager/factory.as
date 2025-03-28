@@ -2,7 +2,6 @@
 #include "../../unit.as"
 #include "../../task.as"
 #include "../misc/commander.as"
-#include "economy.as"
 
 
 namespace Factory {
@@ -86,7 +85,7 @@ string leggant 		("leggant");
 //=======================================================
 //=======================================================
 
-int switchInterval = MakeSwitchInterval();
+float switchLimit = MakeSwitchLimit();
 
 IUnitTask@ AiMakeTask(CCircuitUnit@ unit)
 {
@@ -103,7 +102,6 @@ void AiTaskRemoved(IUnitTask@ task, bool done)
 
 void AiUnitAdded(CCircuitUnit@ unit, Unit::UseAs usage)
 {
-//	if (!factories.empty() || (this->circuit->GetBuilderManager()->GetWorkerCount() > 2)) return;
 	if (usage != Unit::UseAs::FACTORY)
 		return;
 
@@ -111,8 +109,7 @@ void AiUnitAdded(CCircuitUnit@ unit, Unit::UseAs usage)
 	if (userData[facDef.id].attr & Attr::T3 != 0) {
 		// if (ai.teamId != ai.GetLeadTeamId()) then this change affects only target selection,
 		// while threatmap still counts "ignored" here units.
-// 		AiLog("ignore newly created armpw, corak, armflea, armfav, corfav");
-		array<string> spam = {"armpw", "corak", "armflea", "armfav", "corfav"};
+		array<string> spam = {"armpw", "corak", "armflea", "armfav", "corfav", "corvamp", "corveng"};
 		for (uint i = 0; i < spam.length(); ++i)
 			ai.GetCircuitDef(spam[i]).SetIgnore(true);
 	}
@@ -158,8 +155,9 @@ void AiSave(OStream& ostream)
  */
 bool AiIsSwitchTime(int lastSwitchFrame)
 {
-	if (lastSwitchFrame + switchInterval <= ai.frame) {
-		switchInterval = MakeSwitchInterval();
+	const float value = pow((ai.frame - lastSwitchFrame), 0.9) * aiEconomyMgr.metal.income + (aiEconomyMgr.metal.current * 5);
+	if (value > switchLimit) {
+		switchLimit = MakeSwitchLimit();
 		return true;
 	}
 	return false;
@@ -167,17 +165,14 @@ bool AiIsSwitchTime(int lastSwitchFrame)
 
 bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 {
-	const bool isOK = (aiMilitaryMgr.armyCost > 1.2f * facDef.costM * aiFactoryMgr.GetFactoryCount())
-		|| (aiEconomyMgr.metal.current > facDef.costM);
-	aiFactoryMgr.isAssistRequired = Economy::isSwitchAssist = !isOK;
-	return isOK;
+	return true;
 }
 
 /* --- Utils --- */
 
-int MakeSwitchInterval()
+float MakeSwitchLimit()
 {
-	return AiRandom(99999, 9999999) * SECOND;
+	return AiRandom(3000, 8000) * SECOND;
 }
 
 }  // namespace Factory
