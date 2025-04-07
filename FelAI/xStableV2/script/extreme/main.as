@@ -6,9 +6,18 @@
 
 namespace Main {
 
-void AiMain()  // Initialize config params
+void AiMain()
 {
-	AiLog("AI Loaded Correctly");
+	// NOTE: Initialize config params
+// 	aiTerrainMgr.SetAllyZoneRange(600);  // returns 576: (multiples of 128) div 2
+// 	aiEconomyMgr.reclConvertEff = 2.f;
+// 	aiEconomyMgr.reclEnergyEff = 20.f;
+// 	for (Id defId = 1, count = ai.GetDefCount(); defId <= count; ++defId) {
+// 		CCircuitDef@ cdef = ai.GetCircuitDef(defId);
+// 		AiLog(cdef.GetName() + " | threat = " + cdef.threat + " | power = " + cdef.power +
+// 			" | air = " + cdef.GetAirThreat() + " | surf = " + cdef.GetSurfThreat() + " | water = " + cdef.GetWaterThreat());
+// 		cdef.SetThreatKernel((cdef.costM + cdef.costE * 0.02f) * 0.001f);
+// 	}
 
 	for (Id defId = 1, count = ai.GetDefCount(); defId <= count; ++defId) {
 		CCircuitDef@ cdef = ai.GetCircuitDef(defId);
