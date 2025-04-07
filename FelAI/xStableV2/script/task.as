@@ -12,7 +12,7 @@ enum Type {
 }
 
 enum RecruitType {
-	BUILDPOWER = 0, FIREPOWER
+	BUILDPOWER = 1, FIREPOWER
 }
 
 enum BuildType {

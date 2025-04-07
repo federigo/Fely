@@ -16,8 +16,7 @@
 				"size": [10, 10],  // default: size of a unit
 	
 				// Spacer, block_size = size + yard
-				"yard": [0, 30],  // default: [0, 0],
-				"not_ignore": ["factory"]
+				"yard": [0, 30]  // default: [0, 0]
 	
 				
 				// "ignore" / "not_ignore" specified structures: "ignore": [<structure_type>, <structure_type>, ...] 
@@ -28,8 +27,7 @@
 				//"size": [8 ,8],
 				"yard": [12, 20],
 				"offset": [0, 5],
-				"ignore": ["none"],
-				"not_ignore": ["factory"]
+				"ignore": ["none"]
 			},		
 			"fac_air": {
 				"type": ["rectangle", "factory"],
@@ -39,58 +37,51 @@
 			"fac_water": {
 				"type": ["rectangle", "factory"],
 				"yard": [10, 12],
-				"offset": [0, 4],
-				"not_ignore": ["factory"]
+				"offset": [0, 4]
 			},
 			"fac_strider": {                        //t3 factory 9x9
 				"type": ["rectangle", "factory"],
-				"size": [12, 12],
-				"yard":[12, 12],
-				"offset": [0, 20],
-				"ignore":["none"],
-				"not_ignore": ["factory"]
+				"size": [9, 9],
+				"yard":[8, 8],
+				"offset": [0, 5],
+				"ignore":["none"]
 			},
 			"solar": {
 				"type": ["rectangle", "engy_mid"],
-				"ignore": ["engy_mid", "def_low", "mex", "def_low"],
-				"not_ignore": ["factory"]
+				"ignore": ["engy_mid", "def_low", "mex", "def_low"]
 				//"yard": [6, 6]
 				
 			},
 			"advsolar":{
 				"type": ["rectangle", "engy_mid"],
 				//"yard": [5, 5],
-				"ignore": ["mex", "engy_mid", "def_low", "nano"],
-				"not_ignore": ["factory"]
+				"ignore": ["mex", "engy_mid", "def_low", "nano"]
 			},
 			"wind": {
 				"type": ["rectangle", "engy_low"],
 	// 			Integer radius of a blocker or description string.
 	// 			Available string values: explosion, expl_ally
 	//			"radius": "explosion",  // default: "explosion"
-				//"size": [2, 2],  // "default": "explosion"
-				//"yard": [2, 2],
-				//"offset": [8, -8],
+				"size": [3, 3],  // "default": "explosion"
+				"yard": [3, 3],
+				"offset": [3, -2],
 				"ignore": ["engy_low", "mex"],
 				"not_ignore": ["factory"]
 			},
 			"geo": {
 				"type": ["rectangle", "geo"],
 				"yard": [3, 3],
-				"ignore": ["none"],
-				"not_ignore": ["factory"]
+				"ignore": ["none"]
 			},
 			"geo2": {
 				"type": ["rectangle", "geo"],
 				"yard": [3, 3],
-				"ignore": ["none"],
-				"not_ignore": ["factory"]
+				"ignore": ["none"]
 			},
 			"fusion": {
 				"type": ["rectangle", "engy_high"],
 				//"yard": [3, 3],
-				"ignore": ["mex", "engy_high"],
-				"not_ignore": ["factory"]
+				"ignore": ["mex", "engy_high"]
 			},
 	//		"singu": {
 	//			"type": ["circle", "engy_high"],
@@ -104,35 +95,29 @@
 			},
 			"mex": {
 				"type": ["rectangle", "mex"],
-				"ignore": ["all"],
-				"not_ignore": ["factory"]
+				"ignore": ["all"]
 			},
 			"mex2": {
 				"type": ["rectangle", "mex"],
-				"ignore": ["all"],
-				"not_ignore": ["factory"]
+				"ignore": ["all"]
 			},
 			"converter": {
 				"type": ["rectangle", "convert"],
 				"yard": [7, 7],
-				"ignore": ["convert"],
-				"not_ignore": ["factory"]
+				"ignore": ["convert"]
 			},
 			"def_low": {
 				"type": ["circle", "def_low"],
 				"radius": 4,  // 128 / (SQUARE_SIZE * 2)
-				"ignore": ["engy_mid", "engy_high", "engy_low", "nano"],
-				"not_ignore": ["factory"]
+				"ignore": ["engy_mid", "engy_high", "engy_low", "nano"]
 			},
 			"def_mid": {
 				"type": ["circle", "def_low"],
-				"radius": 5,
-				"not_ignore": ["factory"]
+				"radius": 5
 			},
 			"def_hvy": {
 				"type": ["circle", "def_low"],
-				"radius": 8,
-				"not_ignore": ["factory"]
+				"radius": 8
 			},
 			"def_air": {
 				"type": ["rectangle", "unknown"],
@@ -142,20 +127,18 @@
 			"caretaker": {
 				"type": ["rectangle", "nano"],
 				//"offset": [0, 2],
-				"yard": [2, 2],
+				"yard": [6, 6],
 				"ignore": ["mex"],
 				"not_ignore": ["factory"]
 			},
 			"superweapon": {
 				"type": ["circle", "special"],
 				"ignore": ["mex", "def_low", "engy_high"],
-				"yard": [8, 8],
-				"not_ignore": ["factory"]
+				"yard": [8, 8]
 			},
 			"protector": {
 				"type": ["circle", "special"],
-				"ignore": ["mex", "def_low", "engy_mid", "engy_high"],
-				"not_ignore": ["factory"]
+				"ignore": ["mex", "def_low", "engy_mid", "engy_high"]
 			},
 	//		"terraform": {
 	//			"type": ["rectangle", "special"],
@@ -173,8 +156,7 @@
 			"_default_": {
 				"type": ["rectangle", "unknown"],
 				"yard": [4, 4],
-				"ignore": ["engy_high"],
-				"not_ignore": ["factory"]
+				"ignore": ["engy_high"]
 			}
 		},
 		// Water overrides land. Map considered as water if amount of land < 40%
@@ -197,9 +179,9 @@
 			"geo2": ["armageo", "corageo", "legageo"],
 			"fusion":["armfus", "armuwfus", "armafus", "corfus", "coruwfus", "corafus", "legfus", "legafus"],  //add legion underwater fusion later
 			"store": ["armmstor", "armestor", "cormstor", "corestor", "legmstor", "legestor"],
-			"mex": ["armmex", "cormex", "legmex", "legmext15", "armuwmex", "coruwmex"], //add legion underwater mex later
+			"mex": ["armmex", "cormex", "legmex", "armuwmex", "coruwmex"], //add legion underwater mex later
 			"mex2": ["armmoho", "cormoho", "legmoho", "armuwmme", "coruwmme"], //add legion uwmme
-			"converter": ["armmakr", "cormakr", "legeconv", "armmmkr", "cormmkr","legadveconv", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],//add legion t2 maker and uwmmm
+			"converter": ["armmakr", "cormakr", "legmakr", "armmmkr", "cormmkr", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],//add legion t2 maker and uwmmm
 			"def_low": ["armllt", "corllt", "leglht", "armbeamer", "corhllt", "legmg"],
 			"def_mid": ["armclaw", "cormaw", "legdtr", "armpb", "corvipe", "legbombard", "armhlt", "corhlt", "leghive"],
 			"def_hvy":  ["armamb", "armanni", "cortoast", "cordoom", "armguard", "corpun", "armkraken", "corfdoom", "armsilo"],
