@@ -1577,7 +1577,6 @@
 			},
 			"legmstor" : {
 				"role": ["static"],
-				"since": 999,
 				"limit": 1
 			},
 			"legwin": {
@@ -1600,7 +1599,6 @@
 			},
 			"legestor" : {
 				"role": ["static"],
-				"since": 999,
 				"limit": 1
 			},
 			//Land T2 Economy
@@ -1922,68 +1920,50 @@
 				"limit": 10,
 				"build_speed": 6.0
 			},
-			
 			"legch": {
 				"role": ["builder"],
-				"limit": 10,
 				"build_speed": 6.0
 			},
 			"legcs": {
 				"role": ["builder"],
 				"retreat": 0.6,
-				"limit": 6,
 				"build_speed": 6.0
 			},
 			"legaca": {
 				"role": ["builder", "air"],
-				"attribute": ["solo"],
 				"retreat": 0.6,
-				"limit": 15,
 				"build_speed": 5.0
 			},
 			"legca": {
 				"role": ["builder", "air"],
 				"retreat": 0.6,
-				"limit": 15,
 				"build_speed": 3.0
 			},
 			"legacv": {
 				"role": ["builderT2"],
-				"attribute": ["solo"],
-				"limit": 15,
 				"build_speed": 12.5  //bp 250
 			},
 			"legmlv": {
-				"role": ["support"],
-				"limit": 0
+				"role": ["support"]
 			},
 			"legotter": {
 				"role": ["builder"],
-				"attribute": ["solo"],
-				"limit": 6,
 				"build_speed": 4.0
 			},
 			"legcv": {
 				"role": ["builder"],
-				"limit": 10,
 				"build_speed": 4.5  //bp 90
 			},
 			"legaceb": {
 				"role": ["builder"],
-				"limit": 16,
-				"build_speed": 7.0,
-				"since": 1300
+				"build_speed": 7.0
 			},
 			"legack": {
 				"role": ["builderT2"],
-				"attribute": ["solo"],
-				"limit": 10,
 				"build_speed": 9.0  
 			},
 			"legck": {
 				"role": ["builder"],
-				//"attribute": ["solo"],
-				"limit": 12,
 				"build_speed": 3.75  
 			},
 	

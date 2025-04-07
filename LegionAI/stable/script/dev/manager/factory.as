@@ -22,24 +22,69 @@ class SUserData {
 // Example of userData per UnitDef
 array<SUserData> userData(ai.GetDefCount() + 1);
 
-string armlab  ("armlab");
-string armalab ("armalab");
-string armvp   ("armvp");
-string armavp  ("armavp");
-string armsy   ("armsy");
-string armasy  ("armasy");
-string armap   ("armap");
-string armaap  ("armaap");
-string armshltx("armshltx");
-string corlab  ("corlab");
-string coralab ("coralab");
-string corvp   ("corvp");
-string coravp  ("coravp");
-string corsy   ("corsy");
-string corasy  ("corasy");
-string corap   ("corap");
-string coraap  ("coraap");
-string corgant ("corgant");
+//=======================================================
+//Armada Land Factories
+//=======================================================
+string armlab  		("armlab");
+string armalab 		("armalab");
+string armvp   		("armvp");
+string armavp  		("armavp");
+//string armhp   		("armhp");
+//Armada Sea Factories
+//string armfhp  		("armfhp");
+string armsy   		("armsy");
+string armasy  		("armasy");
+string armamsub 	("armamsub");
+//Armada Air Factories
+string armap   		("armap");
+string armaap  		("armaap");
+string armplat  	("armplat");
+string armapt3  	("armapt3");
+//Armada T3 Factories
+string armshltx 	("armshltx");
+string armshltxuw 	("armshltxuw");
+//=======================================================
+//Cortex Land Factories
+//=======================================================
+string corlab  		("corlab");
+string coralab 		("coralab");
+string corvp   		("corvp");
+string coravp  		("coravp");
+//string corhp  		("corhp");
+//Cortex Land Factories
+//string corfhp  		("corfhp");
+string corsy   		("corsy");
+string corasy  		("corasy");
+string coramsub 	("coramsub");
+//Cortex Land Factories
+string corap   		("corap");
+string coraap  		("coraap");
+string corplat  	("corplat");
+string corapt3  	("corapt3");
+//Cortex Land Factories
+string corgant 		("corgant");
+string corgantuw 	("corgantuw");
+//=======================================================
+//Legion Land Factories
+//=======================================================
+string leglab  		("leglab");
+string legalab 		("legalab");
+string legvp   		("legvp");
+string legavp  		("legavp");
+//string leghp  		("leghp");
+//Legion Land Factories
+//string legfhp  		("legfhp");
+//string legsy   	("legsy"); //Add Later
+//string legasy  	("legasy"); //Add Later
+string legamsub 	("legamsub");
+//Legion Land Factories
+string legap   		("legap");
+string legaap  		("legaap");
+//Legion Land Factories
+string leggant 		("leggant");
+//string leggantuw 	("leggantuw"); //Add Later
+//=======================================================
+//=======================================================
 
 int switchInterval = MakeSwitchInterval();
 

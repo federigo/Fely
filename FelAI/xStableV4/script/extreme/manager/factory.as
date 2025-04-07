@@ -177,7 +177,7 @@ bool AiIsSwitchAllowed(CCircuitDef@ facDef)
 
 int MakeSwitchInterval()
 {
-	return AiRandom(550, 1000) * SECOND;
+	return AiRandom(550, 850) * SECOND;
 }
 
 }  // namespace Factory

@@ -18,10 +18,10 @@
 			"legion":  ["leglht",		"cortl",   		"legrl",  		"leghive",   	"legmg",   		"legdtr",  		"legrhapsis",  	"leglupara",	"legbombard", 	"coratl", 
 						"legflak",   	"legacluster", 	"legbastion", 	"legcluster",   "legabm",		"legrad",		"legjam",		"legestor",		"legmstor",		"legadvsol", 
 						"legnanotc",	"legarad",		"legtarg",		"legadvestore",	"legperdition", "legajam",		"legfus",       "legsolar",     "legdeflector", "corfhlt",
-						"legsd", 		"legstarfall",	"legfus",		"legalab",		"legavp",		"legaap",		"leggant",		"legap"]
+						"legsd", 		"legstarfall",	"legfus",		"legafus",		"legalab",		"legavp",		"legaap",		"leggant"]
 		},
 		// Actual number of defences per cluster bounded by income - the order of defenses that should be build with numbers as above.
-		"land":  [0, 2, 3, 4, 15, 16, 20, 20, 20, 12, 12, 14, 10, 10, 10, 10, 10, 20, 20, 20, 20, 20, 20, 31],
+		"land":  [0, 2, 3, 4, 15, 16, 20, 12, 12, 14, 10],
 		"water": [1, 1, 1, 1, 4, 9, 10, 9, 10],
 		"prevent": 3,  // number of preventive defences
 		"amount": {  // income bound factor
@@ -33,9 +33,8 @@
 		"point_range": 600.0,  // maximum distance between 2 points in hierarchical cluster within economy cluster
 	
 		// Base defence and time to build it, in seconds
-		"base": [
-			[0, 120], [0, 180], [2, 240], [2, 240], [4, 300], [33, 480], [34, 480], [35, 480], [37, 580], [32, 600], [32, 720], [32, 840], [14, 1200], [36, 1300], [32, 1360], [8, 1420], [8, 1480], [8, 1540], [12, 1800], [12, 1800], [12, 1800]
-		],
+		"base": 
+		[	[0, 120], [2, 240], [17, 265], [18, 280], [32, 420], [34, 480], [32, 540], [35, 600], [32, 660]	],
 	
 		"superweapon": {
 			"unit": {
