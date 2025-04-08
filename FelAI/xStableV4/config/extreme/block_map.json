@@ -199,7 +199,7 @@
 			"store": ["armmstor", "armestor", "cormstor", "corestor", "legmstor", "legestor"],
 			"mex": ["armmex", "cormex", "legmex", "legmext15", "armuwmex", "coruwmex"], //add legion underwater mex later
 			"mex2": ["armmoho", "cormoho", "legmoho", "armuwmme", "coruwmme"], //add legion uwmme
-			"converter": ["armmakr", "cormakr", "legeconv", "armmmkr", "cormmkr","legadveconv", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],//add legion t2 maker and uwmmm
+			"converter": ["armmakr", "cormakr", "legeconv", "armmmkr", "cormmkr", "legadveconv", "armfmkr", "corfmkr", "armuwmmm", "coruwmmm"],//add legion t2 maker and uwmmm
 			"def_low": ["armllt", "corllt", "leglht", "armbeamer", "corhllt", "legmg"],
 			"def_mid": ["armclaw", "cormaw", "legdtr", "armpb", "corvipe", "legbombard", "armhlt", "corhlt", "leghive"],
 			"def_hvy":  ["armamb", "armanni", "cortoast", "cordoom", "armguard", "corpun", "armkraken", "corfdoom", "armsilo"],

@@ -21,30 +21,31 @@
 						"legsd", 		"legstarfall",	"legfus",		"legafus",		"legalab",		"legavp",		"legaap",		"leggant"]
 		},
 		// Actual number of defences per cluster bounded by income - the order of defenses that should be build with numbers as above.
-		"land":  [0, 2, 3, 4, 15, 16, 20, 12, 12, 14, 10],
-		"water": [1, 1, 1, 1, 4, 9, 10, 9, 10],
-		"prevent": 3,  // number of preventive defences
-		"amount": {  // income bound factor
-			"offset": [-2.0, 2.0],
-			// Amount factor: 10x10 ~ 48.0, 20x20 ~ 32.0
-			"factor": [48.0, 32.0],
-			"map": [10, 20]
-		},
-		"point_range": 600.0,  // maximum distance between 2 points in hierarchical cluster within economy cluster
-	
-		// Base defence and time to build it, in seconds
-		"base": 
-		[	[0, 120], [2, 240], [17, 265], [18, 280], [32, 420], [34, 480], [32, 540], [35, 600], [32, 660]	],
-	
-		"superweapon": {
+	"land":  [0, 2, 3, 5, 6, 4, 7, 13, 8, 10, 11, 12],
+	"water": [1, 1, 1, 1, 4, 9, 10, 9, 10],
+	"prevent": 1,  // number of preventive defences
+	"amount": {  // income bound factor
+		"offset": [-2.0, 2.0],
+		// Amount factor: 10x10 ~ 48.0, 20x20 ~ 32.0
+		"factor": [48.0, 32.0],
+		"map": [10, 20]
+	},
+	"point_range": 600.0,  // maximum distance between 2 points in hierarchical cluster within economy cluster
+
+	// Base defence and time to build it, in seconds
+	"base": [
+		[3, 420], [10, 1200], [15,1220], [14, 1300], [15, 1320], [12, 1800]
+	],
+
+	"superweapon": {
 			"unit": {
 				"armada": ["armmercury",  	"armemp",  		"armbrtha", 	"armvulc", 		"armamd", "armsilo"],
 				"cortex": ["corscreamer", 	"cortron", 		"corint",   	"corbuzz", 		"corfmd", "corsilo"],
 				"legion": ["leglupara",   	"legperdition", "leglrpc",   	"legstarfall", 	"legfmd", "legsilo"]
 			},
-			"weight":     [ 0.45,          	0.00,      		0.65,       	0.15,      		0.35,     0.25],
+			"weight":     [ 0.25,          0.14,     		 0.25,       	0.06,      		0.15,     0.15],
 	
-			"condition": [60, 800]  // [<Minimum income>, <maximum seconds to build>]
+			"condition": [30, 600]  // [<Minimum income>, <maximum seconds to build>]
 		},
 	
 		"wall": {
@@ -255,6 +256,7 @@
 			"armap": {
 				"hub": [[{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 			},
+
 			"corlab": {
 				"hub": [[{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 			},
@@ -264,6 +266,7 @@
 			"corap": {
 				"hub": [[{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 			},
+
 			"leglab": {
 				"hub": [[{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
 			},
@@ -272,6 +275,24 @@
 			},
 			"legap": {
 				"hub": [[{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+			},
+			"legalab": {
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+				]]
+			},
+			"legavp": {
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+					]]
+			},
+			"legaap": {
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+					]]
 			}
 		},
 		"mex": {
