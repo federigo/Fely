@@ -6,40 +6,41 @@
 		//But there's possibility that AI will just run from enemy till it has big enough group, but it may loose its base. So if with attack=0.8..1.0 AI is not loosing base then everything is ok and i think this range is optimal.
 	
 		"quota": {
-			"scout": 1,  // max scout units out of raiders
-			"raid": [3.0, 32.5],  // [<min>, <avg>] power of raider squad 2.5,48
-			"attack": 15.0,  // min power of attack group ---- was 40
-			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
-				"attack": [0.6, 0.8],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
-				"defence": [0.3, 0.5],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
-				"mobile": 0.02,  // initial modifier for power of attack group based on mobile enemy threat; org=1.05
-				"static": 0.02,  // initial modifier for power of attack group based on static enemy threat; org= 1.2
-				"comm": 0.01   // because of power of dgun
+			"scout": 1,  // max scouts out of units with attribute "scout"
+			"raid": [9.0, 65.0],  // [<min>, <avg>] power of raider squad
+			"attack": 20.0,  // min power of attack group
+			"thr_mod": {
+				"attack": [1.0, 1.0],  // [<min>, <max>] enemy threat modifier for target selection of attack task
+				"defence": [1.0, 1.0],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task
+				"mobile": 1.05,  // initial modifier for power of attack group based on mobile enemy threat
+				"static": 1.2,  // initial modifier for power of attack group based on static enemy threat
+				"comm": 0.05
 			},
 			// anti-air threat threshold, air factories will stop production when AA threat exceeds
 			"aa_threat": [[8, 50000.0], [24, 50000.0]],  // [[<map_start>, <threat_start>], [<map_end>, <threat_end>]]
 			"slack_mod": {
-				"all": 0.05,  // threat map 64-elmos slack multiplier for all units
-				"static": 0.05,  // additional 64-elmo-cells for static units
+				"all": 0.5,  // threat map 64-elmos slack multiplier for all units
+				"static": 0.5,  // additional 64-elmo-cells for static units
 				"speed": [0.75, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
 			},
-			"num_batch": 2 //repeat unit build if response factory build is called
+			"num_batch": 5,  // quantity of mobile units in build-batch
+			"anti_cap": 2.0  // probability 0.0~1.0 of AntiCapture action
 		},
 	
 		// If unit's health drops below specified percent it will retreat
 		"retreat": {
-			"builder": [1.0, 1.0, 1.0],  // [<default>, <UnitDef modifier>] for all builders
-			"fighter": [0.05, 0.05, 0.05],  // [<default>, <UnitDef modifier>] for all not-builder units
-			"shield": [0.25, 0.275]  // [<empty>, <full>] shield power
+			"builder": [0.8, 0.89, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all builders
+			"fighter": [0.5, 0.55, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all not-builder units
+			"shield": [0.25, 0.55]  // [<empty>, <full>] shield power
 		},
 	
 	
 		// following block is all about defense
 		"defence": {
-			"infl_rad": 4,  // influenece cell radius for defendAlly map
-			"base_rad": [1200.0, 800.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
-			"comm_rad": [600.0, 1200.0]  // 0 distance from base ~ 1000, base_rad ~ 500.0
-			//"escort": [1, 1, 300]  // [<builders_count>, <defenders_count>, <escort rule until this time>]  2,2,360
+			"infl_rad": 5,  // radius in influenece cells for defendAlly map
+			"base_rad": [600.0, 1200.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
+			"comm_rad": [1000.0, 500.0],  // 0 distance from base ~ 1000, base_rad ~ 500.0
+			"escort": [2, 1, 600]  // [<builders_count>, <defenders_count>, <constraint_seconds>]
 		},
 		// read of "escort":  [number of builders with defenders, number of defenders for each builder, timeframe were only escorted builders are able to expand (=build mex, porc)]
 		// base radius: ai checks if is withing base_rad. if there is enemy it checks if it is withing comm radius which is variable and depend on distance from base
@@ -700,7 +701,7 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
-				"since": 1200,
+				"since": 1800,
 				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},
@@ -708,7 +709,7 @@
 				"role": ["static"],
 				"attribute": ["support", "solo"],
 				"limit": 1,
-				"since": 1200,
+				"since": 1800,
 				"build_mod": 1000.0,
 				"build_speed": 45.0 //bp 300
 			},

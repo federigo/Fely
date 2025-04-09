@@ -6,21 +6,24 @@
 		"land": {
 			// "<energy_def>": [<lower limit>, <upper limit>, <m-income>, <e-income>, <efficiency>]
 			// limit = random(<lower limit>..<upper limit>)
+
 			"armwin": [200, 300],
 			"armsolar": [80, 120],
 			"armadvsol": [80, 120],
 			"armfus": [30, 40],
 			"armafus": [200, 300],
+
 			"corwin": [200, 300],
 			"corsolar": [80, 120],
 			"coradvsol": [80, 120],
 			"corfus": [30, 40],
 			"corafus": [200, 300],
+
 			"legwin": [200, 300],
 			"legmex": [200, 300],
 			"legsolar": [80, 120],
 			"legadvsol": [80, 120],
-			"legfus": [30, 40],
+			"legfus": [1, 3],
 			"legafus": [200, 300]
 		},
 		"water": {
