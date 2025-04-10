@@ -268,42 +268,72 @@
 			},
 
 			"leglab": {
-				"hub": [[{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+				]]
 			},
 			"legvp": {
-				"hub": [[{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+				]]
 			},
 			"legap": {
-				"hub": [[{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}]]
+				"hub": [[
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+					]]
 			},
 			"legalab": {
 				"hub": [[
 					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
 					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
-					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 20}, "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
-					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 30}, "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
-					{"unit": "legafus", "category": "energy", "offset": {"back": 10}, "priority": "now"}
+					{"unit": "legafus", "category": "energy", "offset": {"back": 40}, "priority": "now"}
 				]]
 			},
 			"legavp": {
 				"hub": [[
 					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
 					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
@@ -319,11 +349,13 @@
 			"legaap": {
 				"hub": [[
 					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"left": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 5}, "priority": "now"},
+					{"unit": "legnanotc", "category": "nano", "offset": {"right": 10}, "priority": "now"},
+					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
 					{"unit": "legfus", "category": "energy", "offset": {"back": 10}, "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
 					{"unit": "legadveconv", "category": "convert", "priority": "now"},
