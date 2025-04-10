@@ -2877,6 +2877,7 @@
 			},
 			"legfig": {
 				"role": ["anti_air", "air"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0}},
 				"power": 0.5,
 				"retreat": 0.25
 			},
@@ -2887,7 +2888,7 @@
 			},
 			"legmos": {
 				"role": ["skirmish", "static", "assault", "skirmish", "raider"],
-				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0}}
+				"threat": {"air": 0.0, "anti_air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "anti_air": 10.0, "surf": 0.0, "water": 0.0, "default": 1.0}}
 			},
 	
 			// LEGION ADV AIRCRAFT aircraft - legaap
@@ -2917,9 +2918,10 @@
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0}}
 			},
 			"legstronghold": {
-				"role": ["assault", "air"],
+				"role": ["raider"],
+				"attribute": ["siege"],
 				"retreat": 0,
-				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0}}
+				"threat": {"air": 10.0, "anti_air": 10.0, "surf": 0.0, "water": 0.0, "default": 1.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 1.0}}
 			},
 			"legfort": {
 				"role": ["heavy", "air"],

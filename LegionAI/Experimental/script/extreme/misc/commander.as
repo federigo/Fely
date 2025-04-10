@@ -87,10 +87,10 @@ SOpener@ GetOpenInfo()
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::SKIRM), SO(RT::BUILDER2), SO(RT::SKIRM), SO(RT::BUILDER2, 2)})
 		}},
 		{Factory::leglab, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER), SO(RT::RAIDER, 5), SO(RT::SKIRM, 6), SO(RT::BUILDER)})
+			SQueue(1.0f, {SO(RT::BUILDER, 3), SO(RT::RAIDER, 5), SO(RT::SKIRM, 6), SO(RT::BUILDER)})
 		}},
 		{Factory::legvp, array<SQueue> = {
-			SQueue(1.0f, {SO(RT::BUILDER), SO(RT::SCOUT, 3), SO(RT::RAIDER, 12), SO(RT::BUILDER)})
+			SQueue(1.0f, {SO(RT::BUILDER, 3), SO(RT::SCOUT, 3), SO(RT::RAIDER, 12), SO(RT::BUILDER)})
 		}},
 		{Factory::legalab, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::RAIDER, 3), SO(RT::BUILDER2), SO(RT::RAIDER, 3), SO(RT::SKIRM), SO(RT::HEAVY), SO(RT::ASSAULT, 2), SO(RT::BUILDER2)})

@@ -21,10 +21,10 @@
 
 			"legwin": [200, 300],
 			"legmex": [80, 120],
-			"legsolar": [80, 120],
-			"legadvsol": [80, 120],
-			"legfus": [30, 40],
-			"legafus": [200, 300]
+			"legsolar": [1, 1],
+			"legadvsol": [1, 1],
+			"legfus": [300, 400],
+			"legafus": [400, 500]
 		},
 		"water": {
 			"armtide": [140, 250],
