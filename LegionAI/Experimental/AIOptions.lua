@@ -46,7 +46,6 @@ local options = {
 -- 		type    = 'number',
 -- 		def     = 1337
 -- 	},
-
 	{ -- string
 		key     = 'disabledunits',
 		name    = 'Disabled units',
