@@ -9,7 +9,8 @@ LEGION IS STILL BEING WORKED ON
 
 AI NAME:
 WAVE DEFENSE IS ARMADA ONLY (DISABLE AIR)
-FELAI/xSTABLEV2 --Prototype BarbAI <<FOR LEGION>> Mainly
+FELAI/xSTABLEV2 --DEPRECATED
+LegionAI/Experimental --Prototype BarbAI <<FOR LEGION>> Mainly
 SMRTCharlie -- DOES NOT WORK DO NOT USE
 
 
@@ -20,7 +21,7 @@ NAVIGATE HERE:
 
 C:\Program Files\Beyond-All-Reason\data\engine\rel2501.2025.01.6\AI\Skirmish
 
-DOWNLOAD FELAI/xStableV2 and put inside Skirmish Folder
+DOWNLOAD LegionAI/Experimental and put inside Skirmish Folder
 
 Then Navigate here and Follow Instructions:
 https://docs.google.com/document/d/1pWk-s2HmTH2Dhxfh4Q4vptfS9fRbxgWeA_pjELyhGhM/edit?tab=t.ygaz0x8rb3tm
