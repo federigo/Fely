@@ -2,8 +2,8 @@
 {
 "quota": {
 	"scout": 1,  // max scouts out of units with attribute "scout"
-	"raid": [9.0, 210.0],  // [<min>, <avg>] power of raider squad
-	"attack": 30.0,  // min power of attack group
+	"raid": [9.0, 420.0],  // [<min>, <avg>] power of raider squad
+	"attack": 60.0,  // min power of attack group
 	"thr_mod": {
 		"attack": [1.0, 1.0],  // [<min>, <max>] enemy threat modifier for target selection of attack task
 		"defence": [1.0, 1.0],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task
@@ -18,13 +18,14 @@
 		"static": 0.5,  // additional 64-elmo-cells for static units
 		"speed": [0.75, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
 	},
-	"num_batch": 5  // quantity of mobile units in build-batch
+	"num_batch": 5,  // quantity of mobile units in build-batch
+	"anti_cap": 2.0  // probability 0.0~1.0 of AntiCapture action
 },
 
 // If unit's health drops below specified percent it will retreat
 "retreat": {
-	"builder": [0.2, 0.25, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all builders
-	"fighter": [0.2, 0.25, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all not-builder units
+	"builder": [0.8, 0.89, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all builders
+	"fighter": [0.5, 0.55, 1.0],  // [<min default>, <max default>, <UnitDef modifier>] for all not-builder units
 	"shield": [0.25, 0.55]  // [<empty>, <full>] shield power
 },
 
@@ -61,11 +62,11 @@
 		// "vampire" - reclaim enemy units without threat check
 //		"attribute": ["boost", "no_strafe"],
 
-		// Fire state (open by default)
-		// "hold" - hold fire
-		// "return" - return fire
-		// "open" - fire at will
-//		"fire_state": "open",
+		// Fire state (fire at will by default)
+		// 0 - hold fire
+		// 1 - return fire
+		// 2 - fire at will
+//		"fire_state": 2,
 
 		// Per unit On state for static and mobile enemies while attacking. Not used when unspecified
 		// true = on
@@ -300,7 +301,7 @@
 		"role": ["static"],
 		"attribute": ["support"],
 		"limit": 1,
-		"midposoffset": [0, 0, 21],
+		"midposoffset": [0, 0, -16],
 		"build_speed": 10.0
 	},
 	"corgant": {
@@ -578,7 +579,7 @@
 		"attribute": ["scout"]
 	},
 	"armthund": {
-		"role": ["bomber", "static"],
+		"role": ["bomber", "air"],
 		"threat": 0.1
 	},
 	"armkam": {
@@ -617,7 +618,7 @@
 		"retreat": 0.4
 	},
 	"armstil": {
-		"role": ["bomber", "air"]
+		"role": ["bomber", "air"],
 	},
 	"armliche": {
 		"role": ["bomber", "air"],
@@ -681,7 +682,7 @@
 	},
 	"armbats": {
 		"role": ["heavy"],
-		"attribute": ["assault"]
+		"attribute": ["assault"],
 	},
 	"armepoch": {
 		"role": ["heavy"],
@@ -779,7 +780,7 @@
 	"corsktl": {
 		"role": ["assault"],
 		"attribute": ["melee"],
-		"retreat": 0
+		"retreat": 0,
 	},
 	"corvoyr": {
 		"role": ["assault"],
@@ -944,7 +945,7 @@
 	},
 	"corbats": {
 		"role": ["heavy"],
-		"attribute": ["assault"]
+		"attribute": ["assault"],
 	},
 	"corblackhy": {
 		"role": ["heavy"],
@@ -1136,7 +1137,7 @@
 		"role": ["static"],
 		"attribute": ["support"],
 		"limit": 1,
-		"midposoffset": [0, 0, 21],
+		"midposoffset": [0, 0, -16],
 		"build_speed": 10.0
 	},
 	"corlab": {

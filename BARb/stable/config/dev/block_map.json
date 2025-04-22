@@ -63,12 +63,12 @@
 		},
 		"fac_strider": {
 			"type": ["rectangle", "factory"],
-			"offset": [0, 4],
-			"yard": [4, 4]
+			"offset": [0, 10],
+			"yard": [0, -4]
 		},
 		"solar": {
 			"type": ["rectangle", "engy_low"],
- 			"ignore": ["engy_low", "def_low", "nano"]
+			"ignore": ["engy_low", "def_low", "nano"]
 		},
 		"wind": {
 //			"type": ["circle", "engy_low"],

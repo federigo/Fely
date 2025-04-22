@@ -37,17 +37,6 @@
 			"coradvsol": [120, 160],
 			"coruwfus": [100, 200]
 		},
-	"converter": {
-		// If land area >= 40% of the map then "land" config used, "water" otherwise
-		"land": {
-			// "<energy_def>": [<lower limit>, <upper limit>, <m-income>, <e-income>, <efficiency>]
-			// limit = random(<lower limit>..<upper limit>)
-
-			"legadveconv": [200, 300],
-			"legeconv": [40, 80]
-		},
-		"water": {
-		},
 		// income factor for energy, time is in seconds
 		// [[<start_factor>, <start_time>], [<end_factor>, <end_time>]]
 		"factor": [[1.0, 300], [50.0, 7200]],
