@@ -185,11 +185,6 @@
 					{"unit": "legnanotc", "category": "nano", "offset": {"front": 15}, "priority": "now"},
 					{"unit": "legnanotc", "category": "nano", "offset": {"front": 20}, "priority": "now"},
 					{"unit": "legnanotc", "category": "nano", "offset": {"front": 25}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "offset": {"back": 5}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "offset": {"back": 10}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "offset": {"back": 15}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "offset": {"back": 20}, "priority": "now"},
-					{"unit": "legnanotc", "category": "nano", "offset": {"back": 25}, "priority": "now"},
 					{"unit": "legabm", "category": "defence", "offset": [180, -180], "condition": {"chance": 0.75}, "priority": "now"},
 					{"unit": "legbastion", "category": "defence", "offset": [-180, 180], "priority": "now"},
 					{"unit": "legflak", "category": "defence", "offset": [-80, 80], "condition": {"air": true}, "priority": "now"}
