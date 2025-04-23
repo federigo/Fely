@@ -11,11 +11,13 @@
 			"armadvsol": [80, 120],
 			"armfus": [30, 40],
 			"armafus": [200, 300],
+
 			"corwin": [200, 300],
 			"corsolar": [80, 120],
 			"coradvsol": [80, 120],
 			"corfus": [30, 40],
 			"corafus": [200, 300],
+
 			"legwin": [200, 300],
 			"legsolar": [80, 120],
 			"legadvsol": [80, 120],
@@ -28,6 +30,7 @@
 			"armsolar": [10],
 			"armadvsol": [120, 160],
 			"armuwfus": [100, 200],
+			
 			"cortide": [140, 250],
 			"corwin": [100, 200],
 			"corsolar": [10],

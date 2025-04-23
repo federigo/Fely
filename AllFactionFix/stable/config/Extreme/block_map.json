@@ -64,7 +64,8 @@
 		"fac_strider": {
 			"type": ["rectangle", "factory"],
 			"offset": [0, 10],
-			"yard": [0, -4]
+			"yard": [8, 8],
+			"size": [8, 8]
 		},
 		"solar": {
 			"type": ["rectangle", "engy_low"],

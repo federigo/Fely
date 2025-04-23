@@ -26,7 +26,7 @@
 		//   if factory's builder unavailable in current frame: priority ~= map_percent * importance0 / 10 + random(-20..+20)
 		// During game: priority ~= map_percent * importance1 + random(-20..+20)
 		// importanceN = 1.0 by default if not set
-		"importance": [0.9, 0.0],
+		"importance": [0.8, 0.0],
 
 		// 'require_energy' adds energy requirement for tierN (N>0): fallback to lowest tier on low energy
 		"require_energy": false,
@@ -54,8 +54,8 @@
 	},
 
 	"armalab": {
-		"importance": [0.0, 0.7],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armack", "armfast", "armzeus", "armfboy", "armfark", "armmav", "armfido", "armaak", "armmark", "armspid",
 					  "armsptk", "armsnipe", "armvader", "armamph", "armspy"],
@@ -75,7 +75,7 @@
 	},
 
 	"armvp": {
-		"importance": [0.75, 0.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["armcv", "armbeaver", "armmlv", "armfav", "armflash", "armpincer", "armstump", "armart", "armjanus", "armsam"],
@@ -101,8 +101,8 @@
 	},
 
 	"armavp": {
-		"importance": [0.0, 0.7],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armacv", "armlatnk", "armbull", "armmanni", "armmart", "armmerl", "armyork", "armseer", "armgremlin"],
 		"land": {
@@ -118,7 +118,7 @@
 
 	//T3 factory
 	"armshltx": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 2.0],
 		"require_energy": true,
 		"income_tier": [100, 200],
 		"unit":      ["armmar", "armraz", "armvang", "armbanth", "armlun", "armthor"],
@@ -153,8 +153,8 @@
 	},
 	
 	"armaap": {
-		"importance": [0.0, 0.7],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [50],
 		"unit":      ["armaca", "armhawk", "armawac", "armpnix", "armbrawl", "armblade", "armstil", "armliche"],
 		"land": {
@@ -203,7 +203,7 @@
 
 	// ARMADA hovers
 	"armhp": {
-		"importance": [0.2, 0.1],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["armch", "armsh", "armanac", "armmh", "armah"],
@@ -224,7 +224,7 @@
 
 	// ARMADA sea factories
 	"armamsub": {
-		"importance": [0.2, 0.2],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armbeaver", "armpincer", "armcroc", "armjeth", "armaak", "armdecom"],
@@ -236,7 +236,7 @@
 	},
 
 	"armfhp": {
-		"importance": [0.2, 0.2],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["armch", "armsh", "armanac", "armmh", "armah"],
@@ -256,7 +256,7 @@
 	},
 
 	"armplat": {
-		"importance": [1.0, 1.0],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armcsa", "armsaber", "armsb", "armseap", "armsfig", "armsehak"],
@@ -281,7 +281,7 @@
 
 	// CORTEX factories
 	"corlab": {
-		"importance": [0.9, 0.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["corck", "corak", "cornecro", "corstorm", "corthud", "corcrash"],
@@ -301,8 +301,8 @@
 	},
 
 	"coralab": {
-		"importance": [0.0, 0.8],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["corack", "cortermite", "corpyro", "corsumo", "corcan", "corfast", "cormort", "corhrk", "coraak", "cormando", "corsktl", "corvoyr", "coramph", "corspy"],
 		"land": {
@@ -317,7 +317,7 @@
 	},
 
 	"corvp": {
-		"importance": [0.75, 0.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["corcv", "cormuskrat", "cormlv", "corfav", "corgator", "corgarp", "corraid", "corlevlr", "corwolv", "cormist"],
@@ -343,8 +343,8 @@
 	},
 
 	"coravp": {
-		"importance": [0.0, 0.8],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["coracv", "correap", "corgol", "cormart", "corsent", "corvroc", "corban", "cortrem", "corvrad"],
 		"land": {
@@ -359,7 +359,7 @@
 	},
 
 	"corhp": {
-		"importance": [0.2, 0.1],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["corch", "corsh", "corsnap", "cormh", "corah", "corhal"],
@@ -380,8 +380,8 @@
 
 	//T3 factory
 	"corgant": {
-		"importance": [0.0, 1.0],
-		"require_energy": true,
+		"importance": [0.0, 2.0],
+		"require_energy": false,
 		"income_tier": [100, 200],
 		"unit":      ["corsok", "corshiva", "corkarg", "corcat", "corkorg", "corjugg"],
 		"land": {
@@ -399,7 +399,7 @@
 
 	// CORTEX Aircraft
 	"corap": {
-		"importance": [0.5, 0.0],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [30],
 		"unit":      ["corca", "corveng", "corfink", "corshad", "corbw"],
@@ -415,8 +415,8 @@
 	},
 	
 	"coraap": {
-		"importance": [0.0, 0.7],
-		"require_energy": true,
+		"importance": [0.0, 1.0],
+		"require_energy": false,
 		"income_tier": [50],
 		"unit":      ["coraca", "corvamp", "corawac", "corhurc", "corape", "corcrwh"],
 		"land": {
@@ -448,7 +448,7 @@
 	},
 	
 	"corasy": {
-		"importance": [0.0, 0.6],
+		"importance": [0.0, 1.0],
 		"require_energy": true,
 		"income_tier": [70],
 		"unit":      ["coracsub", "corshark", "corarch", "corcrus", "corcarry", "cormship", "corbats", "corblackhy"],
@@ -465,7 +465,7 @@
 
 	// CORTEX sea factories
 	"coramsub": {
-		"importance": [0.2, 0.2],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["cormuskrat", "corgarp", "corseal", "corparrow", "corcrash", "coraak", "cordecom"],
@@ -477,7 +477,7 @@
 	},
 
 	"corfhp": {
-		"importance": [0.2, 0.2],
+		"importance": [0.2, 0.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["corch", "corsh", "corsnap", "cormh", "corah", "corhal"],
@@ -497,7 +497,7 @@
 	},
 
 	"corplat": {
-		"importance": [1.0, 1.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["corcsa", "corcut", "corsb", "corseap", "corsfig", "corhunt"],
@@ -521,7 +521,7 @@
 	},
 	//LEGION
 	"leglab": {//done
-		"importance": [0.9, 0.0],	
+		"importance": [0.8, 0.0],	
 		"require_energy": false,	
 		"income_tier": [20, 30, 40],	
 		"unit":      [	"legck", 	"cornecro", "leggob", 	"leglob",	"legcen",  	"legbal",  	"legkark"],	
@@ -546,7 +546,7 @@
 		"caretaker": 12
 	},
 	"legvp": {
-		"importance": [0.9, 0.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,	
 		"income_tier": [20, 30, 40],
 		"unit":      [ "legcv", "legotter", "legmlv", "legscout", 	"leghades", "leghelios",	"leggat",  "legbar", 	"legrail", "legamphtank"],
@@ -613,7 +613,7 @@
 		"caretaker": 24
 	},
 	"leggant": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 2.0],
 		"require_energy": true,	
 		"income_tier": [100, 200, 300, 400],	
 		"unit":      [ "legjav", 	"corkarg", "legelrpcmech", 	"legkeres", "legerailtank", "legeshotgunmech", 	"legeheatraymech", 	"corjugg", "corsok"],	
@@ -642,7 +642,7 @@
 		"caretaker": 6
 	},	
 	"legfhp": {
-		"importance": [0.2, 0.2],	
+		"importance": [0.2, 0.0],	
 		"require_energy": false,	
 		"income_tier": [20, 30, 40],	
 		"unit":      ["legch", "legsh", "legner", "legmh", "legah", "legcar"],	
@@ -656,7 +656,7 @@
 		"caretaker": 6
 	},
 	"legamsub": {
-		"importance": [0.2, 0.2],	
+		"importance": [0.2, 0.0],	
 		"require_energy": false,		
 		"income_tier": [30],	
 		"unit":      ["legotter", "legamphtank", "legfloat", "corcrash", "coraak"],	
