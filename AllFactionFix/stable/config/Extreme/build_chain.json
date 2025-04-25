@@ -425,7 +425,7 @@
 				"hub": [[
 					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
 					{"unit": "legnanotc", "category": "nano", "offset": {"left": 5}, "priority": "now"},
-					{"unit": "legaap", "category": "factory", "offset": {"right": 50}, "priority": "now"}
+					{"unit": "legaap", "category": "factory", "offset": {"front": 10}, "priority": "now"}
 				]]
 			},
 			"legaap": {

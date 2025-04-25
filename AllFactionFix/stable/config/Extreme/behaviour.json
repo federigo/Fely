@@ -7,8 +7,8 @@
 	
 		"quota": {
 			"scout": 1,  // max scout units out of raiders
-			"raid": [2.5, 360.0],  // [<min>, <avg>] power of raider squad 2.5,48
-			"attack": 30.0,  // min power of attack group ---- was 40
+			"raid": [2.5, 48.0],  // [<min>, <avg>] power of raider squad 2.5,48
+			"attack": 40.0,  // min power of attack group ---- was 40
 			"thr_mod": {				//AI attacks everything with final threat (after all calculations) <= 1
 				"attack": [1.0, 1.0],//"attack": [0.6, 0.8],  // [<min>, <max>] enemy threat multiplier for target selection of attack task |  values <1 makes enemy group seem less of an thread for ai => ai attacks stronger groups than it own | org=0.25, 0.3
 				"defence": [1.0, 1.0],//"defence": [0.3, 0.5],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task; org=0.95, 0.95 | high values = low risk; low values = high risk 
@@ -77,190 +77,220 @@
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 5.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcom": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 5.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcom": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 5.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl2": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 10.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl2": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 10.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl2": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 10.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl3": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 15.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl3": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 15.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl3": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 15.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl4": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 20.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl4": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 20.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl4": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 20.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl5": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 25.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl5": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 25.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl5": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 25.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl6": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 30.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl6": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 30.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl6": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 30.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl7": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 35.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl7": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 35.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl7": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 35.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl8": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 40.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl8": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 40.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl8": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 40.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl9": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 45.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl9": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 45.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl9": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 45.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 //########################################################################################################################
 			"armcomlvl10": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 50.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"corcomlvl10": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 50.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 			"legcomlvl10": {
 				"role": ["builder"],
 				"attribute": ["commander"],
 				"build_speed": 50.0,
-				"retreat": 0.6
+				"retreat": 0.6,
+				"threat": {"air": 1000.0, "surf": 55.0, "water": 55.0, "default": 55.0, "vs": {"air": 1.0, "surf": 1.0, "water": 1.0, "default": 1.0}}
 			},
 	
 	
@@ -1223,7 +1253,8 @@
 			},
 			"armmstor" : {
 				"role": ["static"],
-				"since": 300
+				"since": 300,
+				"limit": 1
 			},
 			"armwin": {
 				"role": ["static"],
@@ -2227,11 +2258,13 @@
 			"corvoyr": {
 				"role": ["assault"],
 				"attribute": ["support"],
+				"limit": 1,
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
 			},
 			"corspec": {
 				"role": ["assault"],
 				"attribute": ["support"],
+				"limit": 1,
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
 			},
 			"coramph": {
