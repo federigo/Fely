@@ -21,7 +21,7 @@ local options = {
 		desc    = 'Enable global sight',
 		type    = 'bool',
 		section = 'performance',
-		def     = false,
+		def     = true,
 	},
 	{ -- bool
 		key     = 'comm_merge',

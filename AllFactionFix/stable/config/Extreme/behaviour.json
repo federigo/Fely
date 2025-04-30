@@ -1136,10 +1136,10 @@
 				"role": ["static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
 			},
-			//"leggatet3": {
-			//	"role": ["static"],
-			//	"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
-			//},
+			"leggatet3": {
+				"role": ["static"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
+			},
 			"legrwall": {
 				"role": ["static"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
@@ -2600,6 +2600,10 @@
 			},
 			"legsrail": {
 				"role": ["anti_heavy"],
+				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
+			},
+			"legamph": {
+				"role": ["assault"],
 				"threat": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0, "vs": {"air": 0.0, "surf": 0.0, "water": 0.0, "default": 0.0}}
 			},
 	

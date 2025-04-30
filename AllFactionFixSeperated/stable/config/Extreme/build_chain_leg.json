@@ -90,10 +90,10 @@
 						{"unit": "legadveconv", "category": "convert", "offset": {"back": 30}, "priority": "now"},
 						{"unit": "legadveconv", "category": "convert", "offset": {"back": 40}, "priority": "now"},
 						{"unit": "legadveconv", "category": "convert", "offset": {"back": 50}, "priority": "now"},
-						{"unit": "legflak", "category": "defence", "offset": {"front": 120}, "priority": "now"},
-						{"unit": "legflak", "category": "defence", "offset": {"front": 130}, "priority": "now"},
-						{"unit": "legflak", "category": "defence", "offset": {"front": 140}, "priority": "now"},
-						{"unit": "legflak", "category": "defence", "offset": {"front": 150}, "priority": "now"}
+						{"unit": "legflak", "category": "defence", "offset": {"front": 30}, "priority": "now"},
+						{"unit": "legflak", "category": "defence", "offset": {"front": 40}, "priority": "now"},
+						{"unit": "leglupara", "category": "defence", "offset": {"front": 50}, "priority": "now"},
+						{"unit": "leglupara", "category": "defence", "offset": {"front": 60}, "priority": "now"}
 					]
 				]
 			}
