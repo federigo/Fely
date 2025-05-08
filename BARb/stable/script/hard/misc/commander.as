@@ -75,13 +75,15 @@ SOpener@ GetOpenInfo()
 		}},
 		{Factory::corap, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER), SO(RT::AA), SO(RT::RAIDER), SO(RT::BOMBER), SO(RT::SCOUT)})
-		}},
+		}},,
 		{Factory::leglab, array<SQueue> = {
-			SQueue(0.9f, {SO(RT::BUILDER), SO(RT::SCOUT), SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RAIDER, 3), SO(RT::BUILDER), SO(RT::RAIDER, 2)}),
-			SQueue(0.1f, {SO(RT::RAIDER), SO(RT::BUILDER), SO(RT::RIOT), SO(RT::BUILDER), SO(RT::RAIDER, 4), SO(RT::BUILDER), SO(RT::RAIDER, 2)})
+			SQueue(1.0f, {SO(RT::BUILDER), SO(RT::SCOUT, 5), SO(RT::BUILDER, 2), SO(RT::SCOUT, 10), SO(RT::RAIDER, 10), SO(RT::AA)})
 		}},
 		{Factory::legalab, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::RAIDER, 3), SO(RT::BUILDER2), SO(RT::ARTY, 2), SO(RT::ASSAULT), SO(RT::BUILDER2), SO(RT::AA)})
+		}},
+		{Factory::legvp, array<SQueue> = {
+			SQueue(1.0f, {SO(RT::BUILDER), SO(RT::SCOUT, 5), SO(RT::BUILDER, 2), SO(RT::SCOUT, 10), SO(RT::RAIDER, 10)})
 		}},
 		{Factory::legavp, array<SQueue> = {
 			SQueue(1.0f, {SO(RT::BUILDER2), SO(RT::SKIRM, 3), SO(RT::BUILDER2), SO(RT::SKIRM, 2), SO(RT::ASSAULT), SO(RT::AA), SO(RT::BUILDER2)})

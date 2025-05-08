@@ -24,7 +24,7 @@
 			//   if factory's builder unavailable in current frame: priority ~= map_percent * importance0 / 10 + random(-20..+20)
 			// During game: priority ~= map_percent * importance1 + random(-20..+20)
 			// importanceN = 1.0 by default if not set
-			"importance": [1.0, 0.2],
+			"importance": [1.0, 0.0],
 	
 			// 'require_energy' adds energy requirement for tierN (N>0): fallback to lowest tier on low energy
 			"require_energy": false,
@@ -146,9 +146,9 @@
 	
 		//T3 factory
 		"armshltx": {
-			"importance": [0.0, 3.0],
+			"importance": [0.0, 1.0],
 	
-			"require_energy": false,
+			"require_energy": true,
 	
 			"income_tier": [100, 200],
 	
