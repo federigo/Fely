@@ -1,8 +1,8 @@
 # BARbots
 Beyond All Reason Custom Bots
-#################
-#HOW TO INSTALL!#
-#################
+
+###HOW TO INSTALL!###
+
 Goto:
 
 C:..........\Beyond-All-Reason\data\engine\recoil_2025.04.08\AI\Skirmish
