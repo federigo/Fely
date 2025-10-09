@@ -196,7 +196,7 @@
 //########################################################################################################################
 
 	"armsy": {
-		"importance": [0.8, 0.0],
+		"importance": [6.0, 6.0],
 		"require_energy": false,
 		"income_tier": [20],
 		"unit":      ["armcs", "armrecl", "armpt", "armdecade", "armpship", "armsub", "armroy"],
@@ -470,7 +470,7 @@
 		"caretaker": 3
 	},
 	"corsy": {
-		"importance": [0.8, 0.0],
+		"importance": [6.0, 6.0],
 		"require_energy": false,
 		"income_tier": [20],
 		"unit":      ["corcs", "correcl", "corpt", "coresupp", "corpship", "corsub", "corroy"],
