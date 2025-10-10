@@ -14,6 +14,7 @@ You should see "Open install directory"
 Click on it, then follow the path mentioned above.
 
 Choose Altergressive, T3RushBot or both files and put inside Skirmish Folder
+
 Note: T3RushBot needs a main attacker (Any BarbAI) for it to survive.
 
 Goto:
