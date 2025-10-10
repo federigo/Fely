@@ -29,7 +29,7 @@
 		//   if factory's builder unavailable in current frame: priority ~= map_percent * importance0 / 10 + random(-20..+20)
 		// During game: priority ~= map_percent * importance1 + random(-20..+20)
 		// importanceN = 1.0 by default if not set
-		"importance": [1.0, 1.0],
+		"importance": [1.0, 0.2],
 			// 'require_energy' adds energy requirement for tierN (N>0): fallback to lowest tier on low energy
 		"require_energy": false,
 			// If income*ecoFactor < income_tier[N] then 'tierN' probability will be used
@@ -50,7 +50,7 @@
 			"caretaker": 3
 	},
 	"armalab": {
-		"importance": [0.0, 2.0],
+		"importance": [0.0, 1.0],
 
 		"require_energy": true,
 
@@ -76,7 +76,7 @@
 		"caretaker": 6  // maxiumum amount of nanos: #caretake x #factories | actual max total amount gets limited by income/nanobuilspeed (behaviour.json)| e.g. 3rd factory 4 caretaker => 3x4=12
 	},
 	"armvp": {
-		"importance": [0.0, 1.0],
+		"importance": [1.0, 0.2],
 		"require_energy": false,
 		"income_tier": [2, 25,  35],
 		"unit":      ["armcv", "armbeaver", "armmlv", "armfav", "armflash", "armpincer", "armstump", "armart", "armjanus", "armsam"],
@@ -196,7 +196,7 @@
 //########################################################################################################################
 
 	"armsy": {
-		"importance": [6.0, 6.0],
+		"importance": [2.0, 2.0],
 		"require_energy": false,
 		"income_tier": [20],
 		"unit":      ["armcs", "armrecl", "armpt", "armdecade", "armpship", "armsub", "armroy"],
@@ -211,7 +211,7 @@
 		"caretaker": 6
 	},
 	"armasy": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 6.0],
 		"require_energy": false,
 		"income_tier": [70, 500],
 		"unit":      ["armacsub", "armsubk", "armaas", "armcrus", "armcarry", "armmship", "armbats", "armepoch", "armpshipt3", "armdecadet3"],
@@ -252,7 +252,7 @@
 		"caretaker": 3
 	},
 	"armamsub": { 
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 0.5],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armbeaver", "armpincer", "armcroc", "armjeth", "armaak", "armdecom"],
@@ -262,8 +262,8 @@
 		},
 		"caretaker": 3
 	},
-	"armfhp": { //Unused
-		"importance": [0.0, 0.0],
+	"armfhp": { 
+		"importance": [1.5, 1.0],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["armch", "armsh", "armanac", "armmh", "armah"],
@@ -282,18 +282,22 @@
 		"caretaker": 3
 	},
 	"armplat": {
-		"importance": [0.2, 0.5],
+		"importance": [0.0, 1.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["armcsa", "armsaber", "armsb", "armseap", "armsfig", "armsehak"],
 		"land": {
-			"tier0": [ 0.17,     0.17,       0.17,    0.17,      0.16,      0.16],
-			"tier1": [ 0.01,     0.01,       0.95,    0.01,      0.01,      0.01]
+			"tier0": [ 0.17,     0.17,       0.17,    0.00,      0.16,      0.16],
+			"tier1": [ 0.01,     0.01,       0.95,    0.00,      0.16,      0.01]
+		},
+		"water": {
+			"tier0": [ 0.17,     0.17,       0.00,    0.17,      0.16,      0.16],
+			"tier1": [ 0.01,     0.01,       0.00,    0.95,      0.16,      0.01]
 		},
 		"caretaker": 3
 	},
 	"armshltxuw": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 0.5],
 		"require_energy": true,
 		"income_tier": [100],
 		"unit":      ["armmar", "armcroc", "armbanth"],
@@ -309,7 +313,7 @@
 //########################################################################################################################
 
 	"corlab": {
-		"importance": [0.0, 1.0],
+		"importance": [0.8, 0.1],
 		"require_energy": false,
 		"income_tier": [10, 20, 30, 40, 50],
 		"unit":      ["corck", "corak", "cornecro", "corstorm", "corthud", "corcrash"],
@@ -339,7 +343,7 @@
 		"caretaker": 6
 	},
 	"corvp": {
-		"importance": [1.0, 0.0],
+		"importance": [0.8, 0.0],
 		"require_energy": false,
 		"income_tier": [10, 20, 30, 40, 50],
 		"unit":      ["corcv", "cormuskrat", "cormlv", "corfav", "corgator", "corgarp", "corraid", "corlevlr", "corwolv", "cormist"],
@@ -364,7 +368,7 @@
 		"caretaker": 3
 	},
 	"coravp": {
-		"importance": [0.0, 2.0],
+		"importance": [0.0, 1.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["coracv", "correap", "corgol", "cormart", "corsent", "corvroc", "corban", "cortrem", "corvrad"],
@@ -459,18 +463,22 @@
 //########################################################################################################################
 
 	"corplat": {
-		"importance": [0.2, 0.5],
+		"importance": [0.0, 1.0],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["corcsa", "corcut", "corsb", "corseap", "corsfig", "corhunt"],
 		"land": {
-			"tier0": [ 0.17,     0.17,     0.17,    0.17,      0.16,      0.16],
-			"tier1": [ 0.01,     0.01,     0.95,    0.01,      0.01,      0.01]
+			"tier0": [ 0.17,     0.17,     0.17,    0.00,      0.16,      0.16],
+			"tier1": [ 0.01,     0.01,     0.95,    0.00,      0.16,      0.01]
+		},
+		"water": {
+			"tier0": [ 0.17,     0.17,     0.00,    0.17,      0.16,      0.16],
+			"tier1": [ 0.01,     0.01,     0.00,    0.95,      0.16,      0.01]
 		},
 		"caretaker": 3
 	},
 	"corsy": {
-		"importance": [6.0, 6.0],
+		"importance": [3.0, 1.0],
 		"require_energy": false,
 		"income_tier": [20],
 		"unit":      ["corcs", "correcl", "corpt", "coresupp", "corpship", "corsub", "corroy"],
@@ -485,7 +493,7 @@
 		"caretaker": 6
 	},
 	"corasy": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 6.0],
 		"require_energy": false,
 		"income_tier": [70, 500],
 		"unit":      ["coracsub", "corshark", "corarch", "corcrus", "corcarry", "cormship", "corbats", "corblackhy", "coresuppt3", "corprince"],
@@ -502,7 +510,7 @@
 		"caretaker": 12
 	},
 	"coramsub": { 
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 0.5],
 		"require_energy": false,
 		"income_tier": [40],
 		"unit":      ["cormuskrat", "corgarp", "corseal", "corparrow", "corcrash", "coraak", "cordecom"],
@@ -531,8 +539,8 @@
 		},
 		"caretaker": 3
 	},
-	"corfhp": { //Unused
-		"importance": [0.0, 0.0],
+	"corfhp": { 
+		"importance": [1.5, 0.5],
 		"require_energy": false,
 		"income_tier": [20, 30, 40],
 		"unit":      ["corch", "corsh", "corsnap", "cormh", "corah", "corhal"],
@@ -551,7 +559,7 @@
 		"caretaker": 3
 	},
 	"corgantuw": {
-		"importance": [0.0, 1.0],
+		"importance": [0.0, 0.5],
 		"require_energy": false,
 		"income_tier": [100],
 		"unit":      ["corshiva", "corseal", "corkorg", "corparrow"],

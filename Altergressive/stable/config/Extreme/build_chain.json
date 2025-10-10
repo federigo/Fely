@@ -209,8 +209,7 @@
 					{"unit": "armnanotct2", "category": "nano", "offset": {"right": 5}, "priority": "now"},
 					{"unit": "armfus", "category": "energy", "offset": {"back": 40}, "priority": "now"},
 					{"unit": "armuwadves", "category": "store", "offset": {"back": 50}, "priority": "now"},
-					{"unit": "armamd", "category": "defence", "offset": {"back": 60}, "priority": "now"},
-					{"unit": "armap", "category": "factory", "offset": {"back": 100}, "priority": "now"}
+					{"unit": "armamd", "category": "defence", "offset": {"back": 60}, "priority": "now"}
 				]]
 			},
 			"armvp": {
@@ -229,8 +228,7 @@
 			},
 			"armap": {
 				"hub": [[
-					{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "normal"},
-					{"unit": "armaap", "category": "factory", "offset": {"back": 15}, "priority": "now"}
+					{"unit": "armllt", "category": "defence", "offset": {"front": 5}, "priority": "normal"}
 				]]
 			},
 			"armaap": {
@@ -267,14 +265,12 @@
 					{"unit": "cornanotct2", "category": "nano", "offset": {"right": 5}, "priority": "now"},
 					{"unit": "corfus", "category": "energy", "offset": {"back": 40}, "priority": "now"},
 					{"unit": "coruwadves", "category": "store", "offset": {"back": 50}, "priority": "now"},
-					{"unit": "corfmd", "category": "defence", "offset": {"back": 60}, "priority": "now"},
-					{"unit": "corap", "category": "factory", "offset": {"back": 100}, "priority": "now"}
+					{"unit": "corfmd", "category": "defence", "offset": {"back": 60}, "priority": "now"}
 				]]
 			},
 			"corap": {
 				"hub": [[
-					{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "normal"},
-					{"unit": "coraap", "category": "factory", "offset": {"back": 15}, "priority": "now"}
+					{"unit": "corllt", "category": "defence", "offset": {"front": 5}, "priority": "normal"}
 				]]
 			},
 			"coraap": {

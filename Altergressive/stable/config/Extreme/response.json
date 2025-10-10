@@ -67,10 +67,17 @@
 	},
 	"anti_sub": {
 		"vs":         ["sub"],
-		"ratio":      [ 0.0],
-		"importance": [ 0.0],
-		"max_percent": 0.00,
-		"eps_step": 0.00
+		"ratio":      [ 0.8],
+		"importance": [ 5.0],
+		"max_percent": 0.30,
+		"eps_step": 0.0
+	},
+	"sub":{
+		"vs":         ["skirmish", "assault", "riot", "heavy", "super"],
+		"ratio":      [ 0.50,        0.50,		0.5,	0.5,	0.5],
+		"importance": [ 5.0,         5.0,		5.0, 	5.0, 	5.0],
+		"max_percent": 0.50,
+		"eps_step": 0.0
 	},
 	"anti_heavy": {
 		"vs":         ["heavy", "artillery", "support", "anti_heavy", "commander", "super"],

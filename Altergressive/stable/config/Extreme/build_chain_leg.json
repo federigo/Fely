@@ -121,8 +121,7 @@
 					{"unit": "legnanotct2", "category": "nano", "offset": {"front": 10}, "priority": "now"},
 					{"unit": "legfus", "category": "energy", "offset": {"back": 40}, "priority": "now"},
 					{"unit": "legadvestore", "category": "store", "offset": {"back": 50}, "priority": "now"},
-					{"unit": "legabm", "category": "defence", "offset": {"back": 60}, "priority": "now"},
-					{"unit": "legap", "category": "factory", "offset": {"back": 100}, "priority": "now"}
+					{"unit": "legabm", "category": "defence", "offset": {"back": 60}, "priority": "now"}
 				]]
 			},
 			"legvp": {
@@ -141,8 +140,7 @@
 			},
 			"legap": {
 				"hub": [[
-					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"},
-					{"unit": "legaap", "category": "factory", "offset": {"back": 15}, "priority": "now"}
+					{"unit": "leglht", "category": "defence", "offset": {"front": 5}, "priority": "now"}
 				]]
 			},
 			"legaap": {
